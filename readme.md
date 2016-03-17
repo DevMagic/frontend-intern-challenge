@@ -7,7 +7,7 @@ O desafio proposto consiste numa **landing page** simulando um encurtador de lin
 ### Instruções
 
 - **Forke** esse repositório e faça o desafio numa branch com o seu nome (exemplo: `nome-sobrenome`);
-- O seu objetivo principal é transformar esse [mockup](./Layout) em um protótipo funcional HTML/CSS/JS;
+- O seu objetivo principal é transformar esse [mockup](./Layout/Preview.jpg) em um protótipo funcional HTML/CSS/JS;
 - No seu projeto, crie um diretório chamado `project`. Todos os arquivos que você criar devem estar dentro desta pasta;
 - Assim que concluir o seu desafio, abra um **pull request** com suas alterações.
 
