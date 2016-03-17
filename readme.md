@@ -35,6 +35,6 @@ O desafio proposto consiste numa **landing page** simulando um encurtador de lin
 
 ---
 
-Em caso de dúvidas, abra uma [issue](/issues).
+Em caso de dúvidas, [abra uma issue](https://github.com/chaordic/frontend-intern-challenge/issues).
 
 **Boa sorte =]**
