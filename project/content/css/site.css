@@ -1,0 +1,160 @@
+body{
+font-family: 'Roboto','Roboto Slab';
+background: #eee;
+color:#777;
+}
+
+
+
+
+header{
+    width: 100%;
+    height: 985px;
+    background-image: url(../images/background-home.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.intro{
+    display: table;
+    width: 100%;
+    text-align: center;
+    background: url(../images/background-home.jpg) no-repeat bottom center scroll;
+    background-size: cover;
+}
+
+.intro .intro-body{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.container-home{
+    margin:0 auto;
+    width: 50%;
+}
+
+.container-home  input[type=text]{
+    width: 70%;
+    border-bottom: 1px solid #FF6E15;
+    box-shadow: 0 1px 0 0 #FF6E15;
+    color:#FF6E15;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.container-home  input[type=text]:hover{
+    border-bottom: 1px solid #FF6E15;
+    box-shadow: 0 1px 0 0 #FF6E15;
+}
+
+.form{
+    padding: 20px;
+}
+
+nav{
+    box-shadow: none;
+    background-color: #fff;
+}
+
+    nav img{
+    margin: 15px 0 0;
+}
+
+body section#top5 {
+    padding: 60px 0px;
+    background-color: #fff;
+}
+
+
+table{
+    width:60%;
+    margin: 0 auto;
+}
+
+table p{
+    text-align: right;
+    color: #777;
+}
+
+table td{
+    color: #aa1423;
+    font-size: 17px;
+}
+
+table tr{
+    border-bottom: 1px solid #eee;
+}
+
+body section#hits {
+    padding: 60px 0px;
+    background-color: #eee;
+    text-align: center;
+}
+
+footer{
+    color: #aa1423;
+    padding: 5px 0 0;
+    height: 70px;
+    background: #fff;
+    font-size: 1.5rem;
+}
+
+.social{
+    float: right;
+}
+
+.align-footer{
+    padding:20px 0 0;
+}
+
+
+.panel{
+    width: 205px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #CACACA;
+}
+
+h1,
+h2
+{
+    font-family: 'Roboto Slab';
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    color:#fff;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:#aa1423;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.btn-default{
+    padding: 14px;
+    background: #FF6E15;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a{
+    color:#fff;
+}
