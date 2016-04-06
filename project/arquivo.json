@@ -1,0 +1,30 @@
+// Estrutra JSON.
+{
+"usuarios":
+[
+{
+"id": "12", 
+"nome": "Ted",
+"telefone": "(99) 9999-9999",
+"cidade": "Salvador"
+},
+{
+"id": "13", 
+"nome": "Clark", 
+"telefone": "(88) 8888-8888", 
+"cidade": "Madrid"
+},
+{
+"id": "14", 
+"nome": "Nuno", 
+"telefone": "(77) 7777-7777", 
+"cidade": "Nova York"
+},
+{
+"id": "15", 
+"nome": "Maia", 
+"telefone": "(66) 6666-6666", 
+"cidade": "Contagem"
+}
+]
+}
