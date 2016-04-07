@@ -1,0 +1,152 @@
+/* Scss Document */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+body {
+  margin: 0;
+  background: #eee;
+  font-family: "Roboto", serif;
+  color: #AA1423; }
+
+.topo {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 30px;
+  width: 100%;
+  text-align: center; }
+
+.capa {
+  background: url(../assets/background-home.jpg) #AA1423 no-repeat center;
+  background-size: 1200px;
+  width: 100%;
+  height: 600px; }
+
+.topfive {
+  background: #fff;
+  width: 100%;
+  height: 400px; }
+
+.title {
+  font-weight: bold;
+  padding: 40px;
+  font: 30px "Roboto Slab", serif;
+  color: #AA1423; }
+
+.links {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  height: 20px;
+  border-bottom: 1px solid #eee; }
+
+.link-top {
+  font-size: 14px;
+  font-weight: bold;
+  color: #AA1423;
+  text-decoration: none; }
+
+.link-top:hover {
+  color: #7A0E19;
+  text-decoration: none; }
+
+.clicks {
+  width: 100px;
+  font-weight: bold;
+  position: relative;
+  text-align: right;
+  margin-top: -15px;
+  left: 200px;
+  color: #eee;
+  font-size: 14px; }
+
+.hits {
+  height: 200px;
+  width: 100%; }
+
+.triangulo {
+  margin-top: 70px;
+  border-color: #fff transparent transparent transparent;
+  width: 0px;
+  border-width: 60px;
+  border-style: solid; }
+
+.totalhits {
+  margin-top: -25px;
+  height: 35px;
+  padding: 7px;
+  width: auto;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  font: 30px "Roboto Slab", serif;
+  color: #AA1423; }
+
+.sub-hits {
+  margin-top: 6px;
+  font-weight: bold;
+  font: 14px "Roboto", serif;
+  color: #aaa; }
+
+.rodape {
+  height: 80px;
+  background: #fff; }
+
+.logo-rodape {
+  left: 20%;
+  display: inline-block;
+  margin-top: 25px;
+  float: left;
+  font: 24px "Roboto", serif;
+  position: relative; }
+
+.social-rodape {
+  right: 20%;
+  display: inline-block;
+  margin-top: 25px;
+  float: right;
+  font: 24px "Roboto", serif;
+  position: relative; }
+
+.icon-rodape {
+  margin-right: 15px; }
+
+.titulo-capa {
+  font-weight: bold;
+  padding-top: 170px;
+  font: 30px "Roboto Slab", serif;
+  color: #fff; }
+
+.descricao-capa {
+  margin-top: 20px;
+  font-weight: none;
+  padding: 5px;
+  font: 14px "Roboto", serif;
+  color: #fff; }
+
+.text-capa {
+  font-weight: bold;
+  width: 300px;
+  color: orange;
+  height: 30px;
+  margin-top: 70px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid orange; }
+
+.botao-capa {
+  padding: 10px;
+  margin-left: 10px;
+  font: 20px "Roboto", serif;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  background: orange; }
+
+::-webkit-input-placeholder {
+  color: orange; }
+
+/*# sourceMappingURL=estilo.css.map */

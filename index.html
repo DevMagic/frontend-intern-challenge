@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Encurtador de links</title>
+<link href="css/estilo.css" rel="stylesheet" type="text/scss"/>
+<script type="text/javascript">
+function gerarlink(){
+document.getElementById('novolink').style.opacity = 0; 
+document.getElementById('novobotao').style.opacity = 0; 
+document.getElementById('novolink').innerHTML='<input align="left" style="color:#fff;" value="http://chr.dc/xyzxyz" class="text-capa">';
+document.getElementById('novobotao').innerHTML='<input class="botao-capa" value="COPIAR" type="submit">';
+document.getElementById('novolink').style.transition = "opacity 0.5s linear 0s"; 
+document.getElementById('novolink').style.opacity = 1; 
+document.getElementById('novobotao').style.transition = "opacity 0.5s linear 0s"; 
+document.getElementById('novobotao').style.opacity = 1; 
+}</script>
+</head>
+
+<body>
+<div class="topo">
+<img src="imgs/Devmagic Logo.png" width="186" height="24" alt=""/> </div>
+<div class="capa" align="center"><div class="titulo-capa"><b>Encurte seus links.</b></div><div class="descricao-capa">Links são longos. Encurte os links que você deseja compartilhar,<br> e acompanhe enquanto viajam através da internet.</div> <span id="novolink"><input class="text-capa" placeholder="Cole o seu link aqui." type="text"></span><span id="novobotao"><input class="botao-capa" value="ENCURTAR" type="submit" onclick="gerarlink()"></span></div>
+<div class="topfive"><center><div class="title">TOP 5</div>
+<div class="links"><a href="#" class="link-top"><b>http://chr.dc/xyzxyz</b></a><div class="clicks">7.919</div></div><div class="links"><a href="#" class="link-top"><b>http://chr.dc/xyzxyz</b></a><div class="clicks">4.789</div></div><div class="links"><a href="#" class="link-top"><b>http://chr.dc/xyzxyz</b></a><div class="clicks">2100</div></div><div class="links"><a href="#" class="link-top"><b>http://chr.dc/xyzxyz</b></a><div class="clicks">540</div></div><div class="links"><a href="#" class="link-top"><b>http://chr.dc/xyzxyz</b></a><div class="clicks">73</div></div>
+<div class="triangulo"></div>
+</center>
+</div><div class="hits"><center><div style="margin-top:50px;" class="title">HITS</div><div class="totalhits">35.713.571</div><div class="sub-hits"><b>Cliques em links</b></div></center></div>
+<div class="rodape"><div class="logo-rodape">chr.dc</div><div class="social-rodape"><span class="icon-rodape"><a href="#"><img src="Assets/icon-twitter.png" width="26" height="26" alt=""/></a></span><span><a href="#"><img src="Assets/icon-facebook.png" width="26" height="26" alt=""/></a></span></div></div>
+</body>
+</html>
