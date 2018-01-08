@@ -1,0 +1,231 @@
+// Fontes usadas
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+
+// cores usadas
+$red: #AA1423;
+$redRGBA: rgba(170,20,35,.8);
+$text: #777;
+$line: #EEE;
+$orange: #ff6e14;
+
+// MIXINS
+// - Background
+@mixin backgroundCover($url){
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-image:url($url);
+}
+
+// - Placeholder
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+// - transition
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+*{
+    padding:0;
+    margin:0;
+    font-size:10px;
+    font-family:$roboto;
+}
+
+h1, h2{
+    font-family:$roboto-slab;
+    font-size:4em;
+    margin:15px 0;
+}
+h2{
+    color:$red;
+}
+p{
+    font-size:1.6em;
+}
+
+header{
+    width:100%;
+    padding:10px 0;
+    nav{
+        text-align:center;
+    }
+}
+main{
+    width:100%;
+    box-sizing:border-box;
+    section{
+        position:relative;
+        box-sizing:border-box;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color:#fff;
+        .wrapper{
+            width:40%;
+            z-index:2;
+            display:table;
+            padding:2%;
+        }
+        &#shortener{
+            height:80vh;
+            @include backgroundCover("/project/resources/images/bg.png");
+            #backgroundRed{
+                background-color:$redRGBA;
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0;
+                left:0;
+            }
+            .wrapper{
+                color:#fff;
+            }
+            .form{
+                margin:20px 0 0 0;
+                width:100%;
+                display:flex;
+                #shortenedURL{
+                    display:block;
+                }
+                input{
+                    box-sizing:border-box;
+                    font-size:1.3em;
+                }
+                input[type='text']{
+                    width:75%;
+                    margin-right:1%;
+                    padding:2% 1%;
+                    background-color:transparent;
+                    border:0;
+                    border-bottom:3px solid $orange;
+                    color:$orange;
+                    @include placeholder{
+                        color:$orange;
+                    }
+                }
+                input[type='button']{
+                    min-width:25%;
+                    color:#fff;
+                    background-color:$orange;
+                    border:0;
+                    padding:10px;
+                    cursor:pointer;
+                    @include transition(.3s);
+                    &:hover{
+                        background-color:#ff9939;
+                    }
+                }
+            }
+        }
+        &#top, &#hits{
+            padding: 50px 0 75px 0;
+        }
+        &#top{
+            ul{
+                list-style:none;
+                li{
+                    display:flex;
+                    justify-content:space-between;
+                    padding:2% 0;
+                    border-bottom:1px solid $line;
+                    margin:1% 0;
+                    a, span{
+                        font-size:1.6em;
+                    }
+                    a{
+                        color:$red;
+                        font-weight:bold;
+                    }
+                    span{
+                        color:$text;
+                    }
+                }
+            }
+        }
+        &#hits{
+            background-color:$line;
+            #triangle{
+                -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                background-color:#fff;
+                width:50px;
+                height:35px;
+                position:absolute;
+                top:0;
+                left:50%;
+                margin-left:-25px;
+            }
+            #counter{
+                 padding:1%;
+                background-color:#fff;
+                color:$red;
+                font-size:2.5em;
+                position:relative;
+                display:block;
+                width:40%;
+                min-width:150px;
+                text-align:center;
+                margin:auto;
+                &:after{
+                    content:'Cliques em links';
+                    color:$text;
+                    position:absolute;
+                    bottom:-30px;
+                    text-align:center;
+                    width:100%;
+                    left:0;
+                    font-size:.75em;
+                }
+            }
+        }
+    }
+    footer{
+        padding:20px 0;
+        .wrapper{
+            width:60%;
+            margin:auto;
+            ul{
+                display:flex;
+                list-style:none;
+                justify-content:space-between;
+                align-items:center;
+                li{
+                    font-size:1.6em;
+                    &:first-child{
+                        color:$red;
+                        font-weight:bold;
+                    }
+                    &:last-child{
+                        .social {
+                            margin:0 0 0 10px;
+                            padding:10px;
+                            box-sizing:border-box;
+                            float:left;
+                            font-size:10px;
+                            border-radius:50%;
+                            background-color:$text;
+                            @include transition(.3s);
+                            color:#fff;
+                            cursor:pointer;
+                            &:hover{
+                                background-color:$red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

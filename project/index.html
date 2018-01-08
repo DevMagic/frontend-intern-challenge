@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="/project/resources/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='/project/web-sass/style.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='js/script.js'></script>
+        <title>DevMagic - Encurtador</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src='/project/resources/images/logo.png' alt='Logo da DevMagic' title='DevMagic'>
+            </nav>
+        </header>
+        <main>
+            <section id="shortener">
+                <div class='wrapper'>
+                    <h1>
+                        Encurte seus links.
+                    </h1>
+                    <p>
+                        Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.
+                    </p>
+                    
+                    <div class='form'>
+                        <input type='text' placeholder='Cole o seu link' id='long-url' name='long-url'>
+                        <a href='javascript:;' id='shorten-url'>
+                            <input type='button' value='ENCURTAR' id='shorten'>
+                        </a>
+                    </div>
+                    <span id='shortenedURL'>
+                        Último URL encurtado.
+                    </span>
+                </div>
+                <div id='backgroundRed'></div>
+            </section>
+            <section id="top">
+                <div class='wrapper'>
+                    <h2>
+                        TOP 5
+                    </h2>
+                    <ul id="ulTop">
+                    </ul>
+                </div>
+            </section>
+            <section id="hits">
+                <div id="triangle"></div>
+                <div class='wrapper'>
+                    <h2>
+                        HITS
+                    </h2>
+                    <p id="counter">
+                        0
+                    </p>
+                </div>
+            </section>
+            <footer>
+                <div class='wrapper'>
+                    <ul>
+                        <li>
+                            chr.dc
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook social" aria-hidden="true"></i>
+                            <i class="fa fa-twitter social" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Jose Luiz Reis Oliveira <br>
+                    <i>luizero.reis@gmail.com</i>
+                </p>
+            </footer>
+        </main>
+        
+    </body>
+</html>
