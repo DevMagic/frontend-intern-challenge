@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+html {
+  width: 100%;
+}
+body {
+  background-color: #eee;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 20px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+main {
+  display: flex;
+  color: #eee;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/background-home.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 985px;
+  text-align: center;
+}
+.main__h1 {
+  font-size: 4em;
+}
+.main__p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+.url {
+}
+.url__input {
+  font-family: 'Roboto', sans-serif;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ff6e14;
+  font-size: 2em;
+}
+input[type='text'] {
+  width: 700px;
+  height: 50px;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #ff6e14;
+  border-left: none;
+}
