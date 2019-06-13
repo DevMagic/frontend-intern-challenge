@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
 html {
   width: 100%;
 }
@@ -10,26 +11,29 @@ body {
 header {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 5vh;
 }
 
 main {
   display: flex;
+  width: 100%;
   color: #eee;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: url('../img/background-home.jpg') no-repeat center center fixed;
-  background-size: cover;
-  height: 985px;
   text-align: center;
+  height: 100vh;
+  justify-content: center;
+  background: url('../img/background-home.jpg');
+  background-size: 100% 100%;
 }
 .main__h1 {
-  font-size: 4em;
+  margin: 0;
+  font-size: 2em;
 }
 .main__p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
+  margin-top: 0;
   width: 45vw;
 }
 
@@ -38,6 +42,7 @@ main {
 }
 .url__input {
 }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ff6e14;
@@ -51,12 +56,14 @@ input[type='text'] {
   border-right: none;
   border-bottom: 1px solid #ff6e14;
   border-left: none;
+  color: #ff6e14;
 }
 button {
   margin-left: 10px;
   height: 9vh;
   width: 15vw;
   background-color: #ff6e14;
+  border: none;
   color: #eee;
   font-size: 1.4em;
 }
@@ -87,20 +94,16 @@ td:nth-child(2n + 2) {
 .hits {
   display: flex;
   flex-direction: column;
-  background-color: #eee;
-  text-align: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  margin-right: 4vw;
-  margin-left: 4vw;
-  padding-bottom: 10vh;
   align-items: center;
+  text-align: center;
+  background-color: #eee;
+  margin: 10vh 4vw;
+  padding-bottom: 10vh;
   font-size: 2em;
   color: #aa1423;
 }
 
 .triangle {
-  padding: 0;
   margin: 0;
   height: 0;
   width: 0;
@@ -113,6 +116,7 @@ td:nth-child(2n + 2) {
   background-color: white;
 }
 .hit__data-text {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 0.45em;
   color: #777;
@@ -131,4 +135,65 @@ ul {
 li {
   display: inline;
   margin-left: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__h1 {
+    margin: 0;
+    font-size: 1.6em;
+  }
+  .main__p {
+    font-size: 0.8em;
+  }
+  .url {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  ::placeholder {
+    font-size: 1em;
+  }
+  input[type='text'] {
+    width: 70vw;
+    height: 6vh;
+  }
+  button {
+    margin-top: 5vw;
+    width: 40vw;
+    border: none;
+    font-size: 1em;
+  }
+
+  td:nth-child(2n + 2) {
+    color: #777;
+    padding-left: 2em;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .main__h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  .main__p {
+    font-size: 0.8em;
+    width: 60vw;
+  }
+  input[type='text'] {
+    width: 50vw;
+    height: 6vh;
+  }
+  button {
+    margin-top: 5vw;
+    width: 20vw;
+    border: none;
+    font-size: 1em;
+    background-color: #ff6e14;
+  }
+
+  td:nth-child(2n + 2) {
+    color: #777;
+    padding-left: 6em;
+  }
 }
