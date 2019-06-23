@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="felipe-goes" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>felipe-goes</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" type="text/css" href="../src/public/css/style.css">
+</head>
+<body>
+    <!-- Bara de Navegação com logo centralizado -->
+    <!-- Inicio Nav tag -->
+    <nav> 
+        <div class="logo">
+            <img src="../src/public/images/logo-dev-tamanho-site.png" alt="">
+        </div>
+    </nav>
+    <!-- Fim nav tag -->
+
+    <header>
+        <div class="contentUrl">
+            <h1></h1>
+            <h1>Encurte seus links.</h1>
+            <h2>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</h2>
+
+            <div class="linkChanging" >
+                <input id="input-link" type="text" name="url" placeholder="Cole o seu link aqui" value="">
+                <p id="clean"></p>
+                <button id="button-link" onclick="resolveClick()" type="button" value="ENCURTAR">ENCURTAR</button>
+            </div> 
+        </div>
+
+        <div class="top-5">
+            <h1>TOP 5</h1>
+            <table class="table-top-5">
+                <tr">
+                    <th id="link-0" class="link-0">www.google.com/123213/a</th>
+                    <th id="quantity-0" class="quantity-0">2.500</th>
+                </tr>
+                <tr>
+                    <th id="link-1" class="link-1">www.google.com/123213/a</th>
+                    <th id="quantity-1" class="quantity-1">2.500</th>
+                </tr>
+                <tr>
+                    <th id="link-2" class="link-2">www.google.com/123213/a</th>
+                    <th id="quantity-2" class="quantity-2">2.500</th>
+                </tr>
+                <tr>
+                    <th id="link-3" class="link-3">www.google.com/123213/a</th>
+                    <th id="quantity-3" class="quantity-3">2.500</th>
+                </tr>
+                <tr>
+                    <th id="link-4" class="link-4">www.google.com/123213/a</th>
+                    <th id="quantity-4" class="quantity-4">2.500</th>
+                </tr>
+            </table>
+            
+        </div>
+
+        <div class="hits">
+            <h1 class="triangle"></h1>
+            <h1>HITS</h1>
+            <h2 id="totalHits"></h2>
+            <h3>Cliques em links</h3>
+        </div>
+        
+    </header>
+    <footer>
+        <div class="image-footer">      
+            <table class="icon-list">
+                <tr>
+                    <th class="img-chaordic"><img src="../src/public/images/logo-chaordic.png" alt="logo-chaordic"></th>        
+                    <th class="img-twitter"><img src="../src/public/images/icon-twitter.png" alt="logo-twitter"></th>          
+                    <th class="img-facebook"><img src="../src/public/images/icon-facebook.png" alt="logo-facebook"></th>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script src="public/js/styleChanges.js"></script>
+    <script src="public/js/pageLoad.js"></script>
+    <script type="text/javascript" src="public/js/urls.json"></script>
+
+</body>
+</html>

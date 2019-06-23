@@ -1,0 +1,166 @@
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Roboto:400");
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF;
+  -webkit-font-smoothing: antialiased !important;
+}
+body nav {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+body .contentUrl {
+  background-image: url(../images/background-home.jpg);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+body .contentUrl h1 {
+  text-align: center;
+  padding-top: 10%;
+  font-family: "Roboto", sans-serif;
+  font-size: 300%;
+  color: white;
+}
+body .contentUrl h2 {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 180%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+body .contentUrl .linkChanging {
+  text-align: center;
+  color: orangered;
+  padding-bottom: 10%;
+}
+body .contentUrl .linkChanging input::placeholder {
+  color: orangered;
+}
+body .contentUrl .linkChanging input {
+  font-size: 150%;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  color: orangered;
+  background: transparent;
+  border-bottom-color: orangered;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  padding-bottom: 0.5%;
+  padding-top: 0%;
+  padding-right: 15%;
+  padding-left: 0%;
+}
+body .contentUrl .linkChanging p {
+  font-size: 150%;
+  display: inline;
+  background: transparent;
+  border-bottom-color: orangered;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  padding-bottom: 0.5%;
+  padding-top: 0%;
+  padding-right: 0.5%;
+  padding-left: 0%;
+}
+body .contentUrl .linkChanging button {
+  font-size: 140%;
+  width: 13%;
+  font-family: "Roboto-Slab", sans-serif;
+  color: white;
+  background-color: orangered;
+  border-color: transparent;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+body .top-5 h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 300%;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  color: #AA1423;
+}
+body .top-5 .table-top-5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .top-5 .table-top-5 .link-0, body .top-5 .table-top-5 .link-1, body .top-5 .table-top-5 .link-2, body .top-5 .table-top-5 .link-3, body .top-5 .table-top-5 .link-4 {
+  width: 40%;
+  padding-bottom: 5%;
+  color: #AA1423;
+}
+body .top-5 .table-top-5 .quantity-0, body .top-5 .table-top-5 .quantity-1, body .top-5 .table-top-5 .quantity-2, body .top-5 .table-top-5 .quantity-3, body .top-5 .table-top-5 .quantity-4 {
+  color: #777;
+  text-align: right;
+  padding-bottom: 5%;
+}
+body .hits {
+  font-family: "Roboto", sans-serif;
+  font-size: 180%;
+  text-align: center;
+  color: #AA1423;
+  background-color: #EEE;
+}
+body .hits .triangle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 65px solid #fff;
+}
+body .hits h1 {
+  padding-bottom: 1%;
+}
+body .hits h2 {
+  width: 16%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}
+body .hits h3 {
+  color: #777;
+  font-size: 60%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+body .image-footer .icon-list {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+body .image-footer .icon-list .img-chaordic {
+  width: 82%;
+  text-align: left;
+}
+body .image-footer .icon-list .img-twitter {
+  width: 15%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

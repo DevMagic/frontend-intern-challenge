@@ -1,0 +1,24 @@
+{
+  "name": "teste-devmagic",
+  "version": "1.0.0",
+  "description": "O desafio proposto consiste numa **landing page** simulando um encurtador de links, onde testará as habilidades e qualidade de código de um desenvolvedor front-end ao transformar um layout em um protótipo funcional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felpgoes/frontend-intern-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felpgoes/frontend-intern-challenge/issues"
+  },
+  "homepage": "https://github.com/felpgoes/frontend-intern-challenge#readme",
+  "keywords": [],
+  "dependencies": {
+    "sass": "^1.21.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
