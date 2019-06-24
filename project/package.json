@@ -26,7 +26,6 @@
     "eslint-plugin-react": "^7.13.0"
   },
   "dependencies": {
-    "ecstatic": "^3.3.2",
     "simplehttpserver": "^0.3.0"
   }
 }
