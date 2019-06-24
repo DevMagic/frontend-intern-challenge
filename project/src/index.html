@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>felipe-goes</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
     <link rel="stylesheet" type="text/css" href="../src/public/css/style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
     <!-- Inicio Nav tag -->
     <nav> 
         <div class="logo">
-            <img src="../src/public/images/logo-dev-tamanho-site.png" alt="">
+            <img src="../src/public/images/Logo-DevMagic.png" alt="">
         </div>
     </nav>
     <!-- Fim nav tag -->
@@ -26,8 +27,8 @@
 
             <div class="linkChanging" >
                 <input id="input-link" type="text" name="url" placeholder="Cole o seu link aqui" value="">
-                <p id="clean"></p>
-                <button id="button-link" onclick="resolveClick()" type="button" value="ENCURTAR">ENCURTAR</button>
+                <p id="button-clear" onclick="clearInput()" value="clear"></p>
+                <button id="button-link" class="button-link" onclick="resolveClick()" type="button" value="ENCURTAR">ENCURTAR</button>
             </div> 
         </div>
 
@@ -35,24 +36,24 @@
             <h1>TOP 5</h1>
             <table class="table-top-5">
                 <tr">
-                    <th id="link-0" class="link-0">www.google.com/123213/a</th>
-                    <th id="quantity-0" class="quantity-0">2.500</th>
+                    <th id="link-0" class="link-0"></th>
+                    <th id="quantity-0" class="quantity-0"></th>
                 </tr>
                 <tr>
-                    <th id="link-1" class="link-1">www.google.com/123213/a</th>
-                    <th id="quantity-1" class="quantity-1">2.500</th>
+                    <th id="link-1" class="link-1"></th>
+                    <th id="quantity-1" class="quantity-1"></th>
                 </tr>
                 <tr>
-                    <th id="link-2" class="link-2">www.google.com/123213/a</th>
-                    <th id="quantity-2" class="quantity-2">2.500</th>
+                    <th id="link-2" class="link-2"></th>
+                    <th id="quantity-2" class="quantity-2"></th>
                 </tr>
                 <tr>
-                    <th id="link-3" class="link-3">www.google.com/123213/a</th>
-                    <th id="quantity-3" class="quantity-3">2.500</th>
+                    <th id="link-3" class="link-3"></th>
+                    <th id="quantity-3" class="quantity-3"></th>
                 </tr>
                 <tr>
-                    <th id="link-4" class="link-4">www.google.com/123213/a</th>
-                    <th id="quantity-4" class="quantity-4">2.500</th>
+                    <th id="link-4" class="link-4"></th>
+                    <th id="quantity-4" class="quantity-4"></th>
                 </tr>
             </table>
             
@@ -66,6 +67,7 @@
         </div>
         
     </header>
+
     <footer>
         <div class="image-footer">      
             <table class="icon-list">
@@ -77,9 +79,9 @@
             </table>
         </div>
     </footer>
+
     <script src="public/js/styleChanges.js"></script>
     <script src="public/js/pageLoad.js"></script>
-    <script type="text/javascript" src="public/js/urls.json"></script>
 
 </body>
 </html>

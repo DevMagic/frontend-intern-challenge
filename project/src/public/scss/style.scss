@@ -3,10 +3,6 @@ $text: #777;
 $red: #AA1423;
 
 
-@font-face{
-    src: url("https://fonts.googleapis.com/css?family=Roboto:400");
-    font-family: 'Roboto', sans-serif;
-  }
 
 *{
     margin: 0;
@@ -21,7 +17,11 @@ body{
     nav{
         text-align: center;
         padding-top: 1%;
-        padding-bottom: 1%
+        padding-bottom: 1%;
+    
+        img{
+            width: 15%
+        }
     }
 
     .contentUrl{
@@ -30,11 +30,12 @@ body{
         background-size: cover;
         height: 100%;
         background-position: center;
-                
+
+                        
         h1{
             text-align: center;
             padding-top: 10%;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Slab', sans-serif;
             font-size: 300%;
             color: white
         }
@@ -45,7 +46,7 @@ body{
             padding-bottom: 5%;
             padding-left: 25%;
             padding-right: 25%;
-            font-size: 180%;
+            font-size: 160%;
             font-family: 'Roboto', sans-serif;
             color: white
         }
@@ -54,14 +55,16 @@ body{
             text-align: center;
             color: orangered;
             padding-bottom: 10%;
+            
+
 
             input::placeholder{
                 color: orangered;
             }
             input{
                 font-size: 150%;
-                display: inline;
-                font-family: 'Roboto', sans-serif;
+                width: 35%;
+                font-family: 'Roboto Slab', sans-serif;
                 color: orangered;
                 background: transparent;
                 border-bottom-color: orangered;
@@ -70,48 +73,58 @@ body{
                 border-right-color: transparent;
                 padding-bottom: 0.5%; 
                 padding-top: 0%; 
-                padding-right: 15%; 
+                padding-right: 2%; 
                 padding-left: 0%; 
+                
                
             }
 
-            p{
+            #button-clear{
                 font-size: 150%;
-                display: inline;
+                margin-left: -2%;
+                width: 2%;
+                display: -webkit-inline-box;
+                font-family: 'Roboto', sans-serif;
+                color: white;
                 background: transparent;
-                border-bottom-color: orangered;
-                border-top-color: transparent;
-                border-left-color: transparent;    
-                border-right-color: transparent;
-                padding-bottom: 0.5%; 
-                padding-top: 0%; 
-                padding-right: 0.5%; 
-                padding-left: 0%; 
+                padding-top: 0.7%;
+                padding-bottom: 0.7%;
+                padding-right: 0.4%; 
+            }
              
+            button:hover{
+                
+                opacity: 1;
+            
             }
 
-            button{
+            .button-link{
                 font-size: 140%;
                 width: 13%;
-                font-family: 'Roboto-Slab', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 color: white;
                 background-color: orangered;
                 border-color: transparent;
-                padding-top: 0.5%;
-                padding-bottom: 0.5%;
-                padding-left: 0.5%;
-                padding-right: 0.5%;
+                padding-top: 0.7%;
+                padding-bottom: 0.7%;
+                padding-left: 0.4%;
+                padding-right: 0.4%;
+                opacity: 0.8;
+                
+                
             }
-        }
 
+            
+        }
     }
+
 
     .top-5{
 
         h1{
             
             text-align: center;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Slab', sans-serif;
             font-size: 300%;
             padding-bottom: 3%;
             padding-top: 5%;
@@ -120,7 +133,7 @@ body{
         }
 
         .table-top-5{
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Slab', sans-serif;
             font-size: 110%;
             padding-bottom: 5%;
             margin-left:auto; 
@@ -130,20 +143,22 @@ body{
                 width: 40%;
                 padding-bottom: 5%;
                 color: $red;
+                text-align: left;
                 
             };
             .quantity-0, .quantity-1, .quantity-2, .quantity-3, .quantity-4{
                 color: $text;
                 text-align: right;
                 padding-bottom: 5%;
+                text-align: right;
             }
         }
 
     }
 
     .hits{
-        font-family: 'Roboto', sans-serif;
-        font-size: 180%;
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 150%;
         text-align: center;
         color: $red;
         background-color: $linesBackground;
@@ -160,6 +175,7 @@ body{
         
 
         h1{
+            padding-top: 2%;
             padding-bottom: 1%;
         }
         h2{

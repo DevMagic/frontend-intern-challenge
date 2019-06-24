@@ -9,27 +9,45 @@ const randomLink = (length) => {
   return result;
 }
 
-const urlEnc = () => {
 
+const urlEnc = () => {
+  
   let newUrl = document.getElementById("input-link");
   newUrl.value = 'http://chr.dc/' + randomLink(5);
 
 }
 
+let inputClick = document.getElementById("input-link");
 
 const changeColor = () => {
-  let inputClick = document.getElementById("input-link");
+  
   inputClick.style.color = "white";
+
   urlEnc();
 
 };
 
 let buttonClick = document.getElementById("button-link");
+let buttonClear = document.getElementById("button-clear")
 
 const changeText = () => {
   buttonClick.innerHTML = "COPIAR";
   buttonClick.value = "COPIAR";
+  buttonClear.innerHTML = "x";
+ 
 };
+
+const clearInput = () => {
+  buttonClick.innerHTML = "ENCURTAR";
+  buttonClick.value = "ENCURTAR";
+  buttonClear.innerHTML = "";
+  buttonClear.value = "";
+  inputClick.value = "";
+  inputClick.innerHTML = "0";
+  inputClick.style.color = "orangered";
+}
+
+
 
 const copyUrl = () => {
   
@@ -37,15 +55,17 @@ const copyUrl = () => {
   url.select();
 	document.execCommand("copy");
 
-  // link = document.getElementById('input-link').value;
-  // link.execCommand('copy');
-
 }
 
+
+
 const resolveClick = () => {
+
   if(buttonClick.value === "ENCURTAR"){
+    
     changeText();
     changeColor();
+
     console.log('encurtar');
   }else{
     copyUrl();

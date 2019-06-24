@@ -62,7 +62,7 @@ let urlData = [
         }
       ];
       
-var total = 0
+var total = 0.0
 
 const totalHits = () => {
     
@@ -89,7 +89,7 @@ const topFive = () => {
         let quantity = `quantity-${i}`;
 
         let topFiveUrl = document.getElementById(String(id));
-        topFiveUrl.innerHTML = newSortedData[i].url;
+        topFiveUrl.innerHTML = newSortedData[i].shortUrl;
         let topFiveHits = document.getElementById(String(quantity));
         topFiveHits.innerHTML = newSortedData[i].hits;
 
