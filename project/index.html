@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-query.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container cabecalho">
+            <figure class="cabecalho_foto">
+                <img src="../Assets/logo-chaordic.png" alt=”Logo”>
+            </figure>
+        </div>
+    </header>
+    <!--ENCURTADOR-->
+    <section>
+        <div class="home_container">
+            <div class="container">
+                <div class="encurtador_container">
+                    <h1 class="titulo text-center">Encurte seus links.</h1>
+                    <h3 class="descricao text-center">Links são longos. Encurte os links que você deseja
+                        compartilhar, e acompanhe enquanto viajam através da internet.
+                    </h3>
+                    <div class="encurtador">
+                        <input id="input_field" class="link_nao_convertido" placeholder="Cole o seu link aqui" required>
+                        <div id="remove_link_vazio"></div>
+                        <div id="remove_link">
+                            <a id="icon_remover">X</a>
+                        </div>
+                        <hr class="line_input pull-left">
+                        <input type="button" id="btn_encurtar" class="" value="ENCURTAR">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TOP 5 -->
+    <section>
+        <div class="container top5_container">
+            <h1 class="text-center titulo_section">TOP 5</h1>
+            <div id="topfive">
+            </div>
+        </div>
+    </section>
+    <!-- HITS -->
+    <section class="hits_container">
+        <div id="triangle-down"></div>
+        <div class="container">
+            <h1 class="text-center titulo_section">HITS</h1>
+            <div id="all_clicks_container">
+            </div>
+            <p class="text-center hits_ds">Cliques em links</p>
+        </div>
+    </section>
+    <footer class='footer'>
+        <div class="container">
+            <span class="link_footer">chr.dc</span>
+            <div class="social pull-right">
+                <img src="../Assets/icon-twitter.png" alt=”Twitter”>
+                <img class="fb_icon" src="../Assets/icon-facebook.png" alt=”Facebook”>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/encurtador.js"></script>
+    <script src="scripts/top5_hits.js"></script>
+</body>
+
+</html>

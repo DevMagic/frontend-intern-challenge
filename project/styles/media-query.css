@@ -1,0 +1,85 @@
+@media (max-width:1024px) {
+
+    /*ENCURTADOR*/
+    .encurtador_container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        font-size: 4vh;
+    }
+
+    .descricao {
+        font-size: 2vh;
+    }
+
+    #btn_encurtar {
+        height: 42px;
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    #input_field {
+        width: 94%;
+        height: 40px;
+        font-size: 2vh;
+    }
+
+    #icon_remover {
+        font-size: 2vh;
+    }
+
+    .line_input {
+        width: 100%;
+    }
+
+    /*TOP FIVE*/
+    #topfive {
+        width: 100%;
+        margin: 50px auto 0 auto;
+    }
+
+    /*TOTAL HITS*/
+    .total_hits {
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .descricao {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 300px) {
+    #btn_encurtar {
+        height: 42px;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #input_field {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    #icon_remover {
+        font-size: 1em;
+    }
+
+    .link_footer {
+        font: "Roboto";
+        vertical-align: middle;
+        color: #AA1423;
+        font-size: 1.5em;
+    }
+
+}
