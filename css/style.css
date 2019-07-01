@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+/*---------------VARIAVEIS / CORES---------------*/
+:root{
+--home-primary-color: #FF6E14;
+}
+
+
+/*----------------PARAMETROS GLOBAIS--------------*/
+html, body{
+height: 100%;	
+font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------LAYOUT----------------*/
+.section{
+	height: 100%;	
+}
+
+/*-----------------HOME SECTION-------------------*/
+#home{
+position: relative;
+padding-top: 15%;
+color: #fff;	
+background-image: url("../Assets/background-home.jpg");
+background-repeat: no-repeat, repeat;
+background-size: cover;
+}
+
+#home h1{
+    font-family: 'Roboto Slab', serif;
+	font-size: 4vw;
+	font-weight: bold;
+}
+#home p{
+    font-family: 'Roboto', sans-serif;
+	font-size: 1.5vw;
+}
+/*
+Opção de uso sem o Grid System. 
+#home form{
+	max-width: 50%;
+}
+*/
+
+#home input{
+	background-color: transparent !important;	
+	border: none;
+	border-bottom: 2px solid var(--home-primary-color);
+	border-radius: 0px;
+	color:var(--home-primary-color);
+	font-weight: bold;
+
+}
+
+
+
+#home input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:var(--home-primary-color) !important;
+  opacity: 1; /* Firefox */
+}
+
+#home input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:var(--home-primary-color);
+}
+
+#home input::-ms-input-placeholder { /* Microsoft Edge */
+  color:var(--home-primary-color);
+}
+
+#home button{
+background-color:var(--home-primary-color);
+color: white;
+font-weight: bold;
+}
+
+
+
+/*-----------------FIM HOME SECTION-------------------*/
