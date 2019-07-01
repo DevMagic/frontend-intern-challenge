@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>Encurta URL</title>
+</head>
+
+<body class="">
+  <nav class="navbar navbar-light bg-light max-width:500px" style="background-color: #EEE;">
+    <span class="navbar-brand mb-0 h1"><a href="http://chaordic.com.br"><img src="Assets/logo-chaordic.png" style="col-md-4 offset-md-4"></a> </span>
+  </nav>
+  <div class="Top">
+    <form style="	background-image: url(&quot;Assets/background-home.jpg&quot;);	background-position: top left;	background-size: 65%;	background-repeat: repeat;	text-shadow: 0px 0px 1px black;" class="border-left border-right border-top border-bottom border border-dark text-center h-65 w-90">
+      <h1 class="text-center"><br><br>Encurta Url<br>Uma maneira simples de encurtar boas informações&nbsp;<br>para compartilhar aos amigos!<br><br> </h1>
+      <div class="row">
+        <div class="col-md-4 col-xs-12 offset-md-4">
+          <input type="text" id="URL" class="form-control" style="max-width:500px;" placeholder=" Sua URL Aqui!">
+        </div>
+        <input id="Botao" type="button" value="Gerar" class="btn col-md-1 form-control-sm pb-1 btn-sm" onclick="Gerar(); Cont();" style="color: #EEE; background-color: darkorange;"><br><br>
+      </div>
+      <p>Facilitando sua busca!</p><br><br>
+    </form>
+  </div>
+  <div style="max-width: 460px" class="Links col-md-4 col-xs-12 offset-md-4">
+    <h2><br>
+      <br>
+      <center>Top 5 Links mais acessados!</center><br>
+      <table  > 
+        <tr style="border-bottom:1px solid #cccccc;"><td class="left" style="min-width:370px;"> <a href="http://google.com"> http://chr.dc/aUx71 </a></td><td class="right"><a style="color: #777; font-size: 18px;">1922</a></td></tr>
+        <tr style="border-bottom:1px solid #cccccc;"><td class="left" style="min-width:370px;"> <a href="http://facebook.com"> http://chr.dc/qy61p </a></td><td class="right"><a style="color: #777; font-size: 18px;">1519</a></td></tr>
+        <tr style="border-bottom:1px solid #cccccc;"><td class="left" style="min-width:370px;"> <a href="http://globo.com"> http://chr.dc/9dtr4 </a></td><td class="right"><a style="color: #777; font-size: 18px;">1003</a></td></tr>
+        <tr style="border-bottom:1px solid #cccccc;"><td class="left" style="min-width:370px;"> <a href="http://terra.com.br"> http://chr.dc/u9jh3 </a></td><td class="right"><a style="color: #777; font-size: 18px;">765</a></td></tr>
+        <tr style="border-bottom:1px solid #cccccc;"><td class="left" style="min-width:370px;"> <a href="http://uol.com.br"> http://chr.dc/y81xc </a></td><td class="right"><a style="color: #777; font-size: 18px;">722</a></td></tr>
+      </table>
+
+      </div><br><br>
+    </h2>
+  </div>
+  <div class="Cliques" style="	background-image: url(Assets/Fundo-Clique.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <h2>
+      <br>
+      <center>Cliques</center><br>
+    </h2>
+    <h2>
+      <input id="Total" type="text" value="0" style="color: #aa1423; max-width:200px; text-align: center;"class="offset-md-5" disabled>
+      <br><br>
+    </h2>
+    <c>
+      <center>Cliques nos links do Encurtador</center><br>
+    </c>
+  </div>
+  <nav class="navbar navbar-light bg-light" style="background-color: #EEE;">
+    <div>
+      <span class="navbar-brand mb-0 h1">
+        <center><a href="http://chr.dc">chr.dc</a></center><a href="”chr.dc”"> </a>
+      </span><a href="http://chr.dc">
+      </a></div>
+      <div class="offset-md-6">
+    </a><a href="http://twitter.com"><img src="Assets/icon-twitter.png"></a>
+    <a href="http://facebook.com"><img src="Assets/icon-facebook.png"></a>
+  </div>
+  </nav>
+  <script>
+    function Gerar() {
+      document.getElementById("URL").value = "http://chr.dc/qy61p"
+      document.getElementById("Botao").value = "Copiado"
+      var copyText = document.getElementById("URL");
+      copyText.select();
+      document.execCommand("copy");
+    }
+    var count = 0;
+    function Cont(){
+      count++;
+      document.getElementById("Total").value = count;
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+
+</html>
