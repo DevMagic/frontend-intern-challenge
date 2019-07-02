@@ -3,6 +3,10 @@
 /*---------------VARIAVEIS / CORES---------------*/
 :root{
 --home-primary-color: #FF6E14;
+--prymary-color: #aa1423;	
+--secondary-color: #777;	
+--background-section: #eee;	
+
 }
 
 
@@ -23,18 +27,18 @@ position: relative;
 padding-top: 15%;
 color: #fff;	
 background-image: url("../Assets/background-home.jpg");
-background-repeat: no-repeat, repeat;
+background-repeat: no-repeat;
 background-size: cover;
 }
 
 #home h1{
     font-family: 'Roboto Slab', serif;
-	font-size: 4vw;
+	font-size: 4rem;
 	font-weight: bold;
 }
 #home p{
     font-family: 'Roboto', sans-serif;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 }
 /*
 Opção de uso sem o Grid System. 
@@ -50,10 +54,9 @@ Opção de uso sem o Grid System.
 	border-radius: 0px;
 	color:var(--home-primary-color);
 	font-weight: bold;
+	font-size: 1.2rem;
 
 }
-
-
 
 #home input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color:var(--home-primary-color) !important;
@@ -72,8 +75,72 @@ Opção de uso sem o Grid System.
 background-color:var(--home-primary-color);
 color: white;
 font-weight: bold;
+border-radius: 0px;
+
 }
 
+@media (max-width: 768px) {
+	#home{
+	padding-top: 35%;
+	}
+	#home h1{
+		font-family: 'Roboto Slab', serif;
+		font-size: 3rem;
+		font-weight: bold;
+	}
+	#home p{
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+	}
 
+	#home button{
+		padding: 10px;
+		font-size: 1em;
+		max-width: 120px;
+		font-weight: bold;
+	}
+  }
 
+/*--------------HOME MOBILE PROPS--------------*/
+@media (max-width: 375px) {
+	#home{
+	padding-top: 50%;
+	}
+	#home h1{
+		font-family: 'Roboto Slab', serif;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+	#home p{
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.75rem;
+	}
+
+	#home button{
+		padding: 10px;
+		font-size: 0.6em;
+		max-width: 70px;
+		font-weight: bold;
+	}
+  }
 /*-----------------FIM HOME SECTION-------------------*/
+
+
+/*-----------------ARTICLE TOP5-------------------*/
+#top5{
+	height: 50%;
+}
+
+#top5 h1{
+	font-size: 2em;
+	font-family: 'Roboto Slab', serif;
+	color: var(--prymary-color)
+
+}
+
+/*-----------------ARTICLE HITS-------------------*/
+#hits{
+	background-color: var(--background-section);
+	height: 50%;
+	font-family: 
+}

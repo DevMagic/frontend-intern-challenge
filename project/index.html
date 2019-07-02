@@ -8,25 +8,37 @@
 <body>
 	<nav></nav>
 	<section id="home" class="section container-fluid">
+
 		<h1 class="text-center">Encurte seus links.</h1>
 		<p class="text-center">Links são longos. Encurte os links que você deseja compartilhar,<br>  e acompanhe enquanto viajam atráves da internet.</p>
 
 		<div class="row">
 		<div class="col-lg-3 col-sm-1"></div>
+		
 		<div class="col-lg-6 col-sm-10">
 		<form class="container mt-5">
-			<div>
-			<div class="input-group input-group-lg">
+			<div class="input-group">
 				<input type="text" name="cole-link" placeholder="Cole seu link aqui" class="form-control" id="cole-link"> 
-				
-				<div class="input-group-prepend">
-					<button class="btn ml-2" name="encurtar" onclick="encurtarLink()">ENCURTAR</button>
-				</div>
+				<button class="btn btn-lg ml-2" name="encurtar" onclick="encurtarLink()">ENCURTAR</button>
+
 			</div>			
 		</form>
 		</div>
+
 		<div class="col-lg-3 col-sm-1"></div>
 		</div>
+	</section>
+	<section class="section" id="tops-hits">
+		<article id="top5">
+			<div class="container">
+				<h1 class="text-center mt-5">TOP 5 </h1>
+			</div>
+			
+		</article>
+
+
+
+		<article id="hits"></article>
 	</section>
 
 <script type="text/javascript">
