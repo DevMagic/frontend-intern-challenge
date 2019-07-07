@@ -1,3 +1,4 @@
+/*--------JS RESPONSAVEL PELA INTERAÇÃO---------*/
 $( "#btn-encurtar" ).click(function(){
 
 	if ($(this).val() == "ENCURTAR") {	
@@ -29,9 +30,7 @@ $("#btn-limpar").click(function(){
 	$("#btn-limpar").css("visibility", "hidden");
 });
 
-
-	
-/*  ----------------- INTERAÇÃO COM JS PURO ------------------------
+/*	INTERAÇÃO COM JS PURO
 	function encurtarFn() {
 	var linkEncurtado = "http/chr.dc/xyzxyz";
 	var linkOriginal = document.getElementById("cole-link").value;
@@ -39,7 +38,6 @@ $("#btn-limpar").click(function(){
 	document.getElementById("cole-link").style.color = "#fff"
 	document.getElementById("btn-encurtar").value = "COPIAR";
 	document.getElementById("btn-limpar").style.visibility = "visible"
-
 	 }
 	 function limparLink(){
 	 		document.getElementById("cole-link").value = "";
@@ -49,4 +47,54 @@ $("#btn-limpar").click(function(){
 	 }
 */
 
+
+
+$(document).ready(function(){
+
+	var json = require('../../Assets/urls.json'); //with path
+
+	var readJson = (path, cb) => {
+		fs.readFile(require.resolve(path), (err, data) => {
+		  if (err)
+			cb(err)
+		  else
+			cb(null, JSON.parse(data))
+		})
+	  }
+
+
+});
+
+	/*function loadJSON(callback) {
+		var xobj = new XMLHttpRequest();
+		xobj.overrideMimeType("application/json");
+		xobj.open('GET', '/home/otto/frontend-intern-challenge/Assets/urls.json', true);
+		// Replace 'my_data' with the path to your file
+		xobj.onreadystatechange = function() {
+			if (xobj.readyState === 4 && xobj.status === "200") {
+				// Required use of an anonymous callback 
+				// as .open() will NOT return a value but simply returns undefined in asynchronous mode
+				callback(xobj.responseText);
+			}
+		};
+		xobj.send(null);
+	}
+	
+	function init() {
+		loadJSON(function(response) {
+			// Parse JSON string into object
+			var actual_JSON = JSON.parse(response);
+			console.log('AEEEEEW');
+		});
+	}*/ 
+
+/*$(document).ready(function(){
+	fetch("/home/otto/frontend-intern-challenge/Assets/urls.json")
+		.them(function(resp){
+			return resp.json();
+		})
+		.then(function(data){
+			console.log(data);
+		});
+*/
 

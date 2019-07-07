@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>DEVMAGIC FRONTEND INTERN CHALLENGE</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<nav></nav>
+
+<div id="main-wrapper">
+	<header class="text-center" id="header"> 
+		<img src="./img/logo-devmagic.png" class="img-fluid logo-header">
+	</header>
+
 	<section id="home" class="section container-fluid">
 
+		<div class="home-content-wrapper">
 		<h1 class="text-center">Encurte seus links.</h1>
 		<p class="text-center">Links são longos. Encurte os links que você deseja compartilhar,<br>  e acompanhe enquanto viajam atráves da internet.</p>
 
-		<div class="row">
-		<div class="col-lg-3 col-sm-1"></div>
-		
+		<div class="form-row form-inline justify-content-center">
 		<div class="col-lg-6 col-sm-10">
 		<form class="container mt-5">
-			
 			<div class="input-group">
-				<input type="text" name="cole-link" id="cole-link" placeholder="Cole seu link aqui" class="form-control" > 
-
+				<input type="text" name="cole-link" id="cole-link" placeholder="Cole o seu link aqui" class="form-control" > 
   				<div class="input-group-prepend">
-						<input type="button" class="btn" value="X" name="limpar" id="btn-limpar" onclick="limparLink()"> 
+				  <input type="button" class="btn" name="limpar" id="btn-limpar" value="x">
 				</div>
-
 			    <input type="button" class="btn ml-2" value="ENCURTAR" name="encurtar" id="btn-encurtar" onclick="encurtarFn()"> 
 			</div>	
-		
 		</form>
 		</div>
-
-		<div class="col-lg-3 col-sm-1"></div>
+		</div>
 		</div>
 	</section>
+
+
 	<section class="section" id="tops-hits">
+		
 		<article id="top5" class="container">
 			<div class="container">
 				<h1 class="text-center ">TOP 5 </h1>
-				<ul class="list-group mt-3">
-					<li id="top1">http/chr.dc/xyzxyz
-						<span class="link-quant">7.919</span>
+				<ul class="list-group">
+					<li id="top1">
+						<a href="#">http/chr.dc/xyzxyz</a>
+						<label class="link-quant">7.919</label>
 					</li>
-					<li>http/chr.dc/abcabc
-						<span class="link-quant">6.899</span>
+					<li><a href="#">http/chr.dc/abcabc</a>
+						<label class="link-quant">6.899</label>
 					</li>
-					<li>http/chr.dc/derder
-						<span class="link-quant">2.111</span>
+					<li><a href="#">http/chr.dc/derder</a>
+						<label class="link-quant">2.111</label>
 					</li>
-					<li>http/chr.dc/fghfgh
-						<span class="link-quant">617</span>
+					<li><a href="#">http/chr.dc/fghfgh</a>
+						<label class="link-quant">617</label>
 					</li>
-					<li>http/chr.dc/yuiyui
-						<span class="link-quant">43</span>
+					<li><a href="#">http/chr.dc/yuiyui</a>
+						<label class="link-quant">43</label>
 					</li>															
 				</ul>
-			</div>
-			
+			</div>			
 		</article>
+
 		<article id="hits">
 			<div class="text-center">
 				<span class="seta-baixo"></span>
@@ -66,22 +70,23 @@
 			<div class="container content-wraper">
 			<h1 class="text-center">HITS</h1>
 			
-			<div class="container text-center pt-2">
-			<label class="text-center counter pl-3 pr-3">35.713.571</label><br>
+			<div class="container text-center">
+			<label class="counter pl-3 pr-3">35.713.571</label><br>
 			</div>
-			<p class="text-center">Cliques em Links</p>
-		</div>
+			<label>Cliques em Links</label>
+			</div>
 		</article>
 	</section>
+
 	<footer>
-		<div class="container mt-4 mb-2">
-		<label>chr.dc</label> 
-		<a><img src="../Assets/icon-facebook.png" alt=""></a>
-		<a><img src="../Assets/icon-twitter.png" alt=""></a>
+		<div class="container">
+		<a id="link-chr" href="#">chr.dc</a> 
+		<a class="social"><img src="../Assets/icon-facebook.png" alt=""></a>
+		<a class="social"><img src="../Assets/icon-twitter.png" alt=""></a>
 		</div>
 	</footer>
 
-
+</div> <!--FIM DO WRAPPER HTML-->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

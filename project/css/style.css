@@ -6,46 +6,45 @@
 --prymary-color: #aa1423;	
 --secondary-color: #777;	
 --background-section: #eee;	
-
 }
-
-
 /*----------------PARAMETROS GLOBAIS--------------*/
 html, body{
 height: 100%;	
 font-family: 'Roboto', sans-serif;
 }
 
+
+
+
 /*-----------------LAYOUT----------------*/
-#home{
-min-height: 100%;	
+#main-wrapper{
+	height: 100%;	
 }
+#header img{
+	max-height: 60px;
+}
+
 
 /*-----------------HOME SECTION-------------------*/
 #home{
+height: 100%;	
 position: relative;
 padding-top: 15%;
 color: #fff;	
-background-image: url("../../Assets/background-home.jpg");
-background-repeat: no-repeat;
+background-image: url("../img/background-home.jpg");
 background-size: cover;
 }
 
 #home h1{
     font-family: 'Roboto Slab', serif;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 #home p{
     font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
+	line-height: 1.5rem;
 }
-/*
-Opção de uso sem o Grid System. 
-#home form{
-	max-width: 50%;
-}
-*/
 
 #home #cole-link{
 	background-color: transparent !important;	
@@ -55,12 +54,14 @@ Opção de uso sem o Grid System.
 	color:var(--home-primary-color);
 	font-weight: bold;
 	font-size: 1.2rem;
-
+	font-family: 'Roboto', sans-serif;
 }
 
 #home #cole-link::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color:var(--home-primary-color) !important;
   opacity: 1; /* Firefox */
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.5;
 }
 
 #home #cole-link:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -70,13 +71,14 @@ Opção de uso sem o Grid System.
 #home #cole-link::-ms-input-placeholder { /* Microsoft Edge */
   color:var(--home-primary-color);
 }
-
 #btn-limpar{
 margin-left: -35px;
 visibility: hidden;
 z-index: 9999;
-font-weight: bold;
 color: #fff;
+font-weight: bold;
+font-family: Arial, sans-serif;
+
 }
 
 #home #btn-encurtar{
@@ -87,76 +89,68 @@ border-radius: 0px;
 min-width: 145px;
 }
 
-@media (max-width: 768px) {
-	#home{
-	padding-top: 35%;
-	}
-	#home h1{
-		font-family: 'Roboto Slab', serif;
-		font-size: 3rem;
-		font-weight: bold;
-	}
-	#home p{
-		font-family: 'Roboto', sans-serif;
-		font-size: 1rem;
-	}
+/* ALTERNATIVA - FORM SÓ COM CSS
+.form-inline{
+display: flex;	
+flex-flow: row wrap;
+align-items: center;
+}
 
-	#home #cole-link{
-		font-size: 1em;
-		max-width: 120px;
-		font-weight: bold;
-	}
+.form-inline input {
+	vertical-align: middle;
+	margin: 5px 10px 5px 0;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
   }
 
-/*--------------HOME MOBILE PROPS--------------*/
-@media (max-width: 375px) {
-	#home{
-	padding-top: 50%;
-	}
-	#home h1{
-		font-family: 'Roboto Slab', serif;
-		font-size: 2rem;
-		font-weight: bold;
-	}
-	#home p{
-		font-family: 'Roboto', sans-serif;
-		font-size: 0.75rem;
-	}
-
-	#home button{
-		padding: 10px;
-		font-size: 0.6em;
-		max-width: 70px;
-		font-weight: bold;
-	}
+  .form-inline #btn-encurtar {
+	padding: 10px 20px;
+	background-color: dodgerblue;
+	border: 1px solid #ddd;
+	color: white;
+	cursor: pointer;
   }
-/*-----------------FIM HOME SECTION-------------------*/
+*/
+
+@media (max-width: 450px) {
+
+
+
+  }
 
 
 /*-----------------ARTICLE TOP5-------------------*/
 #top5{
-	max-width: 50%;
-	padding: 60px;
+	max-width: 60%;
+	padding: 120px;
+	font-size: 1.5rem;
+
 }
 #top5 h1{
-	font-size: 3em;
+	font-size: 2.5rem;
 	font-family: 'Roboto Slab', serif;
 	color: var(--prymary-color)
 }
 
 #top5 .list-group li {
 	color: var(--prymary-color);
-	font-weight: bold; 
 	border-bottom: 1px solid var(--background-section);
 	list-style: none;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 1.3em;
 }
-#top5 .list-group li span {
+
+#top5 .list-group li a{
+	text-decoration: none;
+	color: var(--prymary-color);
+
+}
+#top5 .list-group li a:hover{
+text-decoration: underline;
+}
+
+#top5 .list-group li .link-quant {
 	color: var(--secondary-color);
 	float: right;
-	font-weight: normal; 
 }
 
 /*-----------------ARTICLE HITS-------------------*/
@@ -178,39 +172,43 @@ min-width: 145px;
   }
 
 #hits .content-wraper{
-	padding: 30px;
+	padding: 40px;
+	text-align: center;
 }
 
 #hits h1 {
-	font-size: 3em;
+	font-size: 2.5em;
 	font-family: 'Roboto Slab', serif;
 	color: var(--prymary-color)		
 }
 
-.counter {
+#hits .counter {
 	background-color: white;
 	font-size: 2.2em;
 	font-family: 'Roboto Slab', serif;
 	color: var(--prymary-color);
 	border: solid  1px var(--secondary-color);
-	border-radius: 10px;
+	border-radius: 5px;
+	margin: 5px;
 }
 
-#hits p {
+#hits label {
 	color: var(--secondary-color);
 }
 
 
 /*--------------FOOTER-------------*/
 footer .container{
+	height: 60px;
 	max-width: 60%;
+	padding-top: 20px
 }
 
-footer label{
+footer #link-chr{
 	color: var(--prymary-color);
 }
 
-footer a {
+footer .social{
 	float: right;
 	padding-left: 30px;
 }
