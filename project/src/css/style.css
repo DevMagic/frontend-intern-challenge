@@ -85,10 +85,6 @@ input[type='text'] {
   border: none;
   color: #eee;
   font-size: 1.4em;
-  transition: all 4s;
-}
-.url__btnSendUrl-clicked {
-  background-color: red;
 }
 
 .top5 {
