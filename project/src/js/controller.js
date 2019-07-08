@@ -1,4 +1,6 @@
-import { Service } from '/js/services.js';
+import { Service } from '../js/services.js';
+import '../css/style.css';
+import * as images from '../js/images.js';
 const service = new Service();
 
 class Controller {
@@ -61,10 +63,7 @@ class Controller {
   }
   setBtnCopy() {
     let btnSendUrl = document.getElementById('btnSendUrl');
-    btnSendUrl.classList.add('url__btnSendUrl-clicked');
     btnSendUrl.innerText = 'COPIAR';
-    btnSendUrl.innerHTML = 'copiar';
-    btnSendUrl.textContent = 'copiar';
     btnSendUrl.value = 'copiar';
   }
   createTopFiveTableAndGetData() {
