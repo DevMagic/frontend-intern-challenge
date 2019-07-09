@@ -1,0 +1,171 @@
+@import 'sass/variaveis';
+@import 'sass/mixin';
+
+//Sass disponibiliza o recurso de aninhamento (nesting) que facilita saber qual 
+//elemento está dentro de outro elemento, além de facilitar na visualizaçao e
+//organizaçao do codigo, tanto o .scss como no .css
+
+.main { 
+    text-align: center;
+    background-image: url(../imgs/background-home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        font-family: $fonte-principal;
+        font-size: 70px;
+        font-weight: bold;
+        padding-top: 200px;
+        letter-spacing: 2px;
+        color: $cor-branca;
+    }
+
+    h3 {
+        font-family: $fonte-secundaria;
+        font-size: 25px;
+        font-weight: inherit;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        color: $cor-branca;
+    }
+
+    form {
+        padding-bottom: 200px;
+    }
+
+    #input_url {
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin-top: 80px;
+        width: 50%;
+        text-decoration: none;
+        outline: none;
+        border: 0px solid;
+        border-bottom: 2px $input-botao solid;
+        background-color: transparent;
+    }
+
+    .link_normal {
+        color: $input-botao;
+    }
+
+    .link_branco {
+        color: $cor-branca;
+    }
+
+    #input_url::placeholder {
+        color: $input-botao;
+    }
+
+    #botao_remover {
+        font-size: 12px;
+    }
+    
+    #botao_encurtar {
+        font-size: 20px;
+        margin-left: 5px;
+        width: 140px;
+        height: 50px;
+        border: none;
+        text-transform: uppercase;
+        outline: none;
+        background-color: $input-botao;
+        color: $cor-branca;
+    }
+}
+
+.invisivel {
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.visivel {
+    opacity: 1;
+    transition: 1.5s;
+    color: $cor-branca;
+}
+
+.trending {
+
+    h2 {
+        font-family: $fonte-principal;
+        font-size: 70px;
+        padding-top: 150px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $cor-principal;
+        margin-bottom: 45px;
+    }
+
+    .nova_linha {
+        @include linha_padrao;
+        border-bottom: 2px solid $linha-background;
+    }
+
+    .nova_linha_sem_borda {
+        @include linha_padrao;
+        padding-bottom: 150px;
+    }
+
+    #top_5_url {
+        @include top_5_padrao;
+        color: $cor-principal;
+        font-weight: bold;
+    }
+    
+    #top_5_hits {
+        @include top_5_padrao;
+        color: $texto-apoio;
+    }
+
+}
+
+.hits {
+    background-color: $linha-background;
+    text-align: center;
+
+    .container_triangulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+    }
+
+    .triangulo {
+        width: 0;
+        height: 0;
+        border: 50px solid;
+        border-color: $cor-branca $linha-background $linha-background $linha-background;
+    }
+
+    h2 {
+        font-family: $fonte-principal;
+        font-size: 70px;
+        text-transform: uppercase;
+        color: $cor-principal;
+    }
+
+    .total_hits {
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        width: 40%;
+        margin-left: 30%;
+        background: $cor-branca;
+        font-family: $fonte-principal;
+        font-size: 70px;
+        color: $cor-principal;
+    }
+
+    .texto_apoio_hits {
+        color: $texto-apoio;
+        font-size: 30px;
+        padding-bottom: 120px;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,12 @@
+@mixin linha_padrao {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 10%;
+}
+
+@mixin top_5_padrao {
+    font-family: $fonte-principal;
+    font-size: 25px;
+    margin-top: 10px;
+}

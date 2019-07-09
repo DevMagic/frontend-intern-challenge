@@ -1,0 +1,50 @@
+@media (max-width: 360px) {
+    .trending #top_5_url {
+        font-size: 15px;
+    }
+
+    .trending #top_5_hits {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .trending #top_5_url {
+        font-size: 20px;
+    }
+
+    .trending #top_5_hits {
+        font-size: 20px;
+    }
+
+    .hits .total_hits {
+        font-size: 45px;
+    }
+
+    .texto_apoio_hits {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .main #botao_encurtar {
+        font-size: 20px;
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    .main #input_url {
+        font-size: 20px;
+        width: 70%;
+        margin-left: 15px;
+    }
+
+    .trending .nova_linha {
+        width: 85%;
+    }
+
+    .trending .nova_linha_sem_borda {
+        width: 85%;
+    }
+}
+
