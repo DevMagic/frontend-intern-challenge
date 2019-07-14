@@ -1,0 +1,65 @@
+body { 
+    background-image: url("recursos/background-home.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    justify-content: center; 
+  }
+h1 {
+    font-size: 18px auto;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-size: 13px auto;
+    color: #b4b4b4;
+    font-family: 'Roboto Slab', sans-serif;
+}
+#entrada-dados {
+    width: 500px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    justify-content: center;
+}
+#saida-dados {
+    width: 600px;
+    color: black;
+    height: 50px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    justify-content: center;
+}
+#encurtar {
+    color: #FFFFFF;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+}
+#first {
+    padding: 20px;
+    margin: 200px auto;
+    justify-content: center;
+    text-align: center;
+}
+#redes-sociais {
+    background-color: rgb(247, 247, 247);
+    text-align: right;
+}
+button {
+    height: 30px;
+    background-color: #e92c2c;
+    border: #FFFFFF 1px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #ff8282;
+}
