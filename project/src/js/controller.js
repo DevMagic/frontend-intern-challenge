@@ -1,6 +1,6 @@
 import { Service } from '../js/services.js';
 import '../css/style.css';
-import * as images from '../js/images.js';
+import  '../js/images.js';
 const service = new Service();
 
 class Controller {
