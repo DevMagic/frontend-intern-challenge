@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>DEVMAGIC - Encurtador de URL's</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="DEVMAGIC - Encurtador de URL's">
+    <meta name="description" content="Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.">
+    
+    <link rel="stylesheet" type="text/css" media='screen' href="styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    
+  </head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container justify-content-center">
+      <h1 class="logo">
+        <img src="assets/images/logo.png" class="logo-image" />
+      </h1>
+    </div>
+  </header> 
+
+  <section class="home d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center"> 
+        <div class="col-md-6"> 
+          <h2 class="display-4">Encurte seus links.</h2>
+            
+          <p class="highlight">Links são longos. Encurte os links que você deseja compartilhar, 
+          e acompanhe enquanto viajam através da internet.</p>
+
+          <form class="mt-4 mb-4">
+            <div class="input-group">
+              <input type="text" placeholder="Cole o seu link aqui" id="input-link" class="form-control no-outline">
+              <div class="input-group-append ml-3"> 
+                
+                <button type="button" class="btn no-outline" onclick="gerarLink()" onchange="readFile(datasource.json)">Encurtar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section class="conteudo d-flex align-items-center justify-content-center">
+    <div class="container"> 
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 >TOP 5</h2>
+          <table class="table" id="table">
+            
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="click-counter">
+    <div class="triangulo"></div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-3 hits">
+          <h2 class="title">HITS</h2>
+          <h3 class="quantity" id="contador"></h3>
+          <p class="description">Cliques em links</p>    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>chr.dc</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <a href="#" class="btn ml-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="btn ml-2">
+            <i class="fab fa-facebook"></i>
+          </a>                          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</html>

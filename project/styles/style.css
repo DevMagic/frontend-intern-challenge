@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+:root {
+  --red: #AA1423;
+  --orange: #FF6E13;
+  --dark-gray: #777;
+  --light-gray: #EEE;
+  --white: #FFF;
+}
+
+html, 
+body, 
+.home {
+  height: 100%;
+}
+
+.home{
+  background-image: url(../assets/images/background-home.jpg);
+} 
+
+.logo-image{
+  width: 180px;
+}
+
+
+.home .display-4{
+  color: var(--white);
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-align: center;
+} 
+
+
+.highlight{
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.08em;
+  margin: 0px;
+  text-align: center;
+}
+
+.home .form-control[id="input-link"] {
+  background: transparent;
+  border: transparent;
+  border-bottom: 2px solid var(--orange);
+  color: var(--white);
+}
+
+.home .form-control[id="input-link"]::placeholder { 
+  color: var(--orange);
+}
+
+.home .btn:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.home .btn {
+  background: var(--orange);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home .form-control[id="input-link"],
+.home button.btn {
+  outline: none;
+  box-shadow: none;
+}
+
+.conteudo div , .hits{
+    margin: 3em;
+}
+
+.conteudo .table tr td{
+  color: var(--red);
+  font-weight: bold;
+  text-align: left;
+
+}
+
+.conteudo .table tr td:last-child {
+  color: var(--dark-gray);
+  font-weight: 600;
+  text-align: right;
+}
+
+.triangulo{
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid var(--white);
+  height: 0;
+  margin: 0 auto;
+  width: 0;
+}
+.conteudo h2, .click-counter h2 { 
+  color: var(--red);
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.click-counter{
+    background: var(--light-gray);
+}
+
+.click-counter .hits .quantity {
+  background: var(--white);
+  border-radius: 5px;
+  color: var(--red);
+  font-family: 'Roboto Slab', serif;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.click-counter .hits .description{
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+footer{
+  padding: 10px;
+}
+
+footer p{
+  color: var(--red);
+  font-weight: bold;
+  margin-top: 0.5em;
+} 
+
+footer .btn{
+  color: var(--dark-gray);
+  font-size: 1.2em;
+}
+
+
+
+
+
+
