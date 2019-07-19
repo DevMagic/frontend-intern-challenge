@@ -1,0 +1,161 @@
+/* HEADER */
+
+header{
+    text-align: center; 
+    margin-top: -100px;
+}
+
+@media (max-width:768px) { 
+    #logo{
+        height:300px; 
+        width:300px;
+        z-index:-1;
+        position: relative;
+    }
+}
+@media (min-width: 768px) and (max-width:992px) { 
+    #logo{
+        height:300px; 
+        width:400px;
+        z-index:-1;
+        position: relative;
+    }
+}
+@media (min-width: 992px) {
+    #logo{
+        height:300px; 
+        width:400px;
+        z-index:-1;
+        position: relative;
+    }
+}
+
+/* Primeira SECTION e componentes */
+
+@media (max-width:768px) { 
+    #section_A{
+        background-image: url('./../img/background-home.jpg');
+        text-align: center;
+        height: 650px;
+        margin-top: -100px;
+        padding-top: 150px;
+    }
+}
+@media (min-width: 768px)  { 
+    #section_A{
+        background-image: url('./../img/background-home.jpg');
+        text-align: center;
+        height: 910px;
+        margin-top: -100px;
+        padding-top: 350px;
+    }
+}
+
+#section_A div h1{
+    font-family: Roboto;
+    color: white;
+}
+#section_A div label{
+    font-size: 15;
+    text-align: center; 
+    width: 500px;
+    color: white;
+}
+
+#input_txt{
+    background-color:transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid #ff6e15;
+    color: white;
+    font-size: large;
+}
+
+#input_txt::-webkit-input-placeholder {
+    color: #ff6e15;
+    font-size: 15;
+}
+  
+ #input_txt:-moz-placeholder { /* Firefox 18- */
+    color: #ff6e15;  
+    font-size: 15;
+}
+  
+ #input_txt::-moz-placeholder {  /* Firefox 19+ */
+    color: #ff6e15;  
+    font-size: 15;
+}
+  
+ #input_txt:-ms-input-placeholder {  
+    color: #ff6e15;  
+    font-size: 15;
+}
+
+#btn_pesquisar{
+    border-radius: 0px;
+    background-color:#ff6e15;
+}
+
+#divBtn{
+    padding-left: 0px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+/* Segunda SECTION e COMPONENTES  */
+
+#section_B{
+    margin: 10px 10px;
+}
+
+#section_B h2{
+    color:#AA1423;
+    font-family: 'Roboto Slab';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* TERCEIRA SECTION e COMPONENTES*/
+
+#section_C{
+    background-color: #EEE;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 60px 60px;
+}
+#section_C h2{
+    color:#AA1423;
+    font-family: 'Roboto Slab';
+}
+
+#section_C div{
+    background-color: white;
+    width:200px;
+    margin:0 auto;
+    padding-top:10px;
+    font-size:xx-large;
+    border:1px solid #d8d8d8;
+    color:#AA1423;
+    margin-bottom: 10px;
+}
+
+#section_C a{
+    color:#777;
+    font-size:16;
+}
+
+/* FOOTER e COMPONENTES*/
+
+footer{
+    margin: 10px 10px;
+}
+
+#chrdc{
+    font-family: 'Roboto';
+    font-size:20;
+    color:#AA1423;
+}
+
+.ico{
+    padding-right: 20px;
+}
