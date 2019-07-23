@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family= Roboto & display = trocar"
+      rel="folha de estilo"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="principal">
+      <header id="main-header">
+        <div>
+          <div id="tittle-h1">
+            <h1>Encurte seus links.</h1>
+            <p>
+              Links são longos. Encurte os links que você deseja
+              compartilhar,<br />
+              e acompanhe enquanto enquanto viajam através da internet.
+            </p>
+          </div>
+          <div id="box-generator">
+            <input id="link" type="text" placeholder="Cole o seu link aqui" />
+            <button id="generator-link" onclick="doubleClick()">
+              Encurtar
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main-links">
+        <h2>Top 5</h2>
+        <div class="container-links">
+          <div class="box-links">
+            <div class="align-link">
+              <a id="link01" href="">
+                teste
+              </a>
+              <ul id="hits01">
+                123
+              </ul>
+            </div>
+            <hr size="4" color="#eeeeee" />
+            <div class="align-link">
+              <a id="link02" href="">
+                teste
+              </a>
+              <ul id="hits02">
+                123
+              </ul>
+            </div>
+            <hr size="4" color="#eeeeee" />
+            <div class="align-link">
+              <a id="link03" href="">
+                teste
+              </a>
+              <ul id="hits03">
+                123
+              </ul>
+            </div>
+            <hr size="4" color="#eeeeee" />
+            <div class="align-link">
+              <a id="link04" href="">
+                teste
+              </a>
+              <ul id="hits04">
+                123
+              </ul>
+            </div>
+            <hr size="4" color="#eeeeee" />
+            <div class="align-link">
+              <a id="link05" href="">
+                teste
+              </a>
+              <ul id="hits05">
+                123
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="click-links">
+        <h2>Hits</h2>
+        <div id="total-clicks">
+          <p id="clicks-total">123456</p>
+        </div>
+        <p>Cliques em links</p>
+      </aside>
+      <footer class="footer">
+        <a href="">chr.dec</a>
+        <nav class="footer-bottom">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com.br"
+                ><img src="../assets/icon-facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com.br"
+                ><img src="../assets/icon-twitter.png" alt="Twitter"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/links.js"></script>
+  </body>
+</html>
