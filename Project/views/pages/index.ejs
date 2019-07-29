@@ -1,0 +1,56 @@
+<% include ../partials/head.ejs %>
+
+<article class="back-image">
+    <div id="encurtar">
+        <h3>Encurte seus links.</h3>
+        <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
+        <form>
+            
+            <div id="url">
+                <label>
+                    <input type="text" id="txt-url" ng-model="encurtador.url" name="url" class="" placeholder="Cole o seu link aqui">
+                </label>
+                <button type="button" id="cancelar" class="cancelar" ng-click="encurtador.cancelar()">X</button>
+            </div>
+            
+            <button type="button" id="btn-url" ng-click="encurtador.encurtar()">
+                <samp>ENCURTAR</samp>
+            </button>
+            <p>
+                    
+            </p>
+            
+        </form>
+    </div>                
+</article>
+<article class="top" > 
+    <div id="top-5">
+        <h3>TOP 5</h3>
+        <aside>
+
+            <ul>
+                <li ng-repeat="top in encurtador.todos">
+                    <a href="{{top.url}}">{{top.shortUrl}}</a>
+                    <p>{{top.hits}}</p>
+                </li>
+            </ul>
+        </aside>
+    </div>            
+    
+</article>
+<article id="hits">
+    <figure>
+        <div class="triangulo"></div>
+    </figure>
+    <div class="hits ">
+        <h3>HITS</h3>
+        <p id="back-hits" class="centralizado">
+            <em>{{encurtador.contagem}}</em>
+            <br>
+            <br>
+            
+            Cliques em links
+        </p>
+    </div>
+</article>
+<% include ../partials/foot.ejs %>  

@@ -1,0 +1,221 @@
+/*Paleta*/
+$vermelho: #aa1423;
+$laranja: #ff6e14;
+$laranjaPress: #ff8138;
+$branco: white;
+$cinza: #777;
+$cinza1: #eeeeee;
+$cinza2: #d2d2d2;
+/*Fontes*/
+$font1: "Roboto";
+$font2: "Roboto";
+$font3: "Myriad Pro";
+
+
+
+*{
+    box-sizing: border-box;
+}
+@media screen and (max-width: 736px){
+    #btn-url, #url{
+        width:100%;
+        margin:0;
+    }    
+}
+#encurtar {
+    h3{
+        margin-top:0;
+    }
+}
+.back-image{
+    background-image: url("/img/background-home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.centralizado{
+    text-align: center;
+    margin: 0 auto;
+}
+label{
+    width: 100%;
+}
+#url{
+    border:0;
+    display: inherit;
+    border-bottom: 1px solid $laranja;        
+    height: 38px;
+    min-width: 76%;
+    float:left;
+
+    label{
+        width: 95%;
+        float:left;
+    }
+    input{
+        height: 38px;
+        color:$laranja;
+        font-family: $font3;  
+        float:left;
+        font-size: 16px;
+        width: 100%;
+    }
+    .resultado{
+        color: $branco;
+    }
+    input::placeholder{
+        color:$laranja;
+    }
+
+}
+.cancelar{
+    font-size: 16px;
+    font-weight: bold;
+    width: 5%;
+    text-align: right;
+    padding: 0;
+    color: $branco;
+    height:38px;
+    display: inline-block;
+}
+
+#btn-url{
+    background-color: $laranja;
+    border:0;    
+    height: 38px;
+    min-width: 23%;
+    float:left;
+    margin-left: 1%;
+    samp{
+        color:$branco;
+        font-size: 16px;
+        font-family: $font1;
+        font-weight: 700;
+    }
+}
+
+#btn-url:hover{
+    background-color: $laranjaPress;
+}
+
+input, button{
+    background-color: transparent;
+    border:0;
+    outline: none;
+}
+h3, p, span {
+    color: $branco;
+}
+h3{
+    font-size: 36px;
+    font-family: $font2;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-family: $font1;
+    font-weight: 400;
+}
+div{
+    width: 61%;
+    margin: 0 auto;
+}
+
+
+header{
+    position: fixed;
+    background: $branco;
+    width: 100%;
+    figure{
+        margin: 10px 0 10px 0;
+    }
+}
+
+.top{
+    background: $branco;
+    height: 340px;
+    a{
+        text-align: left;
+        font-size: 16px;
+        color: $vermelho;
+        font-family: $font1;
+        font-weight: 700;
+    }
+    p {
+        color:$cinza;
+        text-align: right;
+        font-family: $font1;
+        font-weight: 400;
+        font-size: 16px;
+        margin:0;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    li{
+        margin: 25px 0 25px 0 ;
+    }
+    li > *{
+        display: inline-block;
+        width: 48%;
+    }
+}
+
+.top h3, .top a, .hits h3{
+    color: $vermelho;
+    
+}
+.top h3, .hits h3{
+    margin-bottom: 30px;
+}
+
+.triangulo{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 35px 0 35px;
+    border-color: $branco transparent transparent transparent;
+}
+#hits{
+    height: 240px;
+    background-color: $cinza1;
+}
+#back-hits{
+    font-size: 16px;
+    color: $cinza;
+    font-family: $font1;
+    font-weight: 400;
+    em{
+        padding: 8px;
+        min-width: 172px;
+        height: 48px;
+        border-radius: 5px;
+        background-color: $branco;
+        border: 0.5px solid $cinza2;
+        font-size: 32px;
+        color: $vermelho;
+        font-family: $font2;
+        font-weight: 400;
+        font-style: initial;
+    }
+}
+footer{
+    padding: 10px 0 10px 0;
+    figure{
+        margin:0;
+        display: inline-block;
+        width:49%;
+    }
+    figure {
+        img{
+            margin-left:20px;
+        }
+    }
+}
+
+.transparente{
+    color: transparent;
+    outline:none;
+}

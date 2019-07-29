@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="PT-BR" ng-app="encurtadorApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encurtador CHR</title>
+  <link rel="stylesheet" type="text/css" href="/css/padrao.css">
+  <!--Angular-->
+  <script src="/lib/angular-1.7.8/angular.min.js"></script>
+  <!--Jquery-->
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/js/angularApps/encurtador.js"></script>
+</head>
+<body class="centralizado">
+    <header>        
+        <figure>
+            <img src="/img/devLogo.svg" alt="Logo DevMagic">
+        </figure>        
+    </header>
+    <main ng-controller="encurtadorController as encurtador" ng-init="encurtador.top5();encurtador.hitsTotais()">
