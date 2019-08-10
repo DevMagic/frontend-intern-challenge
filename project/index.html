@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" > 
+        <title>Desafio</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body onload="load()">
+
+        <img id="logo-chaordic" src="../Assets/logo-chaordic.png" alt="Logo do site chaordic">
+
+        <div id="input-section">
+            <img src="../Assets/background-home.jpg" id="background-image">
+            <h1 id="title">Encurte seus links.</h1>
+            <h4 id="title-text">Links são longos. Encurte os links que você deseja compartilhar,<br/> e acompanhe enquanto viajam através da internet.</h4>       
+    
+            <input id="original-link" placeholder="Cole o seu link aqui." type="url" onclick="this.select()" required>
+            <input id="original-link-2" readonly>
+            <div id="x">x</div>
+
+            <button id="shorten-button"><h3 id="button-txt">ENCURTAR<h3></button>
+        </div>
+
+        <div id="top-5-section">
+            <h1 id="top-5-title">Top 5</h1>
+            <ul id="top-5-list">
+                <li>
+                    <a href="" id="top-0-link" class="top-5-links">www.ads.com</a><small id="clicks-0">1</small>
+                </li>
+                <hr>
+                <li>
+                    <a href="" id="top-1-link" class="top-5-links">www.ads.com</a><small id="clicks-1">1</small>
+                </li>
+                <hr>
+                <li>
+                    <a href="" id="top-2-link" class="top-5-links">www.ads.com</a><small id="clicks-2">1</small>
+                </li>
+                <hr>
+                <li>
+                    <a href="" id="top-3-link" class="top-5-links">www.ads.com</a><small id="clicks-3">1</small>
+                </li>
+                <hr>
+                <li>
+                    <a href="" id="top-4-link" class="top-5-links">www.ads.com</a><small id="clicks-4">1</small>
+                </li>
+            </ul>
+        </div>
+        <br>
+
+        <div id="hits-section">
+            <br>
+            <h1 id="hits-title">Hits</h1>
+            <textarea id="cliks" cols="8" rows="3" readonly>35.713.571</textarea>
+            <h4 id="click-counter">Cliques em links.</h4>
+        </div>
+
+        <div id="footer">
+            <a href="" id="footer-link">chr.dc</a>
+            <a href="https://www.facebook.com/" target="blank"><img class="icons" src="../Assets/icon-facebook.png"></a>
+            <a href="https://twitter.com/" target="blank"><img class="icons" src="../Assets/icon-twitter.png"></a> 
+        </div>
+
+        <script src="../Assets/urls.json"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
