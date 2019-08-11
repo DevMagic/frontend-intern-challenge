@@ -22,6 +22,7 @@ function fillsTop5(urls){ //Preenche os Top 5 com os links e hits
    let reversedUrls = urls.reverse(); //Inverte a ordem dos links para decrescente
    for(let i = 0;i < 5; i++){
       document.getElementById('top-'+ i +'-link').textContent = urls[i].shortUrl;
+      document.getElementById('top-'+ i +'-link').href = urls[i].url;
       document.getElementById('clicks-' + i).textContent = reversedUrls[i].hits;
    }
 }
