@@ -1,0 +1,64 @@
+section:not(:first-child) { padding: 40px 0; }
+
+#top-five-section { background-color: $white; }
+
+#hits-section { color: grey; }
+
+h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: $robotoSlab;
+    font-style: thin;
+    color: $vermelho;
+}
+
+#main-section {
+    height: 100%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../Assets/background-home.jpg");
+    background-size: cover;
+    background-position: center;    
+    h1 {
+        color: $white;
+        font-size: 40px;
+        font-weight: 550;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    form {
+        margin-top: 40px;
+        ::placeholder, input { color: $orange; }
+        ::placeholder {
+            font-family: $roboto;
+            font-style: bold;
+        }
+        input:focus { outline: none; }
+        button:focus { outline-color: $orange }
+        input {
+            flex: 1;
+            height: 100%;
+            background-color: transparent;
+            font-size: 15px;
+            border: none;
+            border-bottom: 2px solid $orange;
+            padding-bottom: 8px;
+            margin-right: 5px;
+            width: 73%;
+        }
+        button {
+            padding: 10px 10px;
+            background-color: $orange;
+            color: $white;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+        }
+    }
+} 

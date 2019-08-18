@@ -1,0 +1,152 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #EEE;
+}
+
+section:not(:first-child) {
+  padding: 40px 0;
+}
+
+#top-five-section {
+  background-color: #ffffff;
+}
+
+#hits-section {
+  color: grey;
+}
+
+h1 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-style: thin;
+  color: #AA1423;
+}
+
+#main-section {
+  height: 100%;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../Assets/background-home.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#main-section h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 550;
+}
+
+#main-section p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#main-section form {
+  margin-top: 40px;
+}
+
+#main-section form ::-webkit-input-placeholder, #main-section form input {
+  color: #f06c00;
+}
+
+#main-section form :-ms-input-placeholder, #main-section form input {
+  color: #f06c00;
+}
+
+#main-section form ::-ms-input-placeholder, #main-section form input {
+  color: #f06c00;
+}
+
+#main-section form ::placeholder, #main-section form input {
+  color: #f06c00;
+}
+
+#main-section form ::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+}
+
+#main-section form :-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+}
+
+#main-section form ::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+}
+
+#main-section form ::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+}
+
+#main-section form input:focus {
+  outline: none;
+}
+
+#main-section form button:focus {
+  outline-color: #f06c00;
+}
+
+#main-section form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-color: transparent;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #f06c00;
+  padding-bottom: 8px;
+  margin-right: 5px;
+  width: 73%;
+}
+
+#main-section form button {
+  padding: 10px 10px;
+  background-color: #f06c00;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+}
+
+footer {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+}
+
+footer span {
+  color: #AA1423;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer div img {
+  padding: 0 10px;
+}
+/*# sourceMappingURL=styles.css.map */

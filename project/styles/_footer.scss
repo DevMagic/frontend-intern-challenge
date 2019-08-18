@@ -1,0 +1,14 @@
+footer {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: $white;
+    span {
+        color: $vermelho;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    div {
+        img { padding: 0 10px; }
+    }
+}

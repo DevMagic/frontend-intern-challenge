@@ -1,0 +1,15 @@
+$vermelho: #AA1423;
+$text: #777;
+$line-background: #EEE;
+$orange: #f06c00;
+$white: #ffffff;
+$roboto: 'Roboto', sans-serif;
+$robotoSlab: 'Roboto Slab', serif;
+
+html, body {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    font-family: $roboto;
+    background-color: $line-background;
+}
