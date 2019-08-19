@@ -67,11 +67,11 @@ const textCopiar = 'COPIAR';
 
 const dataRow = document.querySelector('#top-five-section table');
 
+// Renderiza os itens do JSON e ordena por quantidade de hits
 function renderTopFive() {
     dataRow.innerHTML = '';
     const organizedList = data.sort((a, b) => b.hits - a.hits);
     const topFive = organizedList.slice(0, 5);
-    console.log(topFive);
 
     for(item of topFive) {
         const tableDataRow = document.createElement('tr');
