@@ -64,11 +64,38 @@ const buttonElement = document.querySelector('#main-section form button');
 const textEncurtar = 'ENCURTAR';
 const textCopiar = 'COPIAR';
 
+
+const dataRow = document.querySelector('#top-five-section table');
+
+function renderTopFive() {
+    dataRow.innerHTML = '';
+    const organizedList = data.sort((a, b) => b.hits - a.hits);
+    const topFive = organizedList.slice(0, 5);
+    console.log(topFive);
+
+    for(item of topFive) {
+        const tableDataRow = document.createElement('tr');
+        const shortUrlDataCell = document.createElement('td');
+        const hitsDataCell = document.createElement('td');
+        const shortUrlNode = document.createTextNode(item.shortUrl);
+        const hitsNode = document.createTextNode(item.hits.toLocaleString('pt-br'));
+        
+        shortUrlDataCell.appendChild(shortUrlNode);
+        hitsDataCell.appendChild(hitsNode);
+        tableDataRow.appendChild(shortUrlDataCell);
+        tableDataRow.appendChild(hitsDataCell);
+        dataRow.appendChild(tableDataRow);
+    }
+}
+
+renderTopFive();
+
 // Verifica o texto do botão para levar à função correta
 function isToShortenOrCopy(e) {
     e.preventDefault();
     if (buttonElement.innerHTML == textEncurtar) shortenLink();
     else copyLink();
+    renderTopFive();
 }
 
 // Encurta o link informado e soma os hits (números de cliques

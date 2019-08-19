@@ -3,6 +3,7 @@ $text: #777;
 $line-background: #EEE;
 $orange: #f06c00;
 $white: #ffffff;
+$grey: grey;
 $roboto: 'Roboto', sans-serif;
 $robotoSlab: 'Roboto Slab', serif;
 
@@ -12,4 +13,11 @@ html, body {
     text-align: center;
     font-family: $roboto;
     background-color: $line-background;
+}
+
+@mixin centralizeFlexColumn() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

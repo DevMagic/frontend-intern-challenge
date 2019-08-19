@@ -1,8 +1,30 @@
 section:not(:first-child) { padding: 40px 0; }
 
-#top-five-section { background-color: $white; }
+#top-five-section { 
+    @include centralizeFlexColumn();
+    background-color: $white;
+    table {
+        tr {
+            td:first-child {
+                padding: 0.5em 3.8em 0.5em 0;
+                text-align: left;
+                color: $vermelho;
+                font-weight: 800;
+            }
+            td {
+                padding: 0.5em 0 0.5em 3.8em;
+                color: $grey;
+                border-bottom: 2px solid $line-background;
+                text-align: right;
+            }
+        }
+        tr:last-child {
+            td { border-bottom: none; }
+        }
+    }
+}
 
-#hits-section { color: grey; }
+#hits-section { color: $grey; }
 
 h1 {
     margin: 0;
@@ -14,12 +36,9 @@ h1 {
 }
 
 #main-section {
+    @include centralizeFlexColumn();
     height: 100%;
     color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url("../../Assets/background-home.jpg");
     background-size: cover;
     background-position: center;    

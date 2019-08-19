@@ -11,7 +11,38 @@ section:not(:first-child) {
 }
 
 #top-five-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffffff;
+}
+
+#top-five-section table tr td:first-child {
+  padding: 0.5em 3.8em 0.5em 0;
+  text-align: left;
+  color: #AA1423;
+  font-weight: 800;
+}
+
+#top-five-section table tr td {
+  padding: 0.5em 0 0.5em 3.8em;
+  color: grey;
+  border-bottom: 2px solid #EEE;
+  text-align: right;
+}
+
+#top-five-section table tr:last-child td {
+  border-bottom: none;
 }
 
 #hits-section {
@@ -28,8 +59,6 @@ h1 {
 }
 
 #main-section {
-  height: 100%;
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +72,8 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  color: #ffffff;
   background-image: url("../../Assets/background-home.jpg");
   background-size: cover;
   background-position: center;
