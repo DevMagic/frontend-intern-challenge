@@ -122,7 +122,8 @@ h1 {
 }
 
 #main-section form button {
-  padding: 10px 10px;
+  height: 37px;
+  width: 105px;
   background-color: #f06c00;
   color: #ffffff;
   font-size: 15px;
