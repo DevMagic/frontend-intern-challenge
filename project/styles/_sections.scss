@@ -24,7 +24,19 @@ section:not(:first-child) { padding: 40px 0; }
     }
 }
 
-#hits-section { color: $grey; }
+#hits-section { 
+    color: $grey; 
+    div {
+        @include centralizeFlexColumn();
+        h1 {
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius: 8px;
+            background-color: $white;
+            border: 1px solid rgb(206, 206, 206);
+        }    
+    } 
+}
 
 h1 {
     margin: 0;
@@ -72,6 +84,7 @@ h1 {
             width: 73%;
         }
         button {
+            margin-top: 5px;
             height: 37px;
             width: 105px;
             background-color: $orange;

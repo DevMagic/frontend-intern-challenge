@@ -1,3 +1,5 @@
+// Utilizado o json no arquivo javascript porque não tenho muito conhecimento de 
+// server-side javascript para criar um servidor local e efetuar um fetch do json.
 var data = [{
     "id": "23094",
     "hits": 1003,
@@ -63,9 +65,8 @@ const inputElement = document.querySelector('#main-section form input');
 const buttonElement = document.querySelector('#main-section form button');
 const textEncurtar = 'ENCURTAR';
 const textCopiar = 'COPIAR';
-
-
 const dataRow = document.querySelector('#top-five-section table');
+const headerTotalHits = document.querySelector('#hits-section div h1');
 
 // Renderiza os itens do JSON e ordena por quantidade de hits
 function renderTopFive() {
@@ -88,7 +89,18 @@ function renderTopFive() {
     }
 }
 
+
+// Renderiza o total de hits 
+function renderTotalHits() {
+    headerTotalHits.innerHTML = '';
+    let totalHits = 0;
+    data.forEach(item => totalHits += item.hits);
+    const headerNode = document.createTextNode(totalHits.toLocaleString('pt-br'));
+    headerTotalHits.appendChild(headerNode);
+}
+
 renderTopFive();
+renderTotalHits();
 
 // Verifica o texto do botão para levar à função correta
 function isToShortenOrCopy(e) {
@@ -96,6 +108,7 @@ function isToShortenOrCopy(e) {
     if (buttonElement.innerHTML == textEncurtar) shortenLink();
     else copyLink();
     renderTopFive();
+    renderTotalHits();
 }
 
 // Encurta o link informado e soma os hits (números de cliques
