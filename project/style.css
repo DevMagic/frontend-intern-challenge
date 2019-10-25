@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7f7f7;
+}
+
+div.banner {
+  background-image: url("../Assets/background-home.jpg");
+  width: 100%;
+  height: 600px;
+  font-family: Roboto Slab;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.banner .animated {
+  -webkit-animation: drop 2s ease;
+          animation: drop 2s ease;
+}
+
+div.banner h1 {
+  font-size: 36px;
+}
+
+div.banner p {
+  font-family: Roboto;
+  font-size: 16px;
+  margin: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+
+div.banner input {
+  background: none;
+  width: 330px;
+  font-family: Roboto;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 2px solid #ff6e14;
+  padding: 5px 0px;
+  margin: 0px 5px;
+}
+
+div.banner input::-webkit-input-placeholder {
+  color: #ff6e14;
+}
+
+div.banner input:-ms-input-placeholder {
+  color: #ff6e14;
+}
+
+div.banner input::-ms-input-placeholder {
+  color: #ff6e14;
+}
+
+div.banner input::placeholder {
+  color: #ff6e14;
+}
+
+div.banner input:focus {
+  outline: none;
+}
+
+div.banner button {
+  border: none;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  width: 105px;
+  color: #fff;
+  background: #ff6e14;
+  padding: 10px 0px;
+  margin-top: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+div.banner button:hover {
+  background: #ff9959;
+}
+
+div.banner button:focus {
+  outline: none;
+}
+
+div.top-5 {
+  background: #fff;
+  color: #aa1423;
+  height: 400px;
+  font-family: Roboto;
+  font-weight: regular;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.top-5 h2 {
+  font-family: Roboto Slab;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+div.top-5 div.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.top-5 ul.clicks li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.top-5 li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 100px;
+  color: #808080;
+  border-bottom: 1px solid #eeeeee;
+}
+
+div.top-5 a {
+  text-decoration: none;
+  color: #aa1423;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+div.top-5 li:last-child {
+  border: none;
+}
+
+div.hits {
+  background: #eeeeee;
+  height: 235px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto;
+}
+
+div.hits h2 {
+  font-family: Roboto Slab;
+  font-size: 32px;
+  color: #aa1423;
+  margin-bottom: 20px;
+}
+
+div.hits span.number {
+  font-family: Roboto Slab;
+  background: #fff;
+  color: #aa1423;
+  font-size: 32px;
+  margin-bottom: 10px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 1px 15px 1px 15px;
+}
+
+div.hits span.clicks {
+  font-size: 16px;
+  color: #959595;
+}
+
+div.footer {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: Roboto;
+}
+
+div.footer strong {
+  font-size: 20px;
+  color: #aa1423;
+}
+
+div.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.footer li {
+  margin: 10px;
+  list-style: none;
+}
+
+div.footer button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 110vh;
+  }
+  div.banner {
+    width: 110vh;
+  }
+  div.banner p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: 1;
+        flex-wrap: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  div.banner form {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.top-5 {
+    width: 110vh;
+  }
+  div.hits {
+    width: 110vh;
+  }
+  div.footer {
+    width: 110vh;
+  }
+}
+
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

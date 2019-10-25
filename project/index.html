@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>chr.dc</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <img src="../Assets/logo-chaordic.png" alt="" />
+    </header>
+    <div class="banner">
+      <h1 class="title animated">Encurte seus links.</h1>
+      <p class="description animated">
+        Links são longos. Encurte os links que você deseja compartilhar, e
+        acompanhe enquanto viajam através da internet
+      </p>
+      <form id="shortenURL" class="animated">
+        <input
+          id="inputLink"
+          type="search"
+          placeholder="Cole o seu link aqui"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Cole o seu link aqui'"
+        />
+        <button id="shorten">ENCURTAR</button>
+      </form>
+    </div>
+    <div class="top-5">
+      <h2>TOP 5</h2>
+      <div class="top">
+        <ul class="links">
+          <li><a id="link1" href="">http://chr.dc/xyzxyz</a></li>
+          <li><a id="link2" href="">http://chr.dc/abcabc</a></li>
+          <li><a id="link3" href="">http://chr.dc/derder</a></li>
+          <li><a id="link4" href="">http://chr.dc/fghfgh</a></li>
+          <li><a id="link5" href="">http://chr.dc/yuiyui</a></li>
+        </ul>
+        <ul class="clicks">
+          <li id="top1">7.919</li>
+          <li id="top2">6.899</li>
+          <li id="top3">2.111</li>
+          <li id="top4">617</li>
+          <li id="top5">43</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hits">
+      <h2>HITS</h2>
+      <span id="totalclicks" class="number">35.713.571</span>
+      <span class="clicks">Cliques em links</span>
+    </div>
+    <div class="footer">
+      <strong>chr.dc</strong>
+      <ul>
+        <li>
+          <button>
+            <img src="../Assets/icon-twitter.png" alt="twitter-logo" />
+          </button>
+        </li>
+        <li>
+          <button>
+            <img src="../Assets/icon-facebook.png" alt="facebook-logo" />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>
