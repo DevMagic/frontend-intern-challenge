@@ -1,0 +1,142 @@
+.main {
+  text-align: center;
+  background-image: url(../imgs/background-home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.main h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 200px;
+  color: #fff; }
+
+.main h3 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  padding-top: 30px;
+  margin-bottom: 20px; }
+
+.main form {
+  padding-top: 50px;
+  padding-bottom: 160px; }
+
+#btn_encurtar {
+  width: 130px;
+  height: 50px;
+  background-color: #ff6a14;
+  color: #fff;
+  font-weight: bold;
+  border: 0; }
+
+.link_laranja {
+  color: #ff6a14; }
+
+.link_branca {
+  color: #fff; }
+
+.invisivel {
+  visibility: hidden;
+  transition: 1s; }
+
+.visivel {
+  visibility: visible;
+  transition: 1s;
+  color: #fff; }
+
+.nova_linha_com_borda {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: 10%;
+  border-bottom: 2px solid #EEE; }
+
+.nova_linha_sem_borda {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: 10%;
+  padding-bottom: 150px; }
+
+#top_5_url {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #AA1423;
+  font-weight: bold; }
+
+#top_5_hits {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #777; }
+
+#txt_url {
+  border: 0px;
+  border-bottom: solid #ff6a14;
+  background-color: transparent;
+  width: 50%;
+  height: 50px;
+  outline: none; }
+
+#txt_url::placeholder {
+  color: #ff6a14; }
+
+.link_normal {
+  color: #ff6a14; }
+
+.top_hits {
+  display: flex;
+  min-height: 340px; }
+
+.top_hits h1 {
+  font-family: "Roboto Slab", serif;
+  padding-top: 50px;
+  text-align: center;
+  color: #AA1423;
+  padding-bottom: 50px; }
+
+.total_hits {
+  background-color: #EEE;
+  display: flex;
+  justify-content: center; }
+
+.total_hits h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: #AA1423;
+  padding-top: 70px;
+  padding-bottom: 25px; }
+
+#hits {
+  border: 2px solid lightgray;
+  border-radius: 2px;
+  padding: 10px 30px;
+  background: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: #AA1423; }
+
+.click_links {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #777;
+  text-align: center;
+  padding-bottom: 40px; }
+
+.icones {
+  padding-bottom: 10px;
+  padding-top: 40px; }
+
+.flex {
+  display: flex;
+  justify-content: space-between; }
+
+.redes_sociais {
+  width: 80px;
+  display: flex;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=style.css.map */

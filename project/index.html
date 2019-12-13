@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">    
+
+    <title>Encurte seus links</title>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <h1>Encurte seus links.</h1>
+            <h3>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</h3>
+
+            <form>
+                <input type="text" placeholder="Cole o seu link aqui" id="txt_url" class="link_normal">
+                <span class="invisivel" id="btn_remover">X</span>
+                <button type="button" id="btn_encurtar"><span>ENCURTAR</span></button>
+            </form>
+        </div>
+    </section>
+    <section class="top_hits">
+        <div class="container">
+            <h1>TOP 5</h1>
+            <div id="top_5_hits"></div>
+        </div>
+    </section>
+
+    <section class="total_hits">
+        <div class="container_hits">
+            <h1>HITS</h1>
+            <div class="container">
+                <p id="hits"></p>
+                <p class="click_links">Cliques em links</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="icones">
+        <div class="container flex">
+            <img src="imgs/logo-chaordic.png" alt="chaordic">
+            <div class="redes_sociais">
+                <img src="imgs/icon-twitter.png" alt="twitter">
+                <img src="imgs/icon-facebook.png" alt="facebook">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/encurta.js"></script>
+    <script src="js/hits.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@media (max-width: 400px) {
+    .main h1 {
+        padding-top: 100px;
+        font-size: 50px;
+    }
+
+    .main h3 {
+        font-size: 20px;
+    }
+
+    #top_5_url {        
+        font-size: 15px;       
+    }
+      
+    #top_5_hits {        
+        font-size: 15px;        
+    }
+
+    #btn_encurtar {
+        width: 100px;
+        height: 40px;
+    }
+
+    #txt_url {
+        height: 40px;
+    }
+
+    .main form {
+        padding-bottom: 110px;
+      }
+}
