@@ -1,0 +1,153 @@
+body{
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.teste1 {
+    background-image: url("../Assets/background-home.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 0px;
+    box-sizing: border-box;  
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+}
+
+.stringh{
+font-size: 100%;
+}
+
+.stringp{
+font-size: 80%;
+}
+
+.hits {
+    position: relative;
+    background-color: #EEE;
+    padding: 30px;
+    border: 0px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    display: block;
+    color: #AA1423;
+    font-size: 30px;
+}
+
+.texthits {
+    font-family: Roboto Slab;
+    color: #AA1423 ;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid grey;
+    font-size: 40px;
+    width: 150px;
+}
+
+.Stringhits{
+    display: block;
+    font-family: Roboto Slab;
+    color:#AA1423;
+}
+
+.Stringcliques {
+    font-family: Roboto;
+    color: #777;
+    font-size: 18px;
+}
+
+.buttom {
+    border-radius: 0px;
+    color: white;
+    background-color: orangered;
+    border: 0px;
+    padding: 10px;
+    width: 100px;
+    transition: 2s;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-bottom: 2px solid orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+    font-size: 20px;
+    transition: 2s;
+}
+
+.text1{
+    color: white;
+    transition: 1s;
+}
+
+
+.Stringtop5 {
+    font-family: Roboto Slab;
+    font-size: 20px;
+}
+
+.link{
+justify-content: space-between;
+font-family: Roboto;
+text-align: initial;
+}
+
+.click{
+color: #777
+}
+
+.top5 {
+    width: 100%;
+    box-sizing: border-box;  
+    position: relative;
+    display: block;
+    text-align: center;
+    background: #fff;
+    color: #aa1423;
+    font-family: Roboto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul{
+    display: grid;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+li {
+    list-style-type: none;
+    text-align: start;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+li:last-child {
+    border: none;
+  }
+
+.bottom {
+    color: #AA1423;
+    font-family: Roboto Slab;
+    font-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
