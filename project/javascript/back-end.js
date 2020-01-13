@@ -6,15 +6,7 @@ function randomlink() {
   shortlink = "http://chr.dc/" + Math.random().toString(36).substr(2, 5);
   link = document.getElementById("text").value;
   document.getElementById("text").value = shortlink
-
-  document.getElementById('text').fadeOut(function () {
-    link.removeClass("text");
-    link.addClass("text1");
-
-  });
-
   document.getElementById("botao").value = "COPIAR"
-
 }
 
 function copy() {
