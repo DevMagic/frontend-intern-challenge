@@ -1,0 +1,27 @@
+{
+  "name": "devmagic-frontend-teste",
+  "version": "1.0.0",
+  "description": "Landing page simulando um encurtador de links",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "browser-sync start -s -f \"./index.html\" \"css/*.css\" \"js/**\"",
+    "watch:sass": "node-sass-chokidar ./sass/main.scss ./css/style.css --watch --recursive --use-polling --polling-interval 1000",
+    "lint": "eslint ./js/",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Bruno Fernandes",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.8.0",
+    "node-sass": "^4.13.1",
+    "node-sass-chokidar": "^1.4.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Frontend Intern Challange</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__logo-box">
+			<img src="./imgs/devmagic-logo.png" alt="" class="header__logo">
+		</div>
+	</header>
+	<main>
+		<section class="shortener">
+			<div class="shortener__wrapper">
+				<h1 class="primary-heading shortener__title">Encurte seus links.</h1>
+				<p class="paragraph shortener__subtitle">Links são longos. Encurte os links que você deseja
+					compartilhar, e
+					acompanhe enquanto viajam através da internet.
+				</p>
+				<div action="#" class="shortener__box">
+					<div class="shortener__input-box">
+						<input type="text" name="input" id="input" class="shortener__input"
+							placeholder="Cole o seu link aqui">
+						<button class="shortener__btn--close" disabled>&times;</button>
+					</div>
+					<button class="shortener__btn">ENCURTAR</button>
+				</div>
+			</div>
+		</section>
+		<section class="top5" id="top5">
+			<h2 class="secondary-heading top5-title">TOP 5</h2>
+			<div class="top5__wrapper">
+			</div>
+		</section>
+		<section class="count-links">
+			<h2 class="secondary-heading count-links__title">HITS</h2>
+			<div class="count-links__hits-wrapper">
+				<span class="count-links__hits">35.713.571</span>
+			</div>
+			<p class="paragraph">Cliques em links</p>
+		</section>
+	</main>
+	<footer class="footer">
+		<span class="footer__logo">chr.dc</span>
+		<div class="footer__social-box">
+			<a href="#" class="footer__social-media">
+				<img src="./imgs/icon-twitter.png" alt="twitter" class="footer__social-media">
+			</a>
+			<a href="#" class="footer__social-media">
+				<img src="./imgs/icon-facebook.png" alt="facebook" class="footer__social-media">
+			</a>
+		</div>
+	</footer>
+	<script src="./js/json.js"></script>
+	<script src="./js/shortener.js"></script>
+</body>
+
+</html>

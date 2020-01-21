@@ -1,0 +1,34 @@
+.header {
+  padding: 1rem;
+  &__logo-box {
+    text-align: center;
+  }
+  &__logo {
+    width: 18.6rem;
+    display: inline-block;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 15rem;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(medium) {
+    padding: 2rem 10rem;
+  }
+  @include respond(small) {
+    padding: 2rem 5rem;
+  }
+  &__social-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social-media {
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+}

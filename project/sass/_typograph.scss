@@ -1,0 +1,80 @@
+// TYPOGRAPH
+body {
+  font-family: $font-main;
+  color: $color-text;
+}
+
+.primary-heading {
+  font-family: $font-headings;
+  font-size: 3.6rem;
+  color: $color-white;
+}
+
+.secondary-heading {
+  font-family: $font-headings;
+  font-weight: $font-regular;
+  font-size: 3.2rem;
+  color: $color-primary;
+}
+
+.paragraph {
+  font-weight: $font-regular;
+  font-size: 1.6rem;
+}
+
+.shortener {
+  color: $color-white;
+
+  &__input {
+    font-size: 1.3rem;
+    color: $color-orange;
+    font-weight: $font-bold;
+  }
+  &__input::placeholder {
+    color: $color-orange;
+    font-weight: $font-bold;
+  }
+  &__btn {
+    font-size: 1.6rem;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+  &__btn--close {
+    font-weight: $font-regular;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    color: $color-white;
+  }
+}
+
+.top5 {
+  font-family: $font-main;
+
+  &__link {
+    font-weight: $font-bold;
+    font-size: 1.6rem;
+    color: $color-primary;
+  }
+
+  &__hits {
+    font-size: 1.6rem;
+    color: $color-text;
+  }
+}
+
+.count-links {
+  &__hits {
+    font-family: $font-headings;
+    font-size: 3.2rem;
+    color: $color-primary;
+  }
+}
+
+.footer {
+  &__logo {
+    font-family: $font-main;
+    font-size: 2rem;
+    color: $color-primary;
+  }
+}

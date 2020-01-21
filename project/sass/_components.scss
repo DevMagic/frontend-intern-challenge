@@ -1,0 +1,118 @@
+.shortener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 48.3rem;
+  background-image: url("../imgs/background-home.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &__wrapper {
+    max-width: 52%;
+
+    @include respond(medium) {
+      max-width: 72%;
+    }
+    @include respond(small) {
+      max-width: 92%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__subtitle {
+    margin-bottom: 5rem;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+  }
+  &__input-box {
+    flex: 1;
+    margin-right: 0.5rem;
+    position: relative;
+    border-bottom: 2px solid $color-orange;
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    transition: border-bottom 0.5s;
+    outline: none;
+  }
+
+  &__btn--close {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    opacity: 0;
+    outline: none;
+  }
+
+  &__input-box:focus {
+    outline: none;
+    border-bottom: 2px solid lighten($color-orange, 30%);
+  }
+  &__btn {
+    width: 11.7rem;
+    height: 3.8rem;
+    background-color: $color-orange;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.top5 {
+  width: 100%;
+  text-align: center;
+  padding: 5rem;
+
+  a {
+    text-decoration: none;
+  }
+  &__item {
+    margin: 0 auto;
+    width: 36.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-background;
+    }
+  }
+}
+
+.count-links {
+  width: 100%;
+  text-align: center;
+  padding: 5rem;
+  background-color: $color-background;
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    100% 100%,
+    100% 0,
+    54% 0%,
+    50% 14%,
+    46% 0,
+    0 0
+  );
+
+  &__hits-wrapper {
+    margin: 2rem 0 1rem 0;
+    padding: 0.3rem 1rem;
+    background-color: $color-white;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}

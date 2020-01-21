@@ -1,0 +1,107 @@
+// VARIABLES
+$color-primary: #aa1423;
+$color-white: #fff;
+$color-orange: #ff6e14;
+$color-text: #777;
+$color-background: #eee;
+
+$font-main: "Roboto", sans-serif;
+$font-headings: "Roboto Slab", serif;
+
+$font-regular: 400;
+$font-bold: 700;
+
+// MIXINS
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallest {
+    @media (max-width: 20em) {
+      @content;
+    }
+  }
+  @if $breakpoint == small {
+    @media (max-width: 27.5em) {
+      @content;
+    } // 440px to em (440/16)
+  }
+  @if $breakpoint == medium {
+    @media (max-width: 41.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (min-width: 62.5em) {
+      @content;
+    }
+  }
+}
+
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// BASE
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  @include respond("large") {
+    font-size: 70%;
+  }
+
+  @include respond("medium") {
+    font-size: 60%;
+  }
+
+  @include respond("small") {
+    font-size: 45%;
+  }
+
+  @include respond("smallest") {
+    font-size: 40%;
+  }
+}
+
+// UTIL
+.u-color-white {
+  color: $color-white !important;
+}
+
+// ANIMATIONS
+@keyframes colorAnimation {
+  0% {
+    color: currentColor;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: currentColor;
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.colorAnimation {
+  animation: colorAnimation 0.4s;
+}
+
+.opacityAnimation {
+  animation: opacityAnimation 0.4s;
+}
