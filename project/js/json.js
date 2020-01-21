@@ -1,5 +1,5 @@
 let getJSONFile = async () => {
-  let urlJson = "https://raw.githubusercontent.com/fernandesleite/frontend-intern-challenge/bruno-fernandes/project/public/urls.json"
+  const urlJson = "https://raw.githubusercontent.com/fernandesleite/frontend-intern-challenge/bruno-fernandes/project/public/urls.json"
   try {
     let res = await fetch(urlJson);
     if (res.ok) {
