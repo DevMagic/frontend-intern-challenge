@@ -1,0 +1,528 @@
+/*tabela de cores
+#AA1423 - Vermelho
+#777 - Texto de apoio
+#EEE - Linha e background */
+
+/*Fonts
+Roboto e Roboto Slab*/
+
+*{
+margin: auto;
+}
+
+body{
+font-family: 'Roboto Slab', serif;
+font-family: 'Roboto', sans-serif;
+background-color: rgb(255, 255, 255);
+}
+
+
+/*inicio header*/
+header{
+    background-color: white;
+}
+.devmagic{
+    margin-left: 42%;
+}
+/*final header*/
+
+
+/* abre encurta */
+.section-primeiraparte img{
+    width: 100%;
+    height: 36rem;
+}
+.section-primeiraparte h1{
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    margin-top: -404px;
+    margin-left: 29rem;
+    font-size: 49px;
+    color: #fff;
+}
+.section-primeiraparte p{
+    font-family: 'Roboto', serif;
+    position: absolute;
+    margin-top: -343px;
+    margin-left: 24rem;
+    margin-right: 22rem;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.section-primeiraparte button{
+    color: white;
+    background-color: #FF6E15;
+    position: absolute;
+    width: 122px;
+    height: 41px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    margin-left: 476px;
+    margin-top: 215px;
+    position: absolute;
+}
+.link {
+    height: 295px;
+    left: 38%;
+    margin: -150px 0 0 -150px;
+    position: absolute;
+    top: 44%;
+    width: 300px;
+  }
+  ::placeholder{
+    color: #FF6E15;
+  }
+  .input{
+    background-color: transparent;
+    border: none;
+    color: #FF6E15;
+    outline: none;
+    font-family: 'Roboto', serif;
+    font-size: 17px;
+    height: 50px;
+    left: 50%;
+    margin: -25px 0 0 -100px;
+    padding: 10px 0px;
+    position: relative;
+    top: 88%;
+    width: 448px;
+  
+    &:focus {
+      outline: none;    
+    }
+  }
+  
+  .input:focus+.linha {
+    transform: scale(1);
+  }
+  
+  .linha {
+    background-color: #FF6E15;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -4px;
+    position: absolute;
+    top: 295px;
+    width: 416px;
+  }
+
+/*fecha encurta*/
+
+/*abre top*/
+.section-segundaparte{
+    background-color: #ffffff;
+    width: 100%;
+    height: 21rem;
+}
+.section-segundaparte h1{
+    font-family: 'Roboto Slab', serif;
+    color: #AA1423;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 48px;
+}
+.linka{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 29rem;
+    text-underline-position: unset;
+    color: #AA1423;
+    font-weight: 600;
+}
+.numero{
+    font-size: 21px;
+    margin-left: 51rem;
+    margin-top: -48px;
+    text-underline-position: unset;
+    color: #777;
+    font-weight: 600;
+ }
+#triangulo {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 53px 47.5px 0 47.5px;
+    border-color: #ffffff transparent transparent transparent;
+  }
+  .linha2 {
+    background-color: #EEE;
+    display: table-cell;
+    height: 1px;
+    left: 29rem;
+    position: relative;
+    bottom: 8px;
+    width: 392px;
+  }
+/*fecha top*/
+
+/*abre hits*/
+.section-terceiraparte{
+    margin: 0;
+    background-color: #EEE;
+    width: 100%;
+    height: 20rem;
+    }
+.section-terceiraparte h1{
+    font-family: 'Roboto Slab', serif;
+    color: #AA1423;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 44px;
+}
+.section-terceiraparte p{
+    font-family: 'Roboto', serif;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 37rem;
+    text-align: center;
+    font-size: 21px;
+    color: #777;
+}
+.section-terceiraparte input{
+    background-color: #fff;
+    font-family: 'Roboto Slab', serif;
+    color: #AA1423;
+    margin-left: 36rem;
+    border: none;
+    width: 12rem;
+    height: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+/*fecha hits*/
+
+/*abre footer*/
+footer{
+    background-color: white;
+}
+footer img{
+    align-content: space-between;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.chaordic{
+    margin-left: 13rem;
+    margin-top: 1px;
+}
+.redes{
+    margin-right: 155px;
+}
+.redes img{
+    margin-left: 16px;
+}
+/*fecha footer/html*/
+
+
+/*--responsivo mobile --*/
+@media (max-width: 320px) and (min-width: 210px){
+
+   /*abre header*/
+   .devmagic {
+    margin-left: 20%;
+}
+   /*fecha header*/
+
+    /*abre encurta*/
+   .section-primeiraparte img {
+    width: 100%;
+    height: 32rem;
+    }
+    .section-primeiraparte h1 {
+        margin-top: -23rem;
+        margin-left: 2rem;
+        margin-right: -8rem;
+        font-size: 30px;
+    }
+    .section-primeiraparte p {
+        font-family: 'Roboto', serif;
+        position: absolute;
+        margin-top: -325px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+    .link {
+        height: 295px;
+        left: 38%;
+        margin: -150px 0 0 -150px;
+        position: absolute;
+        top: 49%;
+        width: 302px;
+    }
+    .linha {
+        background-color: #FF6E15;
+        display: inline-block;
+        height: 2px;
+        left: 50px;
+        margin-top: -4px;
+        position: absolute;
+        top: 295px;
+        width: 190px;
+    }
+    .input {
+        background-color: transparent;
+        border: none;
+        color: #FF6E15;
+        outline: none;
+        font-family: 'Roboto', serif;
+        font-size: 17px;
+        height: 50px;
+        left: 50%;
+        margin: -25px 0 0 -100px;
+        padding: 10px 0px;
+        position: relative;
+        top: 88%;
+        width: 192px;
+    }
+    .section-primeiraparte button {
+        color: white;
+        background-color: #FF6E15;
+        position: absolute;
+        width: 91px;
+        height: 39px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        margin-left: 156px;
+        margin-top: 255px;
+        position: absolute;
+    }
+    /*fecha encurta*/
+
+    /*abre top*/
+    .linka {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-left: 2rem;
+        text-underline-position: unset;
+        color: #AA1423;
+        font-weight: 600;
+    }
+    .linha2 {
+        background-color: #EEE;
+        display: table-cell;
+        height: 1px;
+        left: 2rem;
+        position: relative;
+        bottom: 8px;
+        width: 270px;
+    }
+    .numero {
+        font-size: 21px;
+        margin-left: 16rem;
+        margin-top: -48px;
+        text-underline-position: unset;
+        color: #777;
+        font-weight: 600;
+    }
+    /*fecha top*/
+
+    /*abre hits*/
+    .section-terceiraparte h1 {
+        font-family: 'Roboto Slab', serif;
+        color: #AA1423;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 44px;
+    }
+    .section-terceiraparte input {
+        background-color: #fff;
+        font-family: 'Roboto Slab', serif;
+        color: #AA1423;
+        margin-left: 4rem;
+        border: none;
+        width: 12rem;
+        height: 3rem;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: -1rem;
+    }
+    .section-terceiraparte p {
+        font-family: 'Roboto', serif;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 5rem;
+        text-align: center;
+        font-size: 21px;
+        color: #777;
+    }
+    /*fecha hits*/
+
+    /*abre footer*/
+    .chaordic {
+        margin-left: 1rem;
+        margin-top: 1px;
+    }
+    .redes {
+        margin-right: 29px;
+    }
+    .redes img {
+        margin-left: 11px;
+    }
+    /*fecha footer*/
+}
+@media (max-width: 768px) and (min-width: 375px){
+/* abre header*/
+    .devmagic{
+        margin-left: 27%;
+        width: 12rem;
+    }
+/*fecha header*/
+
+/*abre encurta*/
+    .section-primeiraparte img{
+        width: 100%;
+        height: 26rem;
+    }
+
+    .section-primeiraparte h1{
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
+        margin-top: -20rem;
+        margin-left: 4rem;
+        margin-right: -8rem;
+        font-size: 31px;
+        color: #fff;
+    }
+
+    .section-primeiraparte p{
+        font-family: 'Roboto', serif;
+        position: absolute;
+        margin-top: -17rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+        font-size: 17px;
+        color: #fff;
+    }
+
+    .linha{
+        background-color: #FF6E15;
+        display: inline-block;
+        height: 2px;
+        left: 42px;
+        margin-top: -4px;
+        position: absolute;
+        top: 177px;
+        width: 227px;
+    }
+
+    .input{
+        background-color: transparent;
+        border: none;
+        color: #FF6E15;
+        outline: none;
+        font-family: 'Roboto', serif;
+        font-size: 17px;
+        height: 50px;
+        left: 48%;
+        margin: -25px 0 0 -100px;
+        padding: 10px 0px;
+        position: relative;
+        top: 49%;
+        width: 231px;
+      
+        &:focus {
+          outline: none;    
+        }
+      }
+      
+      .input:focus+.linha {
+        transform: scale(1);
+      }
+
+      .section-primeiraparte button{
+        color: white;
+        background-color: #FF6E15;
+        width: 95px;
+        height: 38px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        margin-left: 150px;
+        margin-top: 136px;
+        position: absolute;
+    }
+    /*fecha encurta*/
+
+    /*abre top*/
+    .linha2 {
+        background-color: #EEE;
+        display: table-cell;
+        height: 1px;
+        left: 2rem;
+        position: relative;
+        bottom: 8px;
+        width: 290px;
+    }
+
+    .linka {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 2rem;
+        text-underline-position: unset;
+        color: #AA1423;
+        font-weight: 600;
+    }
+
+    .numero {
+        font-size: 21px;
+        margin-left: 18rem;
+        margin-top: -48px;
+        text-underline-position: unset;
+        color: #777;
+        font-weight: 600;
+    }
+    /*fecha top*/
+
+    /*abre hits*/
+    .section-terceiraparte input {
+        background-color: #fff;
+        font-family: 'Roboto Slab', serif;
+        color: #AA1423;
+        margin-left: 6rem;
+        border: none;
+        width: 12rem;
+        height: 3rem;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .section-terceiraparte p {
+        font-family: 'Roboto', serif;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 7rem;
+        text-align: center;
+        font-size: 21px;
+        color: #777;
+    }
+    /*fecha hits*/
+    
+    /*abre footer*/
+    .chaordic {
+        margin-left: 3rem;
+        margin-top: 7px;
+    }
+
+    .redes {
+        margin-right: 64px;
+    }
+
+    .redes img {
+        margin-left: 4px;
+    }
+    /*fecha footer*/
+
