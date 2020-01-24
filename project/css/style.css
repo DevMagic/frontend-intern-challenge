@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+*{
+    padding:5px;
+    margin:0;
+   box-sizing: border-box;
+   list-style: none;
+}
+
+body{
+    height: 100%;
+    background-color:white;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin:0 auto;
+    height: 100%;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+.vermelho
+{
+    color: #aa1423;
+}
+
+.apoio
+{
+    color:#777 ;
+}
+ .linhaBack
+ {
+     color: #eee;
+ }
+
+.tituloSlab
+{
+    font-family:"Roboto Slab",Arial, Helvetica, sans-serif; 
+}
+
+.tituloSlabH2
+{
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#encurtador{
+    width: 100%;
+    height: 95vw;
+    background: url("../images/background-home.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+#encurtador .container
+{
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+    
+
+}
+#encurtador h1
+{
+   
+    margin-bottom: 10px;
+}
+#encurtador h4{
+    font-weight: lighter;
+}
+#encurtador form
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+#encurtador form input
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: orangered solid 3px;
+    margin-bottom: 10px;
+    padding: 5px; 
+}
+#encurtador form button{
+    width: 150px;
+    padding: 7px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#top5 .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px ;
+    font-size: large;
+}
+#top5 ol
+{
+    width: 100%;
+    margin-top: 30px;   
+}
+#top5 li
+{
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ #top5 li:nth-child(n+1):nth-child(-n+4)
+{
+   border-bottom:#EEE solid thin;
+   
+}
+.hits{
+    font-weight: lighter;
+    
+}
+.short-link
+{
+    font-weight: bolder;
+    
+}
+
+.seta
+{
+    background-color: white;
+    width: 60px ;
+    height: 60px;
+    position: absolute;
+    transform: translateX(-50%) translateY(57%) rotate(45deg);
+    left: 50%;
+    /*top: 161%;*/
+    
+   
+   
+
+}
+
+
+
+#totalHits .container
+{
+    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   padding: 50px;
+    font-size: 25px;
+    margin-top: 60px;
+   
+}
+#totalHits #contagem
+{
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border:#EEE solid thin;
+    border-radius: 5%;
+    min-width: 10%;
+    font-size:larger;
+    
+}
+#totalHits p 
+{
+    font-size: medium;
+}
+
+
+
+
+
+footer .container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+
+
+::-webkit-input-placeholder {
+    color: orangered;
+    font-weight: bold;
+    
+ }
+  
+ :-moz-placeholder { /* Firefox 18- */
+    color: orangered;  
+    font-weight: bold;
+    
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: orangered;  
+    font-weight: bold;
+    
+ }
+ :-ms-input-placeholder {  
+    color: orangered; 
+    font-weight: bold; 
+ }
+
+
+
+
+@media screen and (min-width:600px)
+{
+    #encurtador{
+        height: 40vw;
+        font-size: large;
+    
+    }
+    #encurtador form{
+        display: inline-block;
+        margin-top: 40px;
+    }
+    #encurtador h4
+    {
+        width: 500px;
+    }
+    #encurtador form input{
+        margin-bottom: 0;
+        margin-right: 5px;
+        width: 400px;
+       
+    }
+
+    #top5 ol
+    {
+        width:50%;
+    }
+
+    footer
+    {
+        padding: 10px 50px 10px 50px;
+    }
+}
+
+
