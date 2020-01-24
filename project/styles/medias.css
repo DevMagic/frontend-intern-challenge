@@ -1,0 +1,14 @@
+@media only screen and (max-width: 520px) {
+    
+    #div-form input {
+        width: 100%;
+    }
+
+    #div-form button {
+        top: 50px;
+    }
+
+    #div-form #resultado .fechar {
+        left: 95%;
+    }
+}

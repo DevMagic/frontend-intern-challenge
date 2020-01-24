@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encurta seus links</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medias.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/devmagic.png" alt="DEVMAGIC" />
+</header>
+
+<section id="background-home">
+    <div class="wrapper">
+        <div class="conteudo">
+            <h1>Encurte seus links.</h1>
+            <p>
+                Links são logos. Encurte os links que você deseja compartilhar, <br/> e acompanhe enquantoviajam através da internet.
+            </p>
+
+            <div id="div-form">
+                <input type="text" name="link" class="animado mostra" id="link" placeholder="Cole o seu link aqui" autocomplete="off" />
+
+                <div id="resultado" class="animado some">
+                    <input type="text" name="link" class="animado mostra" autocomplete="off" readonly />
+                    <div class="fechar">X</div>
+                </div>
+
+                <button id="btn-encurtar" class="animado mostra"> 
+                    Encurtar 
+                </button>
+
+                <button id="btn-copiar" class="animado some">
+                    Copiar
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="top-five">
+    <div class="wrapper">
+        <div class="conteudo">
+            <h2>Top 5</h2>
+
+            <table>
+            </table>
+        </div>
+    </div>
+
+    <div class="triangulo-para-baixo"></div>
+</section>
+
+<section id="hits">
+    <h2>HITS</h2>
+    <div id="contador">
+        <p>35.713.571</p>
+    </div>
+    <p>Cliques em links</p>
+</section>
+
+<footer>
+    <div class="wrapper">
+        <div class="conteudo">
+            <div>
+                <a href="http://chr.dc">
+                chr.dc
+                </a>
+            </div>
+
+            <div class="textodireita">
+                <a href="http://twitter.com">
+                    <img src="imagens/icon-twitter.png" alt="Twitter" />
+                </a>
+
+                <a href="http://facebook.com">
+                    <img src="imagens/icon-facebook.png" alt="Facebook" />
+                </a> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/libs/jquery-3.4.1.min.js"></script>
+<script src="scripts/libs/axios.min.js"></script>
+
+<script src="scripts/functions.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
