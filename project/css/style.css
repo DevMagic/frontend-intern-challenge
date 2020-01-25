@@ -21,11 +21,6 @@ body{
     height: 100%;
     
 }
-
-.clear{
-    clear: both;
-}
-
 .vermelho
 {
     color: #aa1423;
@@ -35,11 +30,7 @@ body{
 {
     color:#777 ;
 }
- .linhaBack
- {
-     color: #eee;
- }
-
+ 
 .tituloSlab
 {
     font-family:"Roboto Slab",Arial, Helvetica, sans-serif; 
@@ -54,8 +45,6 @@ header{
     display: flex;
     justify-content: center;
 }
-
-
 
 #encurtador{
     width: 100%;
@@ -98,7 +87,7 @@ header{
     border: none;
     border-bottom: orangered solid 3px;
     margin-bottom: 10px;
-    padding: 5px; 
+    padding: 5px;   
 }
 #encurtador form button{
     width: 150px;
@@ -108,8 +97,6 @@ header{
     color: white;
     font-weight: bold;
 }
-
-
 
 #top5 .container
 {
@@ -155,14 +142,7 @@ header{
     position: absolute;
     transform: translateX(-50%) translateY(57%) rotate(45deg);
     left: 50%;
-    /*top: 161%;*/
-    
-   
-   
-
 }
-
-
 
 #totalHits .container
 {
@@ -191,10 +171,6 @@ header{
     font-size: medium;
 }
 
-
-
-
-
 footer .container
 {
     display: flex;
@@ -202,9 +178,6 @@ footer .container
     align-items: flex-end;
     justify-content: space-between;
 }
-
-
-
 
 ::-webkit-input-placeholder {
     color: orangered;
