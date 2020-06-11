@@ -1,0 +1,91 @@
+$first-color: #ffffff;
+$second-color: #ff6e14;
+$third-color: #eeeeee;
+$fourth-color: #aa1423;
+$count-color: #8b8b8b;
+$sixth-color: #6e030d;
+
+.top-links {
+  padding-bottom: 3vw;
+  .content {
+    color: $first-color;
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2vw;
+  }
+  h1 {
+    font: 500 6vmin Roboto Slab, sans-serif;
+    padding: 2vw;
+    color: $fourth-color;
+  }
+}
+
+.topPositions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topPositionUrl {
+  float: left;
+  
+  text-align: left;
+  a { color: $fourth-color; } 
+  a:link {
+    text-decoration: none;
+    font: 700 1.9vmin Roboto, sans-serif;
+    
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+}
+
+.topPositionsCount {
+  float: right;
+  font: 500 1.9vmin Roboto, sans-serif;
+  padding-left: 1vw;
+  text-align: right;
+  color: $count-color;
+}
+
+mat-divider {
+  border-top-color: $third-color;
+  border-top-width: 1px;
+ 
+}
+
+.button{
+
+padding-top: 3vw;
+}
+
+.buttonAdd {
+	background-color:$fourth-color;
+	border-radius:28px;
+	border:1px solid $sixth-color;
+	cursor:pointer;
+	color:#ffffff;
+	font: 500 1.9vmin Roboto, sans-serif;
+	padding:1vw 2.2vw;
+	text-decoration:none;
+}
+
+.buttonAdd:hover {
+	background-color:$sixth-color;
+}
+
+.buttonAdd:active {
+	position:relative;
+	top:1px;
+}

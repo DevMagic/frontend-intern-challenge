@@ -1,0 +1,72 @@
+$first-color: #ffffff;
+$second-color: #ff6e14;
+$third-color: #eeeeee;
+$fourth-color: #aa1423;
+$fifth-color: #8b8b8b;
+$sixth-color: #6e030d;
+
+.hits {
+
+  margin: 0 auto;
+  background-color: $third-color;
+
+  .content {
+    color: $first-color;
+    width: 40vw;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+
+  h1 {
+    font: 500 6vmin Roboto Slab, sans-serif;
+    padding: 2vw;
+    color: $fourth-color;
+  }
+
+  h4 {
+    font: 500 2.6vmin Roboto, sans-serif;
+    padding: 2vw;
+    color: $fifth-color;
+  }
+}
+
+.hits:before {
+  border-top: 3vw solid $first-color;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  bottom: 0 auto;
+  content: "";
+  position: absolute;
+  left: calc(100vw - 53vw);
+  width: 0;
+  height: 0;
+}
+
+mat-card {
+  border-style: solid;
+  border-color: $fifth-color;
+  border-width: thin;
+  width: 30vw;
+  height: fit-content;
+  margin: 0 auto;
+  color: $fourth-color;
+}
+
+mat-card-title {
+  font: 500 6vmin Roboto Slab, sans-serif;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-card {
+    width: 30vw;
+    height: fit-content;
+  }
+
+  mat-card-title {
+    font: 500 4vmin Roboto Slab, sans-serif;
+    text-align: center;
+  }
+}

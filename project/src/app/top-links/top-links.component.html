@@ -1,0 +1,19 @@
+ <section class="top-links">
+   <div class="content">
+     <h1>Top {{counthits}}</h1>
+     <mat-selection-list #topPositions [multiple]="false">
+       <mat-list-option *ngFor="let urls of URLS">
+         <div class="topPositions">
+           <span class="topPositionUrl">
+             <a href="{{urls.url}}" (click)="hitUrl(urls.id)" class="shortUrl" target="_blank">{{urls.shortUrl}}</a>
+           </span>
+           <span class="topPositionsCount"> {{urls.hits}}</span>
+           <mat-divider></mat-divider>
+         </div>
+       </mat-list-option>
+       <div class="button" *ngIf="show">
+         <button class="buttonAdd" (click)="addURL()">+ Top URL</button>
+       </div>
+     </mat-selection-list>
+   </div>
+ </section>

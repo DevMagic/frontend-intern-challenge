@@ -1,0 +1,78 @@
+$first-color: #ffffff;
+$second-color: #ff6e14;
+$third-color: #eeeeee;
+
+.logo {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vw;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+
+  background-image: url('../../assets/imgs/background-home.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+
+  .content {
+
+    width: 80vh;
+
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    h1 {
+      font: 700 6vmin Roboto Slab, sans-serif;
+      padding-bottom: 2vw;
+      color: $first-color;
+      text-align: center;
+    }
+
+    h2 {
+      font: 500 2.5vmin Roboto, sans-serif;
+      padding-bottom: 3vw;
+      color: $first-color;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header {
+  height: 30vh;
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+    .content {
+      width: 45vh;
+      height: 30vh;
+      
+      h1 {
+        font: 500 6vmin Roboto Slab, sans-serif;
+        padding-bottom: 4vw;
+        color: $first-color;
+      text-align: center;
+      }
+  
+      h2 {
+        font: 500 2.9vmin Roboto, sans-serif;
+       
+        color: $first-color;
+      text-align: center;
+      }
+
+    }
+  }
+}

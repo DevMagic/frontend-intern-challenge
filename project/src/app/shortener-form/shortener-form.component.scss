@@ -1,0 +1,74 @@
+$first-color: #ffffff;
+$second-color: #ff6e14;
+$third-color: #eeeeee;
+$fourth-color: #aa1423;
+$count-color: #8b8b8b;
+$sixth-color: #6e030d;
+
+.shortener-form {
+  flex-direction: row;
+  width: 60vw;
+  text-align: center;
+
+  .form-input-newShortener {
+    width: 40vw;
+    font: 700 3vmin Roboto Slab, sans-serif;
+    background: transparent;
+    border-width: 0 0 2px;
+    border-color: $second-color;
+    color: $second-color;
+    text-align: left;
+    outline: 0;
+    padding-bottom: 8px;
+    margin-right: 2vw;
+  }
+
+  .button-newShortener {
+    width: 12vw;
+    font: 700 2.2vmin Roboto Slab, sans-serif;
+    background-color: $second-color;
+    border: none;
+    color: $first-color;
+    padding: 10px;
+
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+@include placeholder {
+  font-style: bold;
+  color: $second-color;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .shortener-form {
+
+    .form-input-newShortener {
+      width: 40vw;
+      font: 700 3vmin Roboto Slab, sans-serif;
+    }
+
+    .button-newShortener {
+      width: 15vw;
+      font: 700 2.5vmin Roboto Slab, sans-serif;
+    }
+  }
+}

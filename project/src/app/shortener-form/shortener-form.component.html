@@ -1,0 +1,6 @@
+<div class="shortener-form">
+    <form #urlform="ngForm"   (ngSubmit)="newShortener(urlform)" class="form form-register">
+        <input name="url" id="register-newShortener" type="text" class="form-input-newShortener" placeholder="Cole o seu link aqui" ngModel required>
+        <input type="submit" value="Encurtar" class="button-newShortener">
+    </form>
+</div>

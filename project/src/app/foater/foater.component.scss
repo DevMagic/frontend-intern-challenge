@@ -1,0 +1,50 @@
+$first-color: #ffffff;
+$second-color: #ff6e14;
+$third-color: #eeeeee;
+$fourth-color: #aa1423;
+$fifth-color: #8b8b8b;
+
+.foater {
+
+  height: 6vh;
+  margin: 0 auto;
+  background-color: $first-color;
+
+  .content {
+    width: 100vw;
+    color: $fourth-color;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+    width: calc(100% - 1vw);
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+
+    .institutional {
+      font: 500 2.5vmin Roboto, sans-serif;
+      text-align: right;
+      margin: 1vw auto;
+      float: left;
+      color: $fourth-color;
+    }
+
+    .social-network {
+      margin: 1vw auto;
+      float: right;
+
+      display: flex;
+      justify-content: space-between;
+
+      .network {
+        padding-left: 2vw;
+
+        img {
+          max-width: 100vw;
+          height: auto;
+        }
+      }
+    }
+  }
+}
