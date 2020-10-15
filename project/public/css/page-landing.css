@@ -1,0 +1,175 @@
+#page-landing {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  
+  display: flex;
+  background: white;
+}
+
+header img.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.background-img {
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.background-img .short-link {
+  width: 30rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.short-link h1 {
+  font: 500 1.6/1.1 "Roboto", sans-serif;
+  line-height: 3.5rem;
+}
+
+.short-link p {
+  font: 400 1.6/1.1 "Roboto", sans-serif;
+}
+
+.short-link input,
+.short-link button {
+  margin-top: 50px;
+}
+
+.short-link input {
+  background: none;
+  color: #ff8f35;
+
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #ff8f35;
+}
+
+.short-link button {
+  color: white;
+  font-weight: bold;
+
+  font-size: 15px;
+  border: none;
+  background: #ff8f35;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.short-link button:hover {
+    background: #ed6802;
+}
+
+/*TABLE*/
+
+.content-table {
+  background: white;
+  display: relative;
+
+  padding: 2.5rem;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #e0e0e0;
+}
+
+.content-table h2 {
+  font: 500 1.6/1.1 "Roboto", sans-serif;
+  color: #aa1423;
+  text-align: center;
+  font: 500;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table th,
+table td {
+  padding: 8px 0;
+}
+
+.table tr.row {
+  border-bottom: 1px solid #000;
+}
+
+.table tbody td:nth-child(1) {
+  width: 40%;
+  font-weight: bold;
+  color: #aa1423;
+  
+}
+
+.table tbody td:nth-child(2) {
+  width: 40%;
+  color: #777;
+  font-size: 12px;
+}
+
+.table tbody {
+  text-align: center;
+}
+
+/* TRIANGLE*/
+
+.triangle {
+  width: 100%;
+  height: 8vh;
+  background: rgb(238, 238, 238);
+  position: relative;
+}
+
+.triangle::before {
+  content: "";
+  width: 0;
+  height: 0;
+
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #fff;
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+/*HITS*/
+
+.count-links {
+  width: 100%;
+  padding: 40px;
+}
+
+.count-links h2 {
+  color: #aa1423;
+  text-align: center;
+}
+
+.count-links .box {
+  text-align: center;
+}
+
+.box {
+  background: white;
+}
+
+/*FOOTER*/
+
+footer .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /*fica a abaixo*/
+  justify-content: space-between; /*espaçamento entre as caixas*/
+  align-items: center;
+}

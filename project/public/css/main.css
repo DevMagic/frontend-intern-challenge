@@ -1,0 +1,53 @@
+* { /*retirar espaçamentos do browser*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    /*resposive short-link*/
+    .short-link input {
+        width: 250px;
+        padding-bottom: .6em;
+    }
+    .short-link button {
+        padding: .7em;
+    }
+    /*responsive table*/
+    .table tbody td:nth-child(1) {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width: 481px) {
+    /*resposive short-link*/
+    .short-link input {
+        width: 300px;
+        padding-bottom: .8em;
+    }
+    
+    .short-link button {
+        padding: .8em;
+    }
+
+        /*responsive table*/
+    .table tbody td:nth-child(1) {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .table {
+        width: 80%
+    }
+}
+
+
+body {
+    background: #EEE;
+    height: 100vh;  
+}
+
