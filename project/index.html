@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./public/css/page-landing.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <div id="page-landing">
       <div id="container">
@@ -21,21 +24,22 @@
         </header>
       </div>
       <main>
-          <div class="background-img">  
-
-            <div class="short-link">
-              <h1>Encurte seus links.</h1>
-              <p>
-                Links são longos. Encurte seus links que você deseja
-                compartilhar enquanto viajam através da internet
-              </p>
-              <input
-                type="text"
-                name="link"
-                id="link"
-                placeholder="Cole o seu link aqui"
-              />
-              <button type="submit">ENCURTAR</button>
+        <div class="background-img">
+          <div class="short-link">
+            <h1>Encurte seus links.</h1>
+            <p>
+              Links são longos. Encurte seus links que você deseja compartilhar
+              enquanto viajam através da internet.
+            </p>
+            <input
+              type="text"
+              name="link"
+              id="link"
+              placeholder="Cole o seu link aqui"
+            />
+            <!-- JS para trocar nome do button e ação de copiar
+              <button type="copy">COPIAR</button> -->
+            <button type="short">ENCURTAR</button>
           </div>
         </div>
         <aside>
@@ -66,18 +70,23 @@
 
           <div class="count-links">
             <h2>HITS</h2>
-            <span class="box">Count clicks</span>
+            <div class="box-count">
+              <p>35.713.571</p>
+            </div>
             <p>Cliques em links</p>
           </div>
           <footer class="footer">
-            <span>chr.dc</span>
-            <div id="image-footer">
-              <img src="public/img/twitter.png" alt="Icone Twitter" />
-              <img src="public/img/facebook.png" alt="Icone Facebook" />
+            <div class="footer-logo">
+            <img src="../Assets/logo-chaordic.png" alt="" />
+            </div>
+            <div class="image-footer">
+              <img src="../Assets/icon-twitter.png" alt="Icone Twitter" />
+              <img src="../Assets/icon-facebook.png" alt="Icone Facebook" />
             </div>
           </footer>
         </aside>
       </main>
     </div>
+    <script src="page-lading.js"></script>
   </body>
 </html>

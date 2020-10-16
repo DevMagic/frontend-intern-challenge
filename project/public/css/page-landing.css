@@ -5,7 +5,6 @@
 
 header {
   width: 100%;
-  
   display: flex;
   background: white;
 }
@@ -15,12 +14,11 @@ header img.logo {
   margin-right: auto;
 }
 
-
 .background-img {
   height: 28rem;
   display: flex;
   align-items: center;
-  
+  background-image: url("../../../Assets/background-home.jpg");
 }
 
 .background-img .short-link {
@@ -31,12 +29,13 @@ header img.logo {
 }
 
 .short-link h1 {
-  font: 500 1.6/1.1 "Roboto", sans-serif;
-  line-height: 3.5rem;
+
+  color: white;
 }
 
 .short-link p {
-  font: 400 1.6/1.1 "Roboto", sans-serif;
+  font-family: sans-serif;
+  color: white;
 }
 
 .short-link input,
@@ -65,7 +64,7 @@ header img.logo {
 }
 
 .short-link button:hover {
-    background: #ed6802;
+  background: #ed6802;
 }
 
 /*TABLE*/
@@ -81,10 +80,11 @@ header img.logo {
 }
 
 .content-table h2 {
-  font: 500 1.6/1.1 "Roboto", sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
   color: #aa1423;
   text-align: center;
-  font: 500;
+  margin-bottom: 15px;
 }
 
 .table {
@@ -107,12 +107,13 @@ table td {
   width: 40%;
   font-weight: bold;
   color: #aa1423;
-  
 }
 
 .table tbody td:nth-child(2) {
   width: 40%;
-  color: #777;
+  font-family: 'Roboto', serif;
+  font-size: 12;
+  color: rgb(85, 85, 85);
   font-size: 12px;
 }
 
@@ -147,29 +148,78 @@ table td {
 /*HITS*/
 
 .count-links {
-  width: 100%;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
 }
 
 .count-links h2 {
+  padding: 10px 0 10px 0;
   color: #aa1423;
-  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
 }
 
-.count-links .box {
-  text-align: center;
-}
-
-.box {
+.count-links .box-count {
+  border: 1px solid rgb(184, 182, 182);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.1rem 0.3rem;
   background: white;
+  margin-bottom: 0.6rem;
+ 
 }
+
+.count-links p:last-child {
+  color:#777;
+  font-size:11px;
+}
+
+.count-links p:first-child {
+  color: #aa1423;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6em;
+}
+
+
+
 
 /*FOOTER*/
 
-footer .footer {
-  width: 100%;
+footer {
+  background: white;
   display: flex;
-  flex-direction: column; /*fica a abaixo*/
-  justify-content: space-between; /*espaçamento entre as caixas*/
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right:  25%;
+
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+
+footer .footer-logo  {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 0.8px 0 0.8px;
+  margin: 0 0.8em 0 0.8em;
+}
+
+footer .image-footer{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+footer .image-footer img:nth-child(1) {
+  margin: 1px;
+  cursor: pointer;
+}
+
+footer .image-footer img:nth-child(2) {
+  margin: 1px;
+  cursor: pointer;
 }

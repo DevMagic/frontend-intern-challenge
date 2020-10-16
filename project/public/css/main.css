@@ -10,12 +10,17 @@
         width: 250px;
         padding-bottom: .6em;
     }
+
     .short-link button {
         padding: .7em;
     }
     /*responsive table*/
     .table tbody td:nth-child(1) {
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    footer {
+        padding-left: 10%;
     }
     
 }
@@ -34,6 +39,10 @@
         /*responsive table*/
     .table tbody td:nth-child(1) {
         font-size: 16px;
+    }
+
+    footer {
+        padding-left: 15%;
     }
 
 }
