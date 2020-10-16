@@ -1,3 +1,7 @@
+@red: #aa1423;
+@text: #777;
+@colorBack: #EEE;
+
 #page-landing {
   width: 100%;
   min-height: 100vh;
@@ -15,10 +19,14 @@ header img.logo {
 }
 
 .background-img {
-  height: 28rem;
+  height: 495px;
   display: flex;
   align-items: center;
-  background-image: url("../../../Assets/background-home.jpg");
+  opacity: 2;
+  background-image: url(../../../Assets/background-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .background-img .short-link {
@@ -29,13 +37,15 @@ header img.logo {
 }
 
 .short-link h1 {
-
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
   color: white;
 }
 
 .short-link p {
-  font-family: sans-serif;
-  color: white;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 16px;
+  color: white
 }
 
 .short-link input,
@@ -45,11 +55,10 @@ header img.logo {
 
 .short-link input {
   background: none;
-  color: #ff8f35;
+  color: #FF6E14;
 
   border: none;
-  border-bottom: 2px solid;
-  border-color: #ff8f35;
+  border-bottom: 3px solid #FF6E14;
 }
 
 .short-link button {
@@ -58,13 +67,13 @@ header img.logo {
 
   font-size: 15px;
   border: none;
-  background: #ff8f35;
+  background: #FF6E14;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .short-link button:hover {
-  background: #ed6802;
+  background: #f38836;
 }
 
 /*TABLE*/
@@ -81,17 +90,16 @@ header img.logo {
 
 .content-table h2 {
   font-family: 'Roboto Slab', serif;
-  font-weight: 500;
+  font-weight: 6;
+  font-size: 32px;
   color: #aa1423;
   text-align: center;
   margin-bottom: 15px;
 }
 
 .table {
-  width: 100%;
+  margin: auto;
   text-align: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .table th,
@@ -152,35 +160,44 @@ table td {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.8rem;
+  padding-bottom: 47px;
 }
 
 .count-links h2 {
   padding: 10px 0 10px 0;
   color: #aa1423;
   font-family: 'Roboto Slab', serif;
-  font-weight: 500;
+  font-weight: 6;
+  font-size: 32px;
+
 }
 
 .count-links .box-count {
+  width: 173px;
+  height: 49px;
+
   border: 1px solid rgb(184, 182, 182);
   box-sizing: border-box;
   border-radius: 5px;
+
   padding: 0.1rem 0.3rem;
   background: white;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
  
 }
 
 .count-links p:last-child {
   color:#777;
-  font-size:11px;
+  font-size: 16px;
+  font-family: 'Roboto', serif;
 }
 
 .count-links p:first-child {
+  text-align: center;
   color: #aa1423;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.6em;
+  font-size: 32px;
+  
 }
 
 
@@ -189,6 +206,7 @@ table td {
 /*FOOTER*/
 
 footer {
+  height: 62px;
   background: white;
   display: flex;
   flex-direction: row;
@@ -215,11 +233,11 @@ footer .image-footer{
 }
 
 footer .image-footer img:nth-child(1) {
-  margin: 1px;
+  margin: 4px;
   cursor: pointer;
 }
 
 footer .image-footer img:nth-child(2) {
-  margin: 1px;
+  margin: 4px;
   cursor: pointer;
 }

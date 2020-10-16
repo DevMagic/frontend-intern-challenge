@@ -29,7 +29,7 @@
     /*resposive short-link*/
     .short-link input {
         width: 300px;
-        padding-bottom: .8em;
+        padding-bottom: 9px;
     }
     
     .short-link button {
@@ -49,9 +49,7 @@
 
 @media only screen and (min-width:1200px) {
 
-    .table {
-        width: 80%
-    }
+
 }
 
 
