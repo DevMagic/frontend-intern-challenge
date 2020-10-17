@@ -1,0 +1,181 @@
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.header {
+    background-image: url(../../Assets/logo-dev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 5vh;
+}
+
+.container-main {
+    background-image: url(../../Assets/background-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;  
+}
+
+.container-main h1 {
+    color: white;
+
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: calc(30px + (75 - 30) * ((100vw - 380px) / (1920 - 380))); /* https://css-tricks.com/snippets/css/fluid-typography/ */
+
+    padding-top: 20%;
+}
+
+.container-main h4 {
+    color: white;
+
+    font-family: "Roboto";
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380))); /* https://css-tricks.com/snippets/css/fluid-typography/ */
+
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.box-encurtar {
+    padding-bottom: 20%;
+}
+
+.container-main #btn-encurtar {
+    color: white; 
+    background-color: #ff6e14;
+
+    font-size: 20px;
+    font-weight: bold;
+    
+    width: 150px;
+    height: 55px;
+    border: none;
+
+    margin-left: 1%;
+  }
+
+.container-main #input-link {
+    color:  #ff6e14;
+    
+    font-size: 20px;
+    
+    width: 50%;
+    text-decoration: none;
+    outline: none;
+    border: 0px solid;
+    
+    padding-bottom: 10px;
+    margin-top: 80px;
+    background-color: transparent; 
+    border-bottom: 2px #ff6e14 solid;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: 1s; 
+  }
+  
+  .visible {
+    opacity: 1;
+    transition: 1s;
+    color: #fff; 
+  }
+
+  .container-main #input-link::placeholder {
+      color: #ff6e14;
+      
+  }
+ 
+  .container-main #btn-limpar {
+    font-size: 12px; 
+  }
+
+  .red-title {
+    color: #AA1423;
+
+    font-family: "Roboto Slab";
+    font-size: calc(30px + (70 - 30) * ((100vw - 380px) / (1920 - 380))); /* https://css-tricks.com/snippets/css/fluid-typography/ */
+
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-top: 5%;
+    margin-bottom: 45px;
+  }
+
+  .top5 .line-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 10%;
+    border-bottom: 2px solid #EEE;
+  }
+
+  .top5 .line-2 {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 75%;
+    margin-left: 10%;
+    padding-bottom: 150px; 
+  }
+
+  .top5 .top-urls {
+    color: #AA1423;
+
+    font-family: "Roboto Slab";
+    font-size: calc(10px + (25 - 10) * ((100vw - 380px) / (1920 - 380))); /* https://css-tricks.com/snippets/css/fluid-typography/ */
+    font-weight: bold;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .top5 .top-hits {
+    color: #777; 
+
+    font-family: "Roboto Slab";
+    font-size: calc(10px + (25 - 10) * ((100vw - 380px) / (1920 - 380))); /* https://css-tricks.com/snippets/css/fluid-typography/ */
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .container-hits {
+      text-align: center;
+
+      background-color: #EEE;
+  }
+
+  .container-hits .num-hits {
+    color: #AA1423;
+    background-color: white;
+
+    font-family: "Roboto Slab";
+    font-size: 70px;
+
+    border: 3px solid #d2d2d2;
+    border-radius: 10px;
+
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  .container-hits :last-child {
+    color: #777;
+
+    font-size: calc(10px + (30 - 10) * ((100vw - 380px) / (1920 - 380))); /* https://css-tricks.com/snippets/css/fluid-typography/ */
+
+    padding-bottom: 5%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
