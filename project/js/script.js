@@ -75,6 +75,8 @@ function change_link() {
     url = "http://chr.dc/" + random_link(5);
 
     link.fadeOut(function() {
+      link.removeClass("link-laranja");
+      link.addClass("link-branco");
       link.val(url).fadeIn();
     });
   
@@ -95,6 +97,8 @@ function change_link() {
 
 function limpar() {
   link.fadeOut(function() {
+    link.addClass("link-laranja");
+      link.removeClass("link-branco");
     link.val('').fadeIn();
   });
 

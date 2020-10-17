@@ -57,6 +57,16 @@ body {
     margin-left: 1%;
   }
 
+  .link-laranja {
+    color: #ff6e14;
+    font-weight: normal;
+  }
+
+  .link-branco {
+    color: white !important; 
+    font-weight: bold;
+  }
+
 .container-main #input-link {
     color:  #ff6e14;
     
