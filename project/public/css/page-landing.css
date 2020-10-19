@@ -68,7 +68,7 @@ header img.logo {
   bottom: 13px;
 }
 
-.short-link button {
+.short-link .btn-shorten {
   color: white;
   font-weight: bold;
   width: 107px;
@@ -80,8 +80,21 @@ header img.logo {
   transition: background-color 0.2s;
 }
 
-.short-link button:hover {
+.short-link .btn-shorten:hover {
   background: #f38836;
+}
+
+.btn-copy {
+  color: "white";
+  font-weight: bold;
+  display: inline;
+}
+
+.img-display {
+  display: inline;
+  position: absolute;
+  right: 9px;
+  bottom: 13px;
 }
 
 /*TABLE*/
@@ -134,7 +147,7 @@ table td {
   text-align: center;
 }
 
-/* TRIANGLE*/
+/*TRIANGLE*/
 .triangle {
   width: 100%;
   height: 8vh;
