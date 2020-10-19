@@ -4,16 +4,24 @@
     box-sizing: border-box;
 }
 
+
 @media screen and (max-width: 480px) {
     /*resposive short-link*/
     .short-link input {
-        width: 250px;
-        padding-bottom: .6em;
+        width: 220px;
+        padding-bottom: .5em;
     }
 
     .short-link button {
         padding: .7em;
     }
+
+    /*input link*/
+    .new-link img{
+        bottom: 16px;
+        right: 160px; 
+    }
+
     /*responsive table*/
     .table tbody td:nth-child(1) {
         font-size: 11px;
@@ -29,14 +37,20 @@
     /*resposive short-link*/
     .short-link input {
         width: 300px;
-        padding-bottom: 9px;
+        height: 28px;
     }
     
     .short-link button {
         padding: .8em;
     }
 
-        /*responsive table*/
+    /*input link*/
+    .new-link img{
+        bottom: 14px;
+        right: 145px; 
+    }
+
+    /*responsive table*/
     .table tbody td:nth-child(1) {
         font-size: 16px;
     }
@@ -46,12 +60,6 @@
     }
 
 }
-
-@media only screen and (min-width:1200px) {
-
-
-}
-
 
 body {
     background: #EEE;

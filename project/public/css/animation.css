@@ -1,0 +1,15 @@
+@keyframes right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.animate-right {
+  animation-name: right; /*tipo animacao*/
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}

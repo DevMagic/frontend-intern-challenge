@@ -1,3 +1,5 @@
+$red: #aa1423;
+
 #page-landing {
   width: 100%;
   min-height: 100vh;
@@ -45,7 +47,7 @@ header img.logo {
 }
 
 .new-link {
-  display: flex;
+  display:flex;
   justify-content: center;
 }
 
@@ -57,12 +59,13 @@ header img.logo {
   border-bottom: 3px solid #ff6e14;
 }
 
+
 .input-img {
   position: relative;
 }
 
 .input-img img {
-  display: none;
+  display : none;
   position: absolute;
   right: 9px;
   bottom: 13px;
@@ -73,6 +76,7 @@ header img.logo {
   font-weight: bold;
   width: 107px;
   height: 39px;
+
   margin-left: 10px;
   border: none;
   background: #ff6e14;
@@ -85,6 +89,7 @@ header img.logo {
 }
 
 /*TABLE*/
+
 .content-table {
   background: white;
   padding: 2.5rem;
@@ -97,7 +102,7 @@ header img.logo {
   font-family: "Roboto Slab", serif;
   font-weight: 6;
   font-size: 32px;
-  color: #aa1423;
+  color: $red;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -119,14 +124,14 @@ table td {
 .table tbody td:nth-child(1) {
   width: 40%;
   font-weight: bold;
-  color: #aa1423;
+  color: $red;
 }
 
 .table tbody td:nth-child(2) {
   width: 40%;
   font-family: "Roboto", serif;
   font-size: 12;
-  color: #555555;
+  color: rgb(85, 85, 85);
   font-size: 12px;
 }
 
@@ -135,10 +140,11 @@ table td {
 }
 
 /* TRIANGLE*/
+
 .triangle {
   width: 100%;
   height: 8vh;
-  background: #eeeeee;
+  background: rgb(238, 238, 238);
   position: relative;
 }
 
@@ -146,15 +152,19 @@ table td {
   content: "";
   width: 0;
   height: 0;
+
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-top: 40px solid #fff;
   position: absolute;
+
   left: 50%;
+
   transform: translateX(-50%);
 }
 
 /*HITS*/
+
 .count-links {
   display: flex;
   flex-direction: column;
@@ -165,7 +175,7 @@ table td {
 
 .count-links h2 {
   padding: 10px 0 10px 0;
-  color: #aa1423;
+  color: $red;
   font-family: "Roboto Slab", serif;
   font-weight: 6;
   font-size: 32px;
@@ -174,9 +184,11 @@ table td {
 .count-links .box-count {
   width: 173px;
   height: 49px;
-  border: 1px solid #b8b6b6;
+
+  border: 1px solid rgb(184, 182, 182);
   box-sizing: border-box;
   border-radius: 5px;
+
   padding: 0.1rem 0.3rem;
   background: white;
   margin-bottom: 0.5rem;
@@ -190,12 +202,13 @@ table td {
 
 .count-links p:first-child {
   text-align: center;
-  color: #aa1423;
+  color: $red;
   font-family: "Roboto Slab", serif;
   font-size: 32px;
 }
 
 /*FOOTER*/
+
 footer {
   height: 62px;
   background: white;
@@ -203,6 +216,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding-right: 25%;
+
   padding-top: 0.8em;
   padding-bottom: 0.8em;
 }
@@ -230,5 +244,3 @@ footer .image-footer img:nth-child(2) {
   margin: 4px;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=page-landing.css.map */

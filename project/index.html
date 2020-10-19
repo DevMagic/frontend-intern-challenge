@@ -31,15 +31,22 @@
               Links são longos. Encurte seus links que você deseja compartilhar
               enquanto viajam através da internet.
             </p>
-            <input
-              type="text"
-              name="link"
-              id="link"
-              placeholder="Cole o seu link aqui"
-            />
-            <!-- JS para trocar nome do button e ação de copiar
-              <button type="copy">COPIAR</button> -->
-            <button type="short">ENCURTAR</button>
+            <div class="new-link">
+              <div class="input-img"> 
+              <input
+                id="input-link"
+                class="animate-right"
+                type="text"
+                name="link"
+                id="link"
+                placeholder="Cole o seu link aqui"
+              />
+                <span>
+                  <img id="img-remove" src="./public/img/remove-link.svg" alt="Remover link">
+                </span>
+              </div>
+                  <button type="button" class="animate-right" id="btn" value="0">ENCURTAR</button>
+            </div>
           </div>
         </div>
         <aside>
@@ -97,6 +104,6 @@
         </aside>
       </main>
     </div>
-    <script src="page-lading.js"></script>
+    <script src="./public/script/page-landing.js"></script>
   </body>
 </html>
