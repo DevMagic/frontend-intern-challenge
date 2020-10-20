@@ -6,7 +6,7 @@
 header {
   width: 100%;
   display: flex;
-  background: white;
+  background: #FFF;
 }
 
 header img.logo {
@@ -34,13 +34,13 @@ header img.logo {
 .short-link h1 {
   font-family: "Roboto Slab", serif;
   font-size: 36px;
-  color: white;
+  color: #FFF;
 }
 
 .short-link p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: white;
+  color: #FFF;
   margin-bottom: 50px;
 }
 
@@ -50,20 +50,20 @@ header img.logo {
 }
 
 .short-link input {
-  color: #ff6e14;
+  color: #FF6E14;
   background: none;
   margin-top: 11px;
   border: none;
-  border-bottom: 3px solid #ff6e14;
+  border-bottom: 3px solid #FF6E14;
 }
 
 .short-link .alter-weight {
-  color: white !important;
+  color: #FFF !important;
   font-weight: bold !important;
 }
 
 .short-link input::placeholder {
-  color: #ff6e14;
+  color: #FF6E14;
   opacity: 1;
 }
 
@@ -87,13 +87,13 @@ header img.logo {
 }
 
 .short-link .btn-shorten {
-  color: white;
+  color: #FFF;
   font-weight: bold;
   width: 107px;
   height: 39px;
   margin-left: 10px;
   border: none;
-  background: #ff6e14;
+  background: #FF6E14;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -103,7 +103,7 @@ header img.logo {
 }
 
 .short-link .btn-shorten:hover {
-  background: #f38836;
+  background: #F38836;
 }
 
 .btn-copy {
@@ -114,11 +114,11 @@ header img.logo {
 
 /*TABLE*/
 .content-table {
-  background: white;
+  background: #FFF;
   padding: 2.5rem;
   width: 100%;
   height: 100%;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #EEE;
 }
 
 .content-table h2 {
@@ -132,7 +132,7 @@ header img.logo {
 
 .table {
   margin: auto;
-  text-align: center;
+  border-spacing: 0;
 }
 
 .table th,
@@ -140,14 +140,15 @@ table td {
   padding: 8px 0;
 }
 
-.table tr.row {
-  border-bottom: 1px solid #000;
+tr.row td {
+  border-bottom: 1px solid #EEE;
 }
 
 .table tbody td:nth-child(1) {
   width: 40%;
   font-weight: bold;
   color: #aa1423;
+  text-align: left;
 }
 
 .table tbody td:nth-child(2) {
@@ -156,6 +157,7 @@ table td {
   font-size: 12;
   color: #555555;
   font-size: 12px;
+  text-align: right;
 }
 
 .table tbody {
@@ -166,7 +168,7 @@ table td {
 .triangle {
   width: 100%;
   height: 8vh;
-  background: #eeeeee;
+  background: #EEE;
   position: relative;
 }
 
@@ -176,7 +178,7 @@ table td {
   height: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-top: 40px solid #fff;
+  border-top: 40px solid #FFF;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -206,12 +208,12 @@ table td {
   box-sizing: border-box;
   border-radius: 5px;
   padding: 0.1rem 0.3rem;
-  background: white;
+  background: #FFF;
   margin-bottom: 0.5rem;
 }
 
 .count-links p:last-child {
-  color: #777;
+  color: #EEE;
   font-size: 16px;
   font-family: "Roboto", serif;
 }
@@ -226,7 +228,7 @@ table td {
 /*FOOTER*/
 footer {
   height: 62px;
-  background: white;
+  background: #FFF;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

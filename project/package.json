@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }

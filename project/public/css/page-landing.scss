@@ -1,4 +1,9 @@
 $red: #aa1423;
+$white: #FFF;
+$orange: #FF6E14;
+$orangeHover: #F38836;
+$grey: #EEE;
+
 
 #page-landing {
   width: 100%;
@@ -8,7 +13,7 @@ $red: #aa1423;
 header {
   width: 100%;
   display: flex;
-  background: white;
+  background: $white;
 }
 
 header img.logo {
@@ -36,13 +41,13 @@ header img.logo {
 .short-link h1 {
   font-family: "Roboto Slab", serif;
   font-size: 36px;
-  color: white;
+  color: $white;
 }
 
 .short-link p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: white;
+  color: $white;
   margin-bottom: 50px;
 }
 
@@ -52,20 +57,20 @@ header img.logo {
 }
 
 .short-link input {
-  color: #ff6e14;
+  color: $orange;
   background: none;
   margin-top: 11px;
   border: none;
-  border-bottom: 3px solid #ff6e14;
+  border-bottom: 3px solid $orange;
 }
 
 .short-link .alter-weight {
-  color: white !important;
+  color: $white !important;
   font-weight: bold !important;
 } 
 
 .short-link input::placeholder {
-  color: #ff6e14;
+  color: $orange;
   opacity: 1;
 }
 
@@ -89,14 +94,14 @@ header img.logo {
 }
 
 .short-link .btn-shorten {
-  color: white;
+  color: $white;
   font-weight: bold;
   width: 107px;
   height: 39px;
 
   margin-left: 10px;
   border: none;
-  background: #ff6e14;
+  background: $orange;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -106,7 +111,7 @@ header img.logo {
 }
 
 .short-link .btn-shorten:hover {
-  background: #f38836;
+  background: $orangeHover;
 }
 
 // classes for script
@@ -120,11 +125,11 @@ header img.logo {
 /*TABLE*/
 
 .content-table {
-  background: white;
+  background: $white;
   padding: 2.5rem;
   width: 100%;
   height: 100%;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid $grey;
 }
 
 .content-table h2 {
@@ -138,7 +143,7 @@ header img.logo {
 
 .table {
   margin: auto;
-  text-align: center;
+  border-spacing: 0;
 }
 
 .table th,
@@ -146,14 +151,15 @@ table td {
   padding: 8px 0;
 }
 
-.table tr.row {
-  border-bottom: 1px solid #000;
+tr.row td {
+  border-bottom: 1px solid $grey;
 }
 
 .table tbody td:nth-child(1) {
   width: 40%;
   font-weight: bold;
   color: $red;
+  text-align: left;
 }
 
 .table tbody td:nth-child(2) {
@@ -162,6 +168,7 @@ table td {
   font-size: 12;
   color: rgb(85, 85, 85);
   font-size: 12px;
+  text-align: right;
 }
 
 .table tbody {
@@ -173,7 +180,7 @@ table td {
 .triangle {
   width: 100%;
   height: 8vh;
-  background: rgb(238, 238, 238);
+  background: $grey;
   position: relative;
 }
 
@@ -184,7 +191,7 @@ table td {
 
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-top: 40px solid #fff;
+  border-top: 40px solid $white;
   position: absolute;
 
   left: 50%;
@@ -219,12 +226,12 @@ table td {
   border-radius: 5px;
 
   padding: 0.1rem 0.3rem;
-  background: white;
+  background: $white;
   margin-bottom: 0.5rem;
 }
 
 .count-links p:last-child {
-  color: #777;
+  color: $grey;
   font-size: 16px;
   font-family: "Roboto", serif;
 }
@@ -240,7 +247,7 @@ table td {
 
 footer {
   height: 62px;
-  background: white;
+  background: $white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
