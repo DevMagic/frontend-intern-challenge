@@ -50,11 +50,25 @@ header img.logo {
 }
 
 .short-link input {
-  background: none;
   color: #ff6e14;
+  background: none;
   margin-top: 11px;
   border: none;
   border-bottom: 3px solid #ff6e14;
+}
+
+.short-link .alter-weight {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.short-link input::placeholder {
+  color: #ff6e14;
+  opacity: 1;
+}
+
+.short-link input:focus {
+  outline: none;
 }
 
 .input-img {
@@ -66,6 +80,10 @@ header img.logo {
   position: absolute;
   right: 9px;
   bottom: 13px;
+}
+
+.img-display {
+  display: block !important;
 }
 
 .short-link .btn-shorten {
@@ -80,6 +98,10 @@ header img.logo {
   transition: background-color 0.2s;
 }
 
+.short-link .btn-shorten:focus {
+  outline: none;
+}
+
 .short-link .btn-shorten:hover {
   background: #f38836;
 }
@@ -88,13 +110,6 @@ header img.logo {
   color: "white";
   font-weight: bold;
   display: inline;
-}
-
-.img-display {
-  display: inline;
-  position: absolute;
-  right: 9px;
-  bottom: 13px;
 }
 
 /*TABLE*/
