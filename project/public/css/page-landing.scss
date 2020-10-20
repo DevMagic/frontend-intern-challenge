@@ -3,7 +3,9 @@ $white: #FFF;
 $orange: #FF6E14;
 $orangeHover: #F38836;
 $lightGrey: #EEE;
+$grey: #a8a8a8;
 $darkGrey: #777;
+
 
 
 #page-landing {
@@ -130,7 +132,7 @@ header img.logo {
   padding: 2.5rem;
   width: 100%;
   height: 100%;
-  border-top: 1px solid $grey;
+  border-top: 1px solid $lightGrey;
 }
 
 .content-table h2 {
@@ -153,7 +155,7 @@ table td {
 }
 
 tr.row td {
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $lightGrey;
 }
 
 .table tbody td:nth-child(1) {
@@ -181,7 +183,7 @@ tr.row td {
 .triangle {
   width: 100%;
   height: 8vh;
-  background: $grey;
+  background: $lightGrey;
   position: relative;
 }
 
@@ -222,7 +224,7 @@ tr.row td {
   width: 173px;
   height: 49px;
 
-  border: 1px solid $darkGrey;
+  border: 1px solid $grey;
   box-sizing: border-box;
   border-radius: 5px;
 
@@ -232,7 +234,7 @@ tr.row td {
 }
 
 .count-links p:last-child {
-  color: $grey;
+  color: $darkGrey;
   font-size: 16px;
   font-family: "Roboto", serif;
 }
