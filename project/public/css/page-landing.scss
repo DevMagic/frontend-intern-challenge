@@ -2,7 +2,8 @@ $red: #aa1423;
 $white: #FFF;
 $orange: #FF6E14;
 $orangeHover: #F38836;
-$grey: #EEE;
+$lightGrey: #EEE;
+$darkGrey: #777;
 
 
 #page-landing {
@@ -166,7 +167,7 @@ tr.row td {
   width: 40%;
   font-family: "Roboto", serif;
   font-size: 12;
-  color: rgb(85, 85, 85);
+  color: $darkGrey;
   font-size: 12px;
   text-align: right;
 }
@@ -221,7 +222,7 @@ tr.row td {
   width: 173px;
   height: 49px;
 
-  border: 1px solid rgb(184, 182, 182);
+  border: 1px solid $darkGrey;
   box-sizing: border-box;
   border-radius: 5px;
 
