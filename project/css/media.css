@@ -1,0 +1,91 @@
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .header {
+      margin-left: 5%;
+    }
+  
+    .intro img {
+      width: 100%;
+      margin: 0 auto 10px auto;
+    }
+  
+    .intro h1 {
+      font-size: 30px;
+    }
+  
+    .intro p {
+      font-size: 14px;
+    }
+  
+    #encurtador {
+      width: 100%;
+      height: 150px;
+    }
+  
+    #encurtador input {
+      width: 300px;
+      margin-left: 30px;
+    }
+  
+    .intro button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: #ff6e15;
+      position: absolute;
+      width: 91px;
+      height: 39px;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      margin-top: 130px;
+      position: absolute;
+    }
+  
+    .top-list {
+      padding-top: 10rem;
+    }
+  
+    .top-list h2 {
+      font-size: 26px;
+    }
+  
+    .top5 ul li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      list-style: none;
+      font-weight: bold;
+      display: flex;
+      padding: 10px 25px;
+      color: #777777;
+      border-bottom: 1px solid #eee;
+      height: 40px;
+    }
+  
+    .hits h2 {
+      font-size: 22px;
+    }
+    span.number {
+      font-size: 22px;
+    }
+  
+    .images {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      padding-top: 20px;
+    }
+  
+    .chaordic {
+      margin-left: 1rem;
+      margin-top: 1px;
+    }
+    .redes {
+      margin-right: 15px;
+    }
+    .redes img {
+      margin-left: 15px;
+    }
+  }

@@ -1,0 +1,263 @@
+/* ESTILOS GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* HEADER */
+  
+  .header {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* FIM HEADER */
+  
+  /* ANIMAÇÃO */
+  .intro .animacao {
+    animation: drop 2s ease;
+  }
+  
+  /* INTRO */
+  
+  .intro img {
+    width: 100%;
+    height: 36rem;
+  }
+  
+  .intro h1 {
+    margin: auto;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 46px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25.25rem;
+  }
+  
+  .intro p {
+    margin: auto;
+    text-align: center;
+    max-width: 630px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* FIM INTRO */
+  
+  /* LINKS BTN */
+  
+  #encurtador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+  }
+  
+  #encurtador input {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-top: 18px;
+    margin-right: 40px;
+    width: 35%;
+    text-decoration: none;
+    outline: none;
+    border: 0px solid;
+    border-bottom: 2px #ff6e14 solid;
+    background-color: transparent;
+    background: none;
+    color: #fff;
+  }
+  
+  #encurtador input::placeholder {
+    color: #ff6e14;
+    font-weight: bold;
+  }
+  #encurtador input:focus {
+    outline: none;
+  }
+  
+  #short_btn {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    width: 120px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    background-color: #ff6e14;
+    color: #fff;
+  }
+  
+  #short_btn:hover {
+    background: #ff9959;
+  }
+  
+  /* BTN FIM */
+  
+  /* TOP 5 */
+  
+  .top-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #aa1423;
+    height: 400px;
+    padding-top: 22.5rem;
+  }
+  
+  .top-list h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+    color: #aa1423;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .top5 {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  .top5 ul li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    padding: 10px 100px;
+    color: #777777;
+    border-bottom: 1px solid #eeeeee;
+    height: 40px;
+  }
+  
+  .clicks li {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .top5 a {
+    text-decoration: none;
+    color: #aa1423;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .top5 li:last-child {
+    border: none;
+  }
+  /* FIM TOP 5 */
+  
+  /* HITS */
+  
+  .hits {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: #eeeeee;
+    height: 235px;
+    margin-top: 11.25rem;
+  }
+  
+  .triangulo {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 53px 47.5px 0 47.5px;
+    border-color: #fff transparent transparent transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+  }
+  
+  .hits h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+    color: #aa1423;
+    margin-bottom: 10px;
+  }
+  
+  span.number {
+    font-family: "Roboto Slab", serif;
+    background: #fff;
+    color: #aa1423;
+    font-size: 32px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    padding: 1px 15px 1px 15px;
+    margin-bottom: 10px;
+  }
+  
+  span.clicks {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 40px;
+  }
+  
+  /*FIM HITS */
+  
+  /* FOOTER */
+  
+  .images {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .chaordic {
+    margin-left: 13rem;
+    margin-top: 1px;
+  }
+  .redes {
+    margin-right: 155px;
+  }
+  .redes img {
+    margin-left: 16px;
+  }
+  
+  /* FIM FOOTER */
+  
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-80px);
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
