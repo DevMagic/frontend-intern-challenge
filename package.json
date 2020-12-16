@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "sass": "^1.30.0"
+  }
+}
