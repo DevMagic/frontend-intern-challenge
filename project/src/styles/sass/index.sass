@@ -1,10 +1,8 @@
 @import 'colors'
 
-#header,
 #main,
 #top-links,
-#hits,
-#footer
+#hits
   padding: 0 32px
 
 #header
@@ -73,6 +71,8 @@
       background: $color-orange
       color: $color-primary
       font-weight: 600
+      &:active
+        background: rgba(248, 107, 42, .8)
 
 #top-links
   height: 35vh
@@ -150,7 +150,7 @@
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 0 20%
+  padding: 0 30%
   font-weight: 500
   color: $color-red
   .social-media
@@ -164,7 +164,7 @@
       &:hover
         height: 27px
 
-@media screen and (min-device-width: 280px) and (max-device-width: 500px)
+@media screen and (min-device-width: 250px) and (max-device-width: 500px)
   #main
     text-align: center
     .link-bar
@@ -190,6 +190,7 @@
 
   #footer
     height: 7vh
+    padding: 0 10%
 
 @media screen and (min-device-width: 501px) and (max-device-width: 900px)
   #header
@@ -209,3 +210,4 @@
   #footer
     height: 7vh
     min-height: 40px
+    padding: 0 20%
