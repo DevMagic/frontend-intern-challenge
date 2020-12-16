@@ -1,0 +1,8 @@
+{
+  "name": "frontend-intern-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/andrey-casetta/frontend-intern-challenge.git",
+  "author": "Andrey Casetta <andrey_amc@hotmail.com>",
+  "license": "MIT"
+}

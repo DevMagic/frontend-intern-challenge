@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #eee;
+}
+
+button {
+  cursor: pointer;
+}
