@@ -5,7 +5,7 @@ const onLoad = async (url) => {
   const response = await fetch(url);
   return await response.json();
 };
-
+// Declarando a URL
 const manipulateData = async () => {
   let data = await onLoad(
     'https://run.mocky.io/v3/2752fcb7-2a4e-4e61-86fd-e8dd09bb8789'
@@ -13,6 +13,7 @@ const manipulateData = async () => {
   return data;
 };
 
+// Criando a lógica para ordenar o JSON
 const newData = async () => {
   // recebendo o arquivo JSON
   const data = await manipulateData();
@@ -27,10 +28,12 @@ const newData = async () => {
   return dataArray;
 };
 
+// Criando a listagem
 const setListing = async () => {
   const data = await newData();
   const ul = document.querySelector('.listing');
 
+  // Definindo o laço para filtrarmos os 5 mais clicados
   for (let i = 0; i <= 4; i++) {
     const li = `<li>
       <p>${data[i].shortUrl}</p>
@@ -39,4 +42,5 @@ const setListing = async () => {
     ul.innerHTML += li;
   }
 };
+
 setListing();
