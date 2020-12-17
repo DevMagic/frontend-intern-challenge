@@ -13,9 +13,8 @@
 
 #main {
   height: 60vh;
-  background: url(../../assets/background-home.jpg) no-repeat center
-    center/cover;
-  color: #ffffff;
+  background: url(../../assets/background-home.jpg) no-repeat center center/cover;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,26 +47,26 @@
   height: inherit;
   width: inherit;
   background: transparent;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 #main .link-bar label input::-webkit-input-placeholder {
-  color: #f86b2a;
+  color: #F86B2A;
 }
 #main .link-bar label input:-moz-placeholder {
-  color: #f86b2a;
+  color: #F86B2A;
 }
 #main .link-bar label input::-moz-placeholder {
-  color: #f86b2a;
+  color: #F86B2A;
 }
 #main .link-bar label input:-ms-input-placeholder {
-  color: #f86b2a;
+  color: #F86B2A;
 }
 #main .link-bar label:after {
-  content: '';
+  content: "";
   display: inline-block;
   width: inherit;
   height: 2px;
-  background: #f86b2a;
+  background: #F86B2A;
   position: absolute;
   bottom: 0;
 }
@@ -75,8 +74,8 @@
   width: 30%;
   height: 100%;
   font-size: 14px;
-  background: #f86b2a;
-  color: #ffffff;
+  background: #F86B2A;
+  color: #FFFFFF;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -90,7 +89,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #aa1423;
+  color: #AA1423;
 }
 #top-links h1 {
   font-weight: 500;
@@ -109,7 +108,7 @@
   justify-content: space-between;
   position: relative;
   line-height: 40px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #EEEEEE;
 }
 #top-links ul li p {
   font-weight: 600;
@@ -127,9 +126,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #eeeeee;
+  background: #EEEEEE;
   position: relative;
-  color: #aa1423;
+  color: #AA1423;
 }
 #hits h1 {
   font-weight: 500;
@@ -140,7 +139,7 @@
   padding: 20px 10px;
   border: 1px solid rgba(119, 119, 119, 0.3);
   border-radius: 3px;
-  background: #ffffff;
+  background: #FFFFFF;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -154,10 +153,10 @@
   color: #777777;
 }
 #hits:before {
-  content: '';
+  content: "";
   display: inline-block;
   border: 30px solid;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: #FFFFFF transparent transparent transparent;
   position: absolute;
   top: 0;
 }
@@ -169,7 +168,7 @@
   justify-content: space-between;
   padding: 0 30%;
   font-weight: 500;
-  color: #aa1423;
+  color: #AA1423;
 }
 #footer .social-media {
   display: flex;
