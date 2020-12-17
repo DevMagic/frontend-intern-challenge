@@ -26,21 +26,24 @@ const validURL = (str) => {
 // Função para pegar a URL original e transformando na URL encurtada
 const generateUrl = () => {
   const link = document.querySelector('.link');
+  const icon = document.getElementById('icon');
   const urlRandom = randomicUrl();
   const smallUrl = `http://ch.dc/${urlRandom}`;
 
-  validURL(link.value)
-    ? (document.querySelector('.link').value = smallUrl)
-    : '';
-
+  if (validURL(link.value)) {
+    document.querySelector('.link').value = smallUrl;
+    icon.classList.add('active');
+  } else {
+    return '';
+  }
   return smallUrl;
 };
 
 // Função para copiar o link novo
-const copyNewLink = (isCopy) => {
+const copyNewLink = () => {
   const link = document.querySelector('.link').select();
   document.execCommand('copy');
-  const copyText = isCopy ? 'Copiar' : 'Encurtar';
+  const copyText = 'Copiar';
   const button = document.querySelector('.generate-link');
   button.innerHTML = copyText;
 };
@@ -49,9 +52,15 @@ const copyNewLink = (isCopy) => {
 let click = true;
 const handleClick = () => {
   const link = document.querySelector('.link').value;
+  const icon = document.getElementById('icon');
+
   if (click && link !== '') {
     generateUrl();
-    copyNewLink(click);
+    copyNewLink();
+    icon.addEventListener('click', () => {
+      document.querySelector('.link').value = '';
+      icon.classList.remove('active');
+    });
     click = !click;
   }
 };

@@ -43,6 +43,9 @@
   position: relative;
   margin-right: 10px;
 }
+#main .link-bar label .active {
+  display: inline-block;
+}
 #main .link-bar label input {
   height: inherit;
   width: inherit;
@@ -61,6 +64,9 @@
 #main .link-bar label input:-ms-input-placeholder {
   color: #F86B2A;
 }
+#main .link-bar label i {
+  display: none;
+}
 #main .link-bar label:after {
   content: "";
   display: inline-block;
@@ -78,6 +84,9 @@
   color: #FFFFFF;
   font-weight: 600;
   text-transform: uppercase;
+}
+#main .link-bar button:hover {
+  background: rgba(248, 107, 42, 0.7);
 }
 #main .link-bar button:active {
   background: rgba(248, 107, 42, 0.8);

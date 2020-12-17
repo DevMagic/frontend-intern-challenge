@@ -43,11 +43,15 @@
       position: relative
       margin-right: 10px
 
+      .active
+        display: inline-block
+
       input
         height: inherit
         width: inherit
         background: transparent
         color: $color-primary
+
         &::-webkit-input-placeholder //Alterar cor do placeholder no CHROME
           color: $color-orange
         &:-moz-placeholder // FIREFOX v18-
@@ -56,6 +60,9 @@
           color: $color-orange
         &:-ms-input-placeholder // IE v10+
           color: $color-orange
+      
+      i
+        display: none
 
       &:after
         content: ''
@@ -66,7 +73,6 @@
         position: absolute
         bottom: 0
 
-
     button
       width: 30%
       height: 100%
@@ -75,6 +81,8 @@
       color: $color-primary
       font-weight: 600
       text-transform: uppercase
+      &:hover
+        background: rgba(248, 107, 42, .7)
       &:active
         background: rgba(248, 107, 42, .8)
 
