@@ -36,7 +36,18 @@ const generateUrl = () => {
   } else {
     return '';
   }
-  return smallUrl;
+
+  copyNewLink();
+  handleClickClose();
+};
+
+// Função que roda quando clicar no close (X)
+const handleClickClose = () => {
+  const icon = document.getElementById('icon');
+  icon.addEventListener('click', () => {
+    icon.classList.remove('active');
+    initialState();
+  });
 };
 
 // Função para copiar o link novo
@@ -48,19 +59,22 @@ const copyNewLink = () => {
   button.innerHTML = copyText;
 };
 
+// Função que define o estado inicial
+const initialState = () => {
+  const button = document.querySelector('.generate-link');
+  const sortText = 'Encurtar';
+  button.innerHTML = sortText;
+  document.querySelector('.link').value = '';
+  click = true;
+};
+
 // Função para lidar com o click no botão gerando o sort link e transformando o texto em copiar
 let click = true;
 const handleClick = () => {
   const link = document.querySelector('.link').value;
-  const icon = document.getElementById('icon');
 
   if (click && link !== '') {
     generateUrl();
-    copyNewLink();
-    icon.addEventListener('click', () => {
-      document.querySelector('.link').value = '';
-      icon.classList.remove('active');
-    });
-    click = !click;
+    click = false;
   }
 };

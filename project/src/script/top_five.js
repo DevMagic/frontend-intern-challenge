@@ -6,9 +6,7 @@ const onLoad = async (url) => {
 };
 // Declarando a URL
 const manipulateData = async () => {
-  let data = await onLoad(
-    'https://run.mocky.io/v3/2752fcb7-2a4e-4e61-86fd-e8dd09bb8789'
-  );
+  let data = await onLoad('../../Assets/urls.json');
   return data;
 };
 
