@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, 
+button,
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --vermelho: #AA1423;
+    --cinza: #777;
+    --secundario-branco: #EEE;
+    --laranja: #ff6e15;
+}
+
+body {
+    
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 06% 90% auto 22% 06%;
+}
+
+/* ======== Cabeçalho (header): ======== */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-imagem-header {
+    height: 70%;
+}
+
+
+/* ======== Sessão de encurtar links (#sessao-encurtar-links) ======== */
+
+#sessao-encurtar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../Assets/background-home.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    
+}
+
+.textos-encurtar-links {
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 48px;
+}
+
+.textos-encurtar-links p {
+    text-align: center;
+
+    color: var(--secundario-branco);
+    font-size: 18px;
+
+}
+
+.textos-encurtar-links h3 {
+    font-size: 46px;
+    color: white;
+}
+
+.acao-encurtar-links {
+    width: 500px;
+
+    
+}
+
+
+
+#link-url {
+    background-color: transparent;
+    color: var(--laranja);
+
+    border-bottom: 1px solid var(--laranja);
+
+    font-size: 16px;
+
+    height: 32px;
+    width: 82%;
+
+}
+
+#link-url::placeholder {
+    color: var(--laranja);
+
+}
+
+#botao-encurtar {
+    background-color: var(--laranja);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    
+    color: white;
+
+}
+
+
+/* ======== Sessão Top5 (#top5) ======== */
+
+.subtitulo {
+    color: var(--vermelho);
+    text-align: center;
+}
+
+#top5 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.conteudo-top5 {
+    width: 400px;
+}
+
+.items-top5 {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8px;
+}
+
+#ranking-top5 {
+    margin-top: 16px;
+}
+
+#ranking-top5 h5 {
+    color: var(--vermelho);
+}
+
+#ranking-top5 p {
+    color: var(--cinza);
+}
+
+#ranking-top5 div {
+    width: 100%;
+    border-bottom: 1px solid var(--cinza);
+}
+
+/* ======== Sessão Hits (#sessao-hits) ======== */
+
+#sessao-hits {
+    background-color: var(--secundario-branco);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#triangulo-para-baixo {
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid white;
+}
+
+.conteudo-hits {
+    height: 100%;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.exibicao-contagem-hits p {
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.exibicao-contagem-hits h3 {
+    margin-top: 16px;
+    margin-bottom: 08px;
+    background: white;
+    padding: 8px;
+
+    text-align: center;
+    color: var(--vermelho);
+}
+
+
+/* ======== Sessão Rodapé (footer) ======== */
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.redes-socias-rodape {
+    height: 100%;
+
+}
+
+.redes-socias-rodape a {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-redes-socias {
+    height: 60%;
+    object-fit: cover;
+}
+
+.redes-socias-rodape a:nth-child(2) {
+    margin-left: 32px;
+}
+
+.texto-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-rodape p {
+    color: var(--vermelho);
+}
+
+.redes-socias-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
