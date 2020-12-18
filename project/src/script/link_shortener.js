@@ -28,7 +28,7 @@ const generateUrl = () => {
   const link = document.querySelector('.link');
   const icon = document.getElementById('icon');
   const urlRandom = randomicUrl();
-  const smallUrl = `http://ch.dc/${urlRandom}`;
+  const smallUrl = `http://chr.dc/${urlRandom}`;
 
   if (validURL(link.value)) {
     document.querySelector('.link').value = smallUrl;
