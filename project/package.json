@@ -1,0 +1,22 @@
+{
+  "name": "devmagic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "next": "10.0.3",
+    "next-images": "^1.6.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1"
+  }
+}
