@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <>
             <header className='background-header'>
-                <h1>DevMagic</h1>
+                <img src="https://avatars0.githubusercontent.com/u/12114496?s=200&v=4"></img>
                 </header>
         </>
     )
