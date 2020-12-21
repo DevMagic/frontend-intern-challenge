@@ -1,0 +1,14 @@
+.PageHeader {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.PageHeader__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.PageHeader__logo-image {
+    height: 100%;
+    padding: 16px 0 10px 0;
+}

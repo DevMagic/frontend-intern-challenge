@@ -1,0 +1,17 @@
+.PageFooter {
+    width: 100%;
+
+    background-color: $color-white;
+
+    margin: 25px auto;
+}
+
+.PageFooter__Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.PageFooter__Container-Icons-fb {
+    margin-right: 24px;
+}

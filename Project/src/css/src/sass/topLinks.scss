@@ -1,0 +1,42 @@
+.TopLinksSection {
+    width: 100%;
+}
+
+.TopLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.TopLinksContainer-linkUrl {
+    color: $color-red;
+    font-weight: $weight-bold;
+    font-size: $size-text;
+
+    margin-bottom: 10px;
+}
+
+.TopLinksContainer-linkAcces {
+    color: $color-dark-gray;
+    font-weight: $weight-regular;
+    font-size: $size-text;
+}
+
+.TopLinksContainer-divisor {
+    width: 360px;
+    height: 2px;
+    
+    background-color: $color-light-gray;
+
+    outline: none;
+    border: none;
+    border-radius: 4px;
+
+    margin-bottom: 14px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .TopLinksContainer-divisor {
+        width: 700px;
+    }    
+}
