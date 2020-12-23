@@ -1,40 +1,70 @@
-# Desafio estagiário: HTML/CSS/JS
+# Getting Started with Create React App
 
-O desafio proposto consiste numa **landing page** simulando um encurtador de links, onde testará as habilidades e qualidade de código de um desenvolvedor front-end ao transformar um layout em um protótipo funcional. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Instruções
+## Available Scripts
 
-- **Forke** esse repositório e faça o desafio numa branch com o seu nome (exemplo: `nome-sobrenome`);
-- O seu objetivo principal é transformar esse [mockup](./Layout/Preview.jpg) em um protótipo funcional HTML/CSS/JS;
-- No seu projeto, crie um diretório chamado `project`. Todos os arquivos que você criar devem estar dentro desta pasta;
-- Assim que concluir o seu desafio, abra um **pull request** com suas alterações.
+In the project directory, you can run:
 
+### `yarn start`
 
-### Layout
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Dentro da pasta [Layout](./Layout) possui um arquivo [psd](./Layout/Layout.psd) e [jpg](./Layout/Preview.jpg), use-os como referência para desenvolver o protótipo;
-- Use as **cores** definidas no [guideline](./Layout/Guideline-color.jpg);
-- As **fontes** utilizadas são: [Roboto](https://www.google.com/fonts/specimen/Roboto) e [Roboto Slab](https://www.google.com/fonts/specimen/Roboto+Slab);
-- Caso necessário, na pasta [Assets](./Assets) possui as imagens já exportadas.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Dicas
+### `yarn test`
 
-- Seu HTML deverá ser o mais semântico possível (faça bom uso das tags HTML5);
-- Faça o CSS bem estruturado e em um arquivo separado;
-- No JavaScript, evite poluir o escopo global. O uso ou não de bibliotecas também será avaliado.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `yarn build`
 
-### Diferenciais
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Boa documentação;
-- Uso de pré-processadores CSS ([Sass](http://sass-lang.com), [Less](http://lesscss.org), [Stylus](http://stylus-lang.com));
-- Adaptar a página para dispositivos móveis (torná-la responsiva);
-- Utilizar alguma automatização ([Grunt](http://gruntjs.com), [Gulp](http://gulpjs.com), [NPM Scripts](https://docs.npmjs.com/misc/scripts))
-- Criar [essa interação](./Layout/Shortener-interaction.gif) utilizando JavaScript;
-- Consumir esse [JSON](./Assets/urls.json) para a seção **TOP 5**, também utilizando JavaScript.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Em caso de dúvidas, [abra uma issue](https://github.com/DevMagic/frontend-intern-challenge/issues).
+### `yarn eject`
 
-**Boa sorte =]**
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

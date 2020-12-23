@@ -1,0 +1,5 @@
+export { default as Encurte} from './Encurte'
+export { default as Button} from './Button'
+export {default as TopCinco } from './Top_Cinco'
+export {default as Hits } from './Hits'
+export {default as PageFinal} from './PageFinal'
