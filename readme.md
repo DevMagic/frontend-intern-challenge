@@ -1,7 +1,9 @@
+## Encurte Link
+o projeto encurta o link predefinito já pelo o arquivo json
+
 ### como Iniciar o Projeto em react
   npm install e instalara todas as dependência do projeto
   
-
 # Desafio estagiário: HTML/CSS/JS
 
 O desafio proposto consiste numa **landing page** simulando um encurtador de links, onde testará as habilidades e qualidade de código de um desenvolvedor front-end ao transformar um layout em um protótipo funcional. 
