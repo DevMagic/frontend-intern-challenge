@@ -1,0 +1,206 @@
+$text:#EEE;
+$textApoio:#777;
+$text2:#AA1423;
+$colorForm: #ff6e14;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+ }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto';
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $text;
+    height: 920px;
+    background-size: cover;
+    background: no-repeat center url('../assets/background-home.jpg');
+    text-align: center;
+    h1{
+        padding-bottom: 0.8rem;
+        font-size: 3rem;
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: bold;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    form{
+        padding-top: 6rem;
+        display: flex;
+        
+    }
+    input {
+        border: none;
+        margin-left: 1rem
+    }
+    #inputLink{
+        background-color: transparent;
+        text-align: left;
+        width: 45rem;  
+        max-width: 450px;  
+        font-size: 1.8rem; 
+        color: $colorForm;
+        border-bottom-color: $colorForm;
+        border-bottom: solid;
+    }
+    #button{
+        background-color: $colorForm;
+        color: $text;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.6rem;
+        width: 10rem;
+        height: 4rem;
+        max-height: 40px;
+        max-width: 110px;
+        &:hover{
+            background-color: #ff8138;
+            cursor: pointer;
+            
+        }
+    }
+    ::-webkit-input-placeholder {
+        color: $colorForm;
+       
+    } 
+}
+
+#top5{
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;
+   padding-top: 2rem;
+   color: $text2;
+   th{
+     font-family: 'Roboto Slab ';
+     font-size: 3rem;
+     font-weight: normal;
+     padding-bottom: 1.5rem;
+   }
+   table{
+    margin: 2rem 0rem 4rem 0rem;
+    font-family: 'Roboto';
+    padding-top: 1.3rem;
+    font-size: 2rem; 
+    border-collapse: collapse;
+    font-weight: bold;
+   }
+  
+   td{
+     padding: 1rem 0rem;
+     border-bottom: 2px solid $text;
+     text-align: left;
+   }
+   .quant{
+      color: $textApoio;
+      font-weight: normal;
+      padding-left: 20rem;
+   }
+   
+   .ultimo{
+       border: none;
+   }
+   
+  
+  
+}
+
+#hits{
+    background-color: $text;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: $text2;
+    font-family: 'Roboto';
+    .triangulo{
+        width: 0; 
+        height: 0; 
+        border-left: 4.5rem solid transparent;
+        border-right: 4.5rem solid transparent;
+        border-top: 4rem solid #fff;
+     }
+   
+    h1{
+        margin: 1.5rem;
+        font-size: 3rem;
+    }
+    label{
+        color: $textApoio;  
+        margin: 1rem 0rem 4rem 0rem;  
+        font-size: 1.8rem;
+    }
+    input{
+        text-align: center;
+        color: $text2;
+        font-size: 3rem;
+        max-width: 20rem; 
+      
+    }
+}
+
+footer{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    h2{
+        color: $text2;
+        font-size: 2.2rem;
+        font-family: 'Roboto';
+        font-weight: normal;
+    }
+    a{
+        margin: 0rem 1rem;
+        text-decoration: none;
+    }
+}
+
+@media(max-width: 590px){
+
+    #main{
+        height: 500px;
+        p{
+            font-size: 1.2rem;
+            word-wrap: true;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2rem;
+        }
+        input{
+            margin: 1rem 0rem;
+        }
+        #inputLink{
+            width: 20rem;
+            text-align: center;
+        }
+
+    }
+    #top5{
+        .quant{
+            padding-left: 6rem;
+        }
+    }
+   
+}

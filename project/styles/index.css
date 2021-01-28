@@ -1,1 +1,249 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0rem;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #EEE;
+  height: 920px;
+  background-size: cover;
+  background: no-repeat center url("../assets/background-home.jpg");
+  text-align: center;
+}
+
+#main h1 {
+  padding-bottom: 0.8rem;
+  font-size: 3rem;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+}
+
+#main p {
+  font-size: 1.8rem;
+}
+
+#main form {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main input {
+  border: none;
+  margin-left: 1rem;
+}
+
+#main #inputLink {
+  background-color: transparent;
+  text-align: left;
+  width: 45rem;
+  max-width: 450px;
+  font-size: 1.8rem;
+  color: #ff6e14;
+  border-bottom-color: #ff6e14;
+  border-bottom: solid;
+}
+
+#main #button {
+  background-color: #ff6e14;
+  color: #EEE;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  width: 10rem;
+  height: 4rem;
+  max-height: 40px;
+  max-width: 110px;
+}
+
+#main #button:hover {
+  background-color: #ff8138;
+  cursor: pointer;
+}
+
+#main ::-webkit-input-placeholder {
+  color: #ff6e14;
+}
+
+#top5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  color: #AA1423;
+}
+
+#top5 th {
+  font-family: 'Roboto Slab ';
+  font-size: 3rem;
+  font-weight: normal;
+  padding-bottom: 1.5rem;
+}
+
+#top5 table {
+  margin: 2rem 0rem 4rem 0rem;
+  font-family: 'Roboto';
+  padding-top: 1.3rem;
+  font-size: 2rem;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+#top5 td {
+  padding: 1rem 0rem;
+  border-bottom: 2px solid #EEE;
+  text-align: left;
+}
+
+#top5 .quant {
+  color: #777;
+  font-weight: normal;
+  padding-left: 20rem;
+}
+
+#top5 .ultimo {
+  border: none;
+}
+
+#hits {
+  background-color: #EEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #AA1423;
+  font-family: 'Roboto';
+}
+
+#hits .triangulo {
+  width: 0;
+  height: 0;
+  border-left: 4.5rem solid transparent;
+  border-right: 4.5rem solid transparent;
+  border-top: 4rem solid #fff;
+}
+
+#hits h1 {
+  margin: 1.5rem;
+  font-size: 3rem;
+}
+
+#hits label {
+  color: #777;
+  margin: 1rem 0rem 4rem 0rem;
+  font-size: 1.8rem;
+}
+
+#hits input {
+  text-align: center;
+  color: #AA1423;
+  font-size: 3rem;
+  max-width: 20rem;
+}
+
+footer {
+  margin: 2rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer h2 {
+  color: #AA1423;
+  font-size: 2.2rem;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+footer a {
+  margin: 0rem 1rem;
+  text-decoration: none;
+}
+
+@media (max-width: 590px) {
+  #main {
+    height: 500px;
+  }
+  #main p {
+    font-size: 1.2rem;
+    word-wrap: true;
+  }
+  #main form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2rem;
+  }
+  #main input {
+    margin: 1rem 0rem;
+  }
+  #main #inputLink {
+    width: 20rem;
+    text-align: center;
+  }
+  #top5 .quant {
+    padding-left: 6rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
