@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -28,16 +28,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #EEE;
   height: 920px;
   background-size: cover;
@@ -47,8 +47,8 @@ header {
 
 #main h1 {
   padding-bottom: 0.8rem;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 3rem;
-  font-family: 'Roboto Slab', sans-serif;
   font-weight: bold;
 }
 
@@ -82,9 +82,9 @@ header {
 #main #button {
   background-color: #ff6e14;
   color: #EEE;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  font-weight: bold;
   width: 10rem;
   height: 4rem;
   max-height: 40px;
@@ -104,22 +104,22 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 2rem;
   color: #AA1423;
 }
 
 #top5 th {
-  font-family: 'Roboto Slab ';
+  font-family: "Roboto Slab", sans-serif;
   font-size: 3rem;
   font-weight: normal;
   padding-bottom: 1.5rem;
@@ -127,11 +127,11 @@ header {
 
 #top5 table {
   margin: 2rem 0rem 4rem 0rem;
-  font-family: 'Roboto';
-  padding-top: 1.3rem;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  border-collapse: collapse;
   font-weight: bold;
+  padding-top: 1.3rem;
+  border-collapse: collapse;
 }
 
 #top5 td {
@@ -155,16 +155,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #AA1423;
-  font-family: 'Roboto';
+  font-family: "Roboto Slab", sans-serif;
 }
 
 #hits .triangulo {
@@ -178,11 +180,12 @@ header {
 #hits h1 {
   margin: 1.5rem;
   font-size: 3rem;
+  font-weight: normal;
 }
 
 #hits label {
   color: #777;
-  margin: 1rem 0rem 4rem 0rem;
+  margin: 1rem 0rem 4.5rem 0rem;
   font-size: 1.8rem;
 }
 
@@ -191,6 +194,7 @@ header {
   color: #AA1423;
   font-size: 3rem;
   max-width: 20rem;
+  height: 6rem;
 }
 
 footer {
@@ -204,8 +208,8 @@ footer {
 
 footer h2 {
   color: #AA1423;
+  font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
-  font-family: 'Roboto';
   font-weight: normal;
 }
 
@@ -223,9 +227,6 @@ footer a {
     word-wrap: true;
   }
   #main form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

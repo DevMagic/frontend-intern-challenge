@@ -1,7 +1,21 @@
-$text:#EEE;
-$textApoio:#777;
-$text2:#AA1423;
+$colorText:#EEE;
+$colorNum:#777;
+$colorTitle:#AA1423;
 $colorForm: #ff6e14;
+$fontText: 'Roboto', sans-serif;
+$fontTitle: 'Roboto Slab', sans-serif;
+
+@mixin flexBox(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin formatText($font, $size,  $weigth) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weigth;
+}
 
 * {
     box-sizing: border-box;
@@ -15,7 +29,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto';
+    font-family: $fontText;
 }
 header{
     display: flex;
@@ -24,28 +38,22 @@ header{
 }
 
 #main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: $text;
+    @include flexBox();
+    color: $colorText;
     height: 920px;
     background-size: cover;
     background: no-repeat center url('../assets/background-home.jpg');
     text-align: center;
     h1{
         padding-bottom: 0.8rem;
-        font-size: 3rem;
-        font-family: 'Roboto Slab', sans-serif;
-        font-weight: bold;
+        @include formatText($fontTitle, 3rem, bold);
     }
     p{
         font-size: 1.8rem;
     }
     form{
         padding-top: 6rem;
-        display: flex;
-        
+        display: flex;   
     }
     input {
         border: none;
@@ -63,10 +71,8 @@ header{
     }
     #button{
         background-color: $colorForm;
-        color: $text;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 1.6rem;
+        color: $colorText;
+        @include formatText($fontText, 1.6rem, bold);
         width: 10rem;
         height: 4rem;
         max-height: 40px;
@@ -83,35 +89,30 @@ header{
     } 
 }
 
+
+
 #top5{
-   display: flex;
-   flex-direction: column;
-   justify-content: center; 
-   align-items: center;
+   @include flexBox();
    padding-top: 2rem;
-   color: $text2;
+   color: $colorTitle;
    th{
-     font-family: 'Roboto Slab ';
-     font-size: 3rem;
-     font-weight: normal;
+     @include formatText($fontTitle, 3rem, normal);
      padding-bottom: 1.5rem;
    }
    table{
     margin: 2rem 0rem 4rem 0rem;
-    font-family: 'Roboto';
+    @include formatText($fontText, 2rem, bold);
     padding-top: 1.3rem;
-    font-size: 2rem; 
     border-collapse: collapse;
-    font-weight: bold;
    }
   
    td{
      padding: 1rem 0rem;
-     border-bottom: 2px solid $text;
+     border-bottom: 2px solid $colorText;
      text-align: left;
    }
    .quant{
-      color: $textApoio;
+      color: $colorNum;
       font-weight: normal;
       padding-left: 20rem;
    }
@@ -119,19 +120,14 @@ header{
    .ultimo{
        border: none;
    }
-   
-  
   
 }
 
 #hits{
-    background-color: $text;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    color: $text2;
-    font-family: 'Roboto';
+    background-color: $colorText;
+    @include flexBox();
+    color: $colorTitle;
+    font-family: $fontTitle;
     .triangulo{
         width: 0; 
         height: 0; 
@@ -143,18 +139,19 @@ header{
     h1{
         margin: 1.5rem;
         font-size: 3rem;
+        font-weight: normal;
     }
     label{
-        color: $textApoio;  
-        margin: 1rem 0rem 4rem 0rem;  
+        color: $colorNum;  
+        margin: 1rem 0rem 4.5rem 0rem;  
         font-size: 1.8rem;
     }
     input{
         text-align: center;
-        color: $text2;
+        color: $colorTitle;
         font-size: 3rem;
-        max-width: 20rem; 
-      
+        max-width: 20rem;
+        height: 6rem; 
     }
 }
 
@@ -163,10 +160,8 @@ footer{
     display: flex;
     justify-content: space-around;
     h2{
-        color: $text2;
-        font-size: 2.2rem;
-        font-family: 'Roboto';
-        font-weight: normal;
+        color: $colorTitle;
+        @include formatText($fontText, 2.2rem, normal);
     }
     a{
         margin: 0rem 1rem;
@@ -183,7 +178,6 @@ footer{
             word-wrap: true;
         }
         form{
-            display: flex;
             flex-direction: column;
             align-items: center;
             padding-top: 2rem;
