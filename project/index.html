@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/index.css">
-
+    
+    
     
 </head>
 <body>
@@ -19,11 +20,13 @@
   </header>
     
   <section id= "main">
+    <h1></h1>
      <h1> Encurte seus links.</h1>
      <p>Links são longos. Encurte os links que você deseja compartilhar, <br>e acompanhe enquanto viajam através da internet.</p>
-     <form action="submit">
+     <form action="shortenLink()">
        <input id="inputLink" type="text" placeholder="Cole seu link aqui">
-       <input id= "button" type="button" value="ENCURTAR">
+       <input id= "button" type="button" value="ENCURTAR" onclick="shortenLinks()">
+       
      </form>
   </section>
 
@@ -35,30 +38,6 @@
         <th colspan="2">Top 5</th>
       </thead>
       <tbody>
-        <tr>
-          <td>url</td>
-          <td class="quant">5584</td>
-         
-        </tr>
-        <tr>
-          <td>url</td>
-          <td class="quant">5584</td>
-          
-        </tr>
-        <tr>
-          <td>url</td>
-          <td class="quant">5584</td>
-          
-        </tr>
-        <tr>
-          <td>url</td>
-          <td class="quant">5584</td>
-          
-        </tr>
-        <tr>
-          <td class="ultimo">url</td>
-          <td  class="ultimo quant">5584</td>
-        </tr>
       </tbody> 
     </table>
   </section>
@@ -66,7 +45,7 @@
   <section id="hits">
     <div class="triangulo"></div>    
     <h1>HITS</h1>
-    <input type="text" value="800.0000.000" Disabled >
+    <input id= "totalHits" type="text" value="" Disabled >
     <label> Cliques em links </label>
   </section>
 
@@ -80,9 +59,11 @@
         <img src="./assets/icon-facebook.png" alt="icone Facebook">
       </a>
       
-     
     </div>
    
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>

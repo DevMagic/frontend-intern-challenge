@@ -77,6 +77,7 @@ header{
         height: 4rem;
         max-height: 40px;
         max-width: 110px;
+        
         &:hover{
             background-color: #ff8138;
             cursor: pointer;
@@ -101,7 +102,7 @@ header{
    }
    table{
     margin: 2rem 0rem 4rem 0rem;
-    @include formatText($fontText, 2rem, bold);
+    @include formatText($fontText, 1.6rem, bold);
     padding-top: 1.3rem;
     border-collapse: collapse;
    }
