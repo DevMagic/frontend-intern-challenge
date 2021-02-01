@@ -48,5 +48,17 @@
     ::-webkit-input-placeholder {
         color: $colorForm;
        
-    } 
+    }
+    
+    #delete{
+        background-color: transparent;
+        border: none;
+        color: $colorText;
+        font-size: 1.5rem;
+        align-self: center;
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
