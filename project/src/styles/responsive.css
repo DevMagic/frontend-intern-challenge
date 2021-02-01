@@ -19,6 +19,11 @@
   #main input {
     margin: 1rem 0rem;
   }
+  #main #delete {
+    position: relative;
+    top: -4.2rem;
+    left: 9.5rem;
+  }
   #main #inputLink {
     width: 20rem;
     text-align: center;

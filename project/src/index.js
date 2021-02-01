@@ -23,10 +23,10 @@ function selectTop5(urls) {
   for (let i = 0; i < 5; i++) {
     i == 4
       ? $("table").append(
-          `<tr> <td class="ultimo">${top[i].shortUrl}</td><td class=" ultimo quant">${top[i].hits}</td></tr> `
+          `<tr> <td class="ultimo">${top[i].shortUrl}</td><td class=" ultimo quant">${formatNumber(top[i].hits)}</td></tr> `
         )
       : $("table").append(
-          `<tr> <td>${top[i].shortUrl}</td><td class="quant">${top[i].hits}</td></tr> `
+          `<tr> <td>${top[i].shortUrl}</td><td class="quant">${formatNumber(top[i].hits)}</td></tr> `
         );
   }
 }
@@ -35,7 +35,7 @@ function contHits(urls) {
   const totalHits = urls.reduce((hits, url) => {
     return url.hits + hits;
   }, 0);
-  $("#totalHits").val(totalHits);
+  $("#totalHits").val(formatNumber(totalHits));
 }
 
 function shortenLinks() {
@@ -49,17 +49,18 @@ function shortenLinks() {
       });
       if (shorten.length > 0) {
         $("#button").css("color", "rgba(0,0,0,0)");
-        $("#inputLink").css({"color": "rgba(0,0,0,0)", "border-color": "#ff6e14"});
-        
+        $("#inputLink").css({
+          color: "rgba(0,0,0,0)",
+          "border-color": "#ff6e14",
+        });
+
         setTimeout(function () {
           $("#button").val("COPIAR");
           $("#button").css("color", "#EEE");
           $("#inputLink").css("color", "#fff");
           $("#inputLink").val(`${shorten[0].shortUrl}`);
-          $("#delete").css('display', 'block')
+          $("#delete").css("display", "block");
         }, 200);
-        
-       
       } else {
         $("#inputLink").val("");
         alert("Link não encontrado");
@@ -67,9 +68,19 @@ function shortenLinks() {
     });
   }
 }
+
 function clean() {
-  $("#delete").css('display', 'none')
-  $("#inputLink").val('');
+  $("#delete").css("display", "none");
+  $("#inputLink").val("");
   $("#button").val("ENCURTAR");
 }
+
+function formatNumber(num) {
+  return String(num).split("").reverse()
+    .join("").split(/(\d{3})/).filter(Boolean)
+    .join(".").split("").reverse().join("");
+}
+
+
 callFunctions();
+

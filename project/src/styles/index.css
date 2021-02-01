@@ -100,6 +100,21 @@ header {
   color: #ff6e14;
 }
 
+#main #delete {
+  background-color: transparent;
+  border: none;
+  color: #EEE;
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: none;
+}
+
+#main #delete:hover {
+  cursor: pointer;
+}
+
 #top5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +253,11 @@ footer a {
   }
   #main input {
     margin: 1rem 0rem;
+  }
+  #main #delete {
+    position: relative;
+    top: -4.2rem;
+    left: 9.5rem;
   }
   #main #inputLink {
     width: 20rem;
