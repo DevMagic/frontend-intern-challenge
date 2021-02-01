@@ -1,0 +1,13 @@
+footer{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    h2{
+        color: $colorTitle;
+        @include formatText($fontText, 2.2rem, normal);
+    }
+    a{
+        margin: 0rem 1rem;
+        text-decoration: none;
+    }
+}

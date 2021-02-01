@@ -51,7 +51,9 @@ function shortenLinks(){
         $('#inputLink').css('color', '#fff')
         $('#inputLink').val(`${shorten[0].shortUrl}`)
       }else{
-        $('#inputLink').val('Link não encontrado')
+        $('#inputLink').val('');
+        alert("Link não encontrado")
+       
       }
    });
   }

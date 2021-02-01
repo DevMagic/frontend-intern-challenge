@@ -1,0 +1,31 @@
+#top5{
+    @include flexBox();
+    padding-top: 2rem;
+    color: $colorTitle;
+    th{
+      @include formatText($fontTitle, 3rem, normal);
+      padding-bottom: 1.5rem;
+    }
+    table{
+     margin: 2rem 0rem 4rem 0rem;
+     @include formatText($fontText, 1.6rem, bold);
+     padding-top: 1.3rem;
+     border-collapse: collapse;
+    }
+   
+    td{
+      padding: 1rem 0rem;
+      border-bottom: 2px solid $colorText;
+      text-align: left;
+    }
+    .quant{
+       color: $colorNum;
+       font-weight: normal;
+       padding-left: 20rem;
+    }
+    
+    .ultimo{
+        border: none;
+    }
+   
+ }

@@ -1,0 +1,52 @@
+#main{
+    @include flexBox();
+    color: $colorText;
+    height: 920px;
+    background-size: cover;
+    background: no-repeat center url('../assets/background-home.jpg');
+    text-align: center;
+    h1{
+        padding-bottom: 0.8rem;
+        @include formatText($fontTitle, 3rem, bold);
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    form{
+        padding-top: 6rem;
+        display: flex;   
+    }
+    input {
+        border: none;
+        margin-left: 1rem
+    }
+    #inputLink{
+        background-color: transparent;
+        text-align: left;
+        width: 45rem;  
+        max-width: 450px;  
+        font-size: 1.8rem; 
+        color: $colorForm;
+        border-bottom-color: $colorForm;
+        border-bottom: solid;
+    }
+    #button{
+        background-color: $colorForm;
+        color: $colorText;
+        @include formatText($fontText, 1.6rem, bold);
+        width: 10rem;
+        height: 4rem;
+        max-height: 40px;
+        max-width: 110px;
+        
+        &:hover{
+            background-color: #ff8138;
+            cursor: pointer;
+            
+        }
+    }
+    ::-webkit-input-placeholder {
+        color: $colorForm;
+       
+    } 
+}

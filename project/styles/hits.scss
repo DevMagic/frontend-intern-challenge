@@ -1,0 +1,32 @@
+#hits{
+    background-color: $colorText;
+    @include flexBox();
+    color: $colorTitle;
+    font-family: $fontTitle;
+    .triangulo{
+        width: 0; 
+        height: 0; 
+        border-left: 4.5rem solid transparent;
+        border-right: 4.5rem solid transparent;
+        border-top: 4rem solid #fff;
+     }
+   
+    h1{
+        margin: 1.5rem;
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    label{
+        color: $colorNum;  
+        margin: 1rem 0rem 4.5rem 0rem;  
+        font-size: 1.8rem;
+    }
+    input{
+        text-align: center;
+        color: $colorTitle;
+        font-size: 3rem;
+        max-width: 20rem;
+        height: 6rem; 
+    }
+}
+

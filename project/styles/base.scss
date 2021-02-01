@@ -1,0 +1,33 @@
+$colorText:#EEE;
+$colorNum:#777;
+$colorTitle:#AA1423;
+$colorForm: #ff6e14;
+$fontText: 'Roboto', sans-serif;
+$fontTitle: 'Roboto Slab', sans-serif;
+
+@mixin flexBox(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin formatText($font, $size,  $weigth) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weigth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+ }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $fontText;
+}

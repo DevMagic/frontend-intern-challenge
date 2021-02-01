@@ -1,0 +1,29 @@
+@media(max-width: 590px){
+
+    #main{
+        height: 500px;
+        p{
+            font-size: 1.2rem;
+            word-wrap: true;
+        }
+        form{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2rem;
+        }
+        input{
+            margin: 1rem 0rem;
+        }
+        #inputLink{
+            width: 20rem;
+            text-align: center;
+        }
+
+    }
+    #top5{
+        .quant{
+            padding-left: 6rem;
+        }
+    }
+   
+}

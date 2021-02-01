@@ -1,0 +1,30 @@
+@media (max-width: 590px) {
+  #main {
+    height: 500px;
+  }
+  #main p {
+    font-size: 1.2rem;
+    word-wrap: true;
+  }
+  #main form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2rem;
+  }
+  #main input {
+    margin: 1rem 0rem;
+  }
+  #main #inputLink {
+    width: 20rem;
+    text-align: center;
+  }
+  #top5 .quant {
+    padding-left: 6rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
