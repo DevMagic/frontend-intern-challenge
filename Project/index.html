@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" charset="UTF-8" defer></script>
+    <title>Encurtador de Links</title>
+</head>
+<body>
+    <section class="encurtador">
+
+        <h1>Encurte seus links.</h1>
+        <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viagam através da internet.</p>
+        <div>
+            <form>
+                <input type="text" id="link-text" placeholder="Cole o seu link aqui" class="text" autocomplete="off">
+                <button type="submit" class="reset" id="resetText" disabled>X</button>
+            </form>
+            <button type="button" class="button" id="encurtar" onclick="encurtar()" class="text">Encurtar</button>
+        </div>
+    </section>
+
+    <section class="top5">
+        <h2>TOP 5</h2>
+
+        <ul>
+            <li id="linkTop1"></li><hr>
+            <li id="linkTop2"></li><hr>
+            <li id="linkTop3"></li><hr>
+            <li id="linkTop4"></li><hr>
+            <li id="linkTop5"></li>
+        </ul>
+    </section>
+
+    <section class="hits">
+        <div class="triang"></div>
+        
+        <h2>HITS</h2>
+        <h2 id="number-hits">35.712.000</h2>
+        <p>Cliques em links</p>
+    </section>
+
+    <footer>
+        <p>chr.dc</p>
+        
+        <ul>
+            <li><a href="http://twitter.com"><img src="../Assets/icon-twitter.png" alt="Twitter icon" title="Twitter"></a></li>
+            <li><a href="http://facebook.com"><img src="../Assets/icon-facebook.png" alt="Facebook icon" title="Facebook"></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

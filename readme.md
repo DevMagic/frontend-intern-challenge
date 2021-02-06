@@ -1,3 +1,14 @@
+# Como executar esse projeto
+
+> Dependencias
+* Express
+* Nodemon (opcional)
+
+> Como executar
+
+É necessário ter o Node instalado na máquina, entre no diretório do projeto e use o comando *npm i* para começar, depois use *npm run start* ou *npm run start:dev* para o nodemon, assim o projeto irá ser executado na porta 3000. Para acessar no navegador basta entrar no link: "localhost:3000/".
+
+
 # Desafio estagiário: HTML/CSS/JS
 
 O desafio proposto consiste numa **landing page** simulando um encurtador de links, onde testará as habilidades e qualidade de código de um desenvolvedor front-end ao transformar um layout em um protótipo funcional. 

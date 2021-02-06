@@ -1,0 +1,27 @@
+{
+  "name": "frontend-intern-challenge",
+  "version": "1.0.0",
+  "description": "É necessário ter o Node instalado na máquina, entre no diretório do projeto e use o comando *npm i* para começar, depois use *npm run start* ou *npm run start:dev* para o nodemon, assim o projeto irá ser executado na porta 3000. Para acessar no navegador basta entrar no link: localhost:3000/",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon server.js", 
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioRDJ/frontend-intern-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioRDJ/frontend-intern-challenge/issues"
+  },
+  "homepage": "https://github.com/AntonioRDJ/frontend-intern-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
