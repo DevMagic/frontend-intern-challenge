@@ -65,7 +65,6 @@ p {
 	justify-content: center;
 	flex-direction: row;
 	width: 100%;
-	cursor: pointer;
 }
 
 .flex {
@@ -94,6 +93,7 @@ p {
 	font-weight: bolder;
 	font-size: 16px;
 	border-style: none;
+	cursor: pointer;
 }
 
 #buttomEncurtar:hover {
