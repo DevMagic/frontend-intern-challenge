@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encurtador de links</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="top-logo"><img src="assets/devmagic-logo.png" /></header>
+      <main class="url-shortener">
+        <div class="container-shortener">
+          <h3 class="container-header">Encurte seus links.</h3>
+          <p>
+            Links são longos. Encurte os links que você deseja compartilhar e
+            acompanhe enquanto viajam através da internet.
+          </p>
+          <form class="form-shortener">
+            <input
+              type="text"
+              placeholder="Cole o seu link aqui"
+              name="url-input"
+              class="url-input"
+            />
+            <button
+              id="main-button"
+              class="waves-effect waves-light btn deep-orange lighten-1"
+            >
+              ENCURTAR
+            </button>
+          </form>
+        </div>
+      </main>
+      <section class="top-links">
+        <h4 class="heading">TOP 5</h4>
+        <section id="top-links-rendered" class="collection"></section>
+      </section>
+      <section class="total-hits">
+        <h4 class="heading">HITS</h4>
+        <div class="count-hits"><h5 class="heading" id="show-count"></h5></div>
+        Cliques em links
+      </section>
+      <footer class="redirects">
+        <div class="chaordic-logo">
+          <a><img src="assets/chaordic-logo.png" /></a>
+        </div>
+        <div class="socials-logo">
+          <a href="https://twitter.com" target="_blank"
+            ><img src="assets/twitter-logo.png"
+          /></a>
+          <a href="https://facebook.com" target="_blank"
+            ><img src="assets/facebook-logo.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
