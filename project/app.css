@@ -108,6 +108,11 @@ li {
   width: 20vw;
 }
 
+#another {
+  margin-top: 5px;
+  opacity: 0;
+}
+
 .redirects {
   margin-top: 10px;
   display: flex;
