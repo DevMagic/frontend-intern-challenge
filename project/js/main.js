@@ -60,25 +60,27 @@ anotherLinkButton.style.transition = "all 1s"
 
 buttonEncurtar.addEventListener("click", (e) => {
   e.preventDefault()
-  if (urlInput.value.substr(0, 4) === "http") {
-    if (buttonEncurtar.textContent === "COPIAR") {
-      urlInput.select()
-      urlInput.setSelectionRange(0, 99999)
-      document.execCommand("copy")
+  if (urlInput.value) {
+    if (urlInput.value.substr(0, 4) === "http") {
+      if (buttonEncurtar.textContent === "COPIAR") {
+        urlInput.select()
+        urlInput.setSelectionRange(0, 99999)
+        document.execCommand("copy")
+      } else {
+        const shortURL = `https://chr.dc/${getShortLink(5)}`
+        urlInput.style.opacity = 0.3
+        buttonEncurtar.style.opacity = 0.3
+        setTimeout(() => {
+          urlInput.value = shortURL
+          urlInput.style.opacity = 1
+          buttonEncurtar.style.opacity = 1
+          buttonEncurtar.textContent = "COPIAR"
+        }, 500)
+        anotherLinkButton.style.opacity = 1
+      }
     } else {
-      const shortURL = `https://chr.dc/${getShortLink(5)}`
-      urlInput.style.opacity = 0.3
-      buttonEncurtar.style.opacity = 0.3
-      setTimeout(() => {
-        urlInput.value = shortURL
-        urlInput.style.opacity = 1
-        buttonEncurtar.style.opacity = 1
-        buttonEncurtar.textContent = "COPIAR"
-      }, 500)
-      anotherLinkButton.style.opacity = 1
+      alert("Url inválida (http faltando)")
     }
-  } else {
-    alert("Url inválida ('http' faltando)")
   }
 
   return false
