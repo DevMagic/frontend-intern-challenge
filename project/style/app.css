@@ -29,11 +29,12 @@ body {
 .url-input {
   margin-top: 55px !important;
   color: #e35822;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .url-input::placeholder {
   color: #e35822;
+  font-weight: 400;
 }
 
 .url-input:focus {
@@ -57,7 +58,7 @@ body {
 #top-links-rendered {
   color: #000;
   margin: 0 auto;
-  width: 40%;
+  width: 40vw;
 }
 
 .top-links {
@@ -122,10 +123,6 @@ li {
 #another-button {
   margin-top: 5px;
   opacity: 0;
-}
-
-button:hover {
-  transform: scale(1.01);
 }
 
 .redirects {

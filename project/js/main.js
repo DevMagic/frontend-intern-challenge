@@ -1,71 +1,28 @@
-// Renders and displays fetched data
-const getTopFive = (links) => {
-  const hitLinks = []
-  links.forEach((link) => {
-    const hits = link.hits
-    hitLinks.push(hits)
-  })
-
-  document.querySelector("#show-count").innerHTML =
-    "&nbsp;" + hitLinks.reduce((a, b) => a + b, 0) + "&nbsp;"
-
-  const topFive = [...hitLinks].sort((a, b) => b - a).slice(0, 5)
-
-  const listContainer = document.querySelector("#top-links-rendered")
-  const listElement = document.createElement("ul")
-
-  topFive.forEach((hit) => {
-    listItem = document.createElement("li")
-    listItem.className = "collection-item"
-    urlItem = document.createElement("a")
-    urlItem.setAttribute(
-      "href",
-      links.find((link) => link.hits === hit).shortUrl
-    )
-    urlItem.className = "shortened-url"
-    urlItem.innerHTML = links.find((link) => link.hits === hit).shortUrl
-    listItem.append(urlItem)
-    listElement.append(listItem)
-    listItem.innerHTML += hit
-    listContainer.appendChild(listElement)
-  })
-}
-
-// Fetch data
-const fetchData = async () => {
-  await fetch(
-    "https://raw.githubusercontent.com/DevMagic/frontend-intern-challenge/master/Assets/urls.json"
-  )
-    .then((response) => response.json())
-    .then((data) => getTopFive(data))
-    .catch((e) => console.log(e))
-}
-
-fetchData()
+// Declaration of used DOM elements
+const snackbar = document.querySelector("#snackbar")
+const urlInput = document.querySelector(".url-input")
+const buttonShortenOrCopy = document.querySelector("#main-button")
+const anotherLinkButton = document.querySelector("#another-button")
+urlInput.style.transition = "all 2s"
+buttonShortenOrCopy.style.transition = "all 2s"
+anotherLinkButton.style.transition = "all 2s"
 
 // Shorts url
 const getShortUrl = async (url) => {
   if (url.search("is.gd") !== -1) {
     return "Não posso encurtar links desse domínio (is.gd)"
   }
-  return await fetch(`https://is.gd/create.php?format=json&url=${url}`)
-    .then((response) => response.json())
-    .then((data) => data.shorturl)
-    .catch((e) => console.log(e))
-}
 
-// Declaration of used DOM elements
-const snackbar = document.querySelector("#snackbar")
-const urlInput = document.querySelector(".url-input")
-const buttonShorterOrCopy = document.querySelector("#main-button")
-const anotherLinkButton = document.querySelector("#another-button")
-urlInput.style.transition = "opacity 1s"
-buttonShorterOrCopy.style.transition = "opacity 1s"
-anotherLinkButton.style.transition = "opacity 1s"
+  const response = await fetch(
+    `https://is.gd/create.php?format=json&url=${url}`
+  ).catch((e) => console.log(e))
+  const { shorturl } = await response.json()
+  return shorturl
+}
 
 // Validates input url
 function validateURL(str) {
-  var pattern = new RegExp(
+  const pattern = new RegExp(
     "^(https?:\\/\\/)?" +
       "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" +
       "((\\d{1,3}\\.){3}\\d{1,3}))" +
@@ -78,25 +35,25 @@ function validateURL(str) {
 }
 
 // Listen for clicks on the main button
-buttonShorterOrCopy.addEventListener("click", (e) => {
+buttonShortenOrCopy.addEventListener("click", (e) => {
   e.preventDefault()
   if (urlInput.value) {
     if (validateURL(urlInput.value)) {
-      if (buttonShorterOrCopy.textContent === "Copiar") {
+      if (buttonShortenOrCopy.textContent === "Copiar") {
         urlInput.select()
         urlInput.setSelectionRange(0, 99999)
         document.execCommand("copy")
       } else {
-        let shortURL = ""
-        getShortUrl(urlInput.value).then((response) => (shortURL = response))
-        urlInput.style.opacity = 0.3
-        buttonShorterOrCopy.style.opacity = 0.3
+        urlInput.style.opacity = 0
+        buttonShortenOrCopy.style.opacity = 0
+
         setTimeout(() => {
-          urlInput.value = shortURL
+          urlInput.style.color = "#fff"
+          getShortUrl(urlInput.value).then((data) => (urlInput.value = data))
           urlInput.style.opacity = 1
-          buttonShorterOrCopy.style.opacity = 1
-          buttonShorterOrCopy.textContent = "Copiar"
-        }, 500)
+          buttonShortenOrCopy.textContent = "Copiar"
+          buttonShortenOrCopy.style.opacity = 1
+        }, 800)
         anotherLinkButton.style.opacity = 1
       }
     } else {
@@ -111,15 +68,16 @@ buttonShorterOrCopy.addEventListener("click", (e) => {
 // Listen for clicks on the 'shorter another link' button
 anotherLinkButton.addEventListener("click", (e) => {
   e.preventDefault()
-  urlInput.style.opacity = 0.3
-  buttonShorterOrCopy.style.opacity = 0.3
+  urlInput.style.opacity = 0
+  buttonShortenOrCopy.style.opacity = 0
 
   setTimeout(() => {
+    urlInput.style.color = "#e35822"
     urlInput.value = ""
-    buttonShorterOrCopy.textContent = "ENCURTAR"
     urlInput.style.opacity = 1
-    buttonShorterOrCopy.style.opacity = 1
-  }, 500)
+    buttonShortenOrCopy.textContent = "Encurtar"
+    buttonShortenOrCopy.style.opacity = 1
+  }, 800)
 
   anotherLinkButton.style.opacity = 0
 })

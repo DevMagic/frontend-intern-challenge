@@ -11,7 +11,6 @@
 
 - Consumindo o JSON providenciado no desafio para exibição do top 5 e o total de cliques
 - Consumindo [API] para encurtar link
-- Animação entre a mudança de estado do input com JavaScript como proposto
 
 [materializecss]: https://materializecss.com/
 [html5]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
