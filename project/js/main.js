@@ -37,6 +37,8 @@ function validateURL(str) {
 // Listen for clicks on the main button
 buttonShortenOrCopy.addEventListener("click", (e) => {
   e.preventDefault()
+  e.stopPropagation()
+
   if (urlInput.value) {
     if (validateURL(urlInput.value)) {
       if (buttonShortenOrCopy.textContent === "Copiar") {
@@ -60,7 +62,7 @@ buttonShortenOrCopy.addEventListener("click", (e) => {
       snackbar.className = "show"
       setTimeout(() => {
         snackbar.className = snackbar.className.replace("show", "")
-      }, 2000)
+      }, 3000)
     }
   }
 })
@@ -68,6 +70,7 @@ buttonShortenOrCopy.addEventListener("click", (e) => {
 // Listen for clicks on the 'shorter another link' button
 anotherLinkButton.addEventListener("click", (e) => {
   e.preventDefault()
+  e.stopPropagation()
   urlInput.style.opacity = 0
   buttonShortenOrCopy.style.opacity = 0
 

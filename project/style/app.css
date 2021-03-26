@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 .url-shortener {
   background: url(../assets/background-home.jpg);
-  background-size: contain;
+  background-size: cover;
   height: 55vh;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ body {
 #top-links-rendered {
   color: #000;
   margin: 0 auto;
-  width: 40vw;
+  width: 35vw;
 }
 
 .top-links {
@@ -76,7 +76,6 @@ body {
 
 li {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -88,7 +87,7 @@ li {
 }
 
 .total-hits {
-  background: url(../assets/totalhits-background.png);
+  background-color: #eeeeee;
   text-align: center;
   color: #000;
   display: flex;
