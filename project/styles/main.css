@@ -1,0 +1,16 @@
+:root{
+    --color-red: #AA1423;
+    --color-support-text: #777;
+    --color-line-background: #EEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
