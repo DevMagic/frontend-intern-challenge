@@ -35,6 +35,57 @@ main{
     width: 100%;
 }
 
+/*Top 5 area*/
+.top-five-container{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+}
+
+.top-five-content{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.top-five-content h2{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-red);
+    margin-bottom: 2rem;
+}
+
+.top-link-list div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-link-list p{
+    font-size: 1rem;
+    font-family: 'Roboto';
+    margin: 0.5rem 0;
+}
+
+.top-link-list p a{
+    text-decoration: none;
+    color: var(--color-red);
+    text-align: left;
+    font-weight: bold;
+}
+
+.top-link-list p + p{
+    text-align: right;
+    color: var(--color-support-text);
+}
+
+.top-link-list div + div{
+    border-top: var(--color-line-background) solid 1px;
+    padding-top: 0.4rem;
+}
+
 /*Hits area*/
 .hits-container{
     background-color: var(--color-line-background);
@@ -124,6 +175,23 @@ footer .icon-Facebook-Twitter{
     }
 
     /*Content display*/
+    /*Top 5 area*/
+    .top-five-content{
+        width: 80%;
+    }
+
+    .top-five-content h2{
+        font-size: 1.33rem;
+    }
+
+    .top-link-list p{
+        font-size: 0.66rem;
+    }
+
+    .top-link-list div + div{
+        padding-top: initial;
+    }
+
     /*Hits area*/
     .hits-content h2, .hits-content span{
         font-size: 1.33rem;
