@@ -10,6 +10,7 @@ header, footer{
     background-color: var(--color-white);
 }
 
+/*Header style*/
 header{
     display: flex;
     flex-direction: row;
@@ -25,12 +26,61 @@ header a img{
     width: 100%;
 }
 
-/*
+/*Content display*/
 main{
-    height: 100vh;
+    width: 100vw;
 }
-*/
 
+.shortener-container, .top-five-container, .hits-container{
+    width: 100%;
+}
+
+/*Hits area*/
+.hits-container{
+    background-color: var(--color-line-background);
+    display: flex;
+    flex-direction: row;
+}
+
+.hits-content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.hits-content h2, .hits-content span{
+    color: var(--color-red);
+    font-size: 2rem;
+}
+
+.hits-content h2{
+    margin-bottom: 2rem;
+    font-family: 'Roboto Slab';
+}
+
+.hits-content span, .hits-content p{
+    font-family: 'Roboto';
+}
+
+.hits-content span{
+    background-color: var(--color-white);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hits-content p{
+    color: var(--color-support-text);
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+/*Footer style*/
 footer{
     display: flex;
     flex-direction: row;
@@ -68,10 +118,27 @@ footer .icon-Facebook-Twitter{
 }
 
 @media screen and (max-width: 768px) {
+    /*Header style*/
     header a{
         width: 8rem;
     }
 
+    /*Content display*/
+    /*Hits area*/
+    .hits-content h2, .hits-content span{
+        font-size: 1.33rem;
+    }
+
+    .hits-content h2{
+        margin-bottom: 1.33rem;
+    }
+
+    .hits-content p{
+        font-size: 0.66rem;
+        margin-top: 0.53;
+    }
+
+    /*Footer style*/
     footer{
         padding: 1rem;
     }
