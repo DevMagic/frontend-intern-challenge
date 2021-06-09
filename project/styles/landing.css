@@ -1,2 +1,90 @@
 @import url('./main.css');
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    width: 100vw;
+    background-color: var(--color-white);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+header a{
+    margin: auto;
+    width: 12rem;
+}
+
+header a img{
+    width: 100%;
+}
+
+/*
+main{
+    height: 100vh;
+}
+*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20vw;
+}
+
+footer .icon-Chaordic{
+    width: 6rem;
+}
+
+footer .icon-Chaordic a{
+    width: 100%;
+}
+
+footer .icon-Chaordic a img{
+    width: 100%;
+}
+
+footer .icon-Facebook-Twitter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 6rem;
+}
+
+.icon-Facebook-Twitter a{
+    width: 2rem;
+}
+
+.icon-Facebook-Twitter a img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header a{
+        width: 8rem;
+    }
+
+    footer{
+        padding: 1rem;
+    }
+
+    .icon-Chaordic a, .icon-Facebook-Twitter{
+        width: 4rem;
+    }
+
+    .icon-Facebook-Twitter{
+        justify-content: space-around;
+    }
+
+    .icon-Facebook-Twitter a{
+        width: 1.8rem;
+    }
+}
