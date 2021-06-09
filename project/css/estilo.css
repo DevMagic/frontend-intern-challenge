@@ -1,0 +1,142 @@
+/*Fonte*/
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto-Light";
+}
+
+
+:focus {
+    outline: none;
+}
+
+
+/*Cabeçalho*/
+header {
+    background-image: url("../Assets/background-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 580px;    
+}
+
+header h1,p {
+    color: #FFF;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header .formulario {
+    margin-top: 20px;
+}
+
+header .formulario .inserirLink {
+    width: 400px;
+    border: transparent;
+    border-bottom: 1px solid #FFA500;
+    background-color: transparent;
+}
+
+header .formulario .inserirLink::-webkit-input-placeholder {
+    color: #FFA500;
+}
+
+
+header .btn-warning,  .btn-warning:hover{
+    color: #FFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+#urls {
+    height: 500px;
+}
+
+
+h2 {
+    color: #AA1423;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#urls h2 {
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+    
+}
+
+
+#urls table {
+    color: red;
+}
+
+#urls table .cinza {
+    color: #777;
+    padding-left: 50px;
+}
+
+
+/*Seção Hits*/
+#hits {
+    background-color: #EEE;
+    height: 300px;
+    text-align: center;    
+    font-weight: bold;
+}
+
+#hits p {
+    color: #777;
+}
+
+#hits .numeroHits {
+    background-color: #FFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+}
+
+/*Rodapé*/
+footer {
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/*MEDIA QUERIE*/
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+    header {
+        height: 400px;
+    }   
+
+    header .formulario .inserirLink {
+        width: 200px;
+    }
+
+    #urls table .preto {
+        padding-left: 5px;
+    }
+       
+}
+
+
+/*Landscape phones, 576px and up*/
+@media (min-width: 576px) and (max-width: 767.98px){
+}
+
+
+/*Tablets, 768px and up*/
+@media (min-width: 768px) and (max-width: 991.98px){
+
+}
