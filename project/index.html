@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevMagic</title>
     <link rel="stylesheet" href="./styles/landing.css">
+    <script src="./scripts/landing.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,9 +19,9 @@
             <div class="shortener-content">
                 <h1>Encurte seus links.</h1>
                 <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
-                <form class="shortener-form">
+                <form class="shortener-form" id="shorten-form">
                     <input type="url" name="txt-link" id="txt-link" placeholder="Cole o seu link aqui">
-                    <button type="button" id="btn-link">ENCURTAR</button>
+                    <button type="button" id="btn-link" data-action="shorten">ENCURTAR</button>
                 </form>
             </div>
         </div>
