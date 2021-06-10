@@ -35,6 +35,68 @@ main{
     width: 100%;
 }
 
+/*Shortener area*/
+.shortener-container{
+    background-image: url('/Assets/background-home.jpg');
+    display: flex;
+    flex-direction: row;
+}
+
+.shortener-content{
+    width: 50%;
+    margin: 8rem auto;
+    text-align: center;
+}
+
+.shortener-content h1{
+    font-size: 2.25rem;
+    color: var(--color-white);
+    font-family: 'Roboto Slab';
+}
+
+.shortener-content p{
+    font-size: 1rem;
+    color: var(--color-white);
+    font-family: 'Roboto';
+    margin-top: 1rem;
+}
+
+.shortener-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.shortener-form input, .shortener-form button{
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
+}
+
+.shortener-form input{
+    width: 73%;
+    background-color: transparent;
+    border-bottom: var(--color-link-shortener) solid 1px;
+    color: var(--color-link-shortener);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.shortener-form input::placeholder{
+    color: var(--color-link-shortener);
+}
+
+.shortener-form button{
+    width: 25%;
+    font-size: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-link-shortener);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
 /*Top 5 area*/
 .top-five-container{
     background-color: var(--color-white);
@@ -175,6 +237,29 @@ footer .icon-Facebook-Twitter{
     }
 
     /*Content display*/
+    /*Shortener area*/
+    .shortener-content{
+        width: 80%;
+        margin: 5.33 auto;
+    }
+
+    .shortener-content h1{
+        font-size: 1.5rem;
+    }
+
+    .shortener-content p{
+        font-size: 0.66rem;
+        margin-top: 0.66rem;
+    }
+
+    .shortener-form{
+        margin-top: 2.66rem;
+    }
+
+    .shortener-form input, .shortener-form button{
+        font-size: 0.66rem;
+    }
+
     /*Top 5 area*/
     .top-five-content{
         width: 80%;
