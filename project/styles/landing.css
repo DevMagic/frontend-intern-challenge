@@ -38,6 +38,9 @@ main{
 /*Shortener area*/
 .shortener-container{
     background-image: url('/Assets/background-home.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
     flex-direction: row;
 }
@@ -78,7 +81,7 @@ main{
 .shortener-form input{
     width: 73%;
     background-color: transparent;
-    border-bottom: var(--color-link-shortener) solid 1px;
+    border-bottom: var(--color-link-shortener) solid 2px;
     color: var(--color-link-shortener);
     font-size: 1rem;
     padding: 0.5rem;
@@ -90,6 +93,7 @@ main{
 
 .shortener-form button{
     width: 25%;
+    min-width: 4rem;
     font-size: 1rem;
     color: var(--color-white);
     background-color: var(--color-link-shortener);
