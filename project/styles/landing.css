@@ -102,6 +102,7 @@ main{
     background-color: var(--color-white);
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .top-five-content{
@@ -148,6 +149,21 @@ main{
     padding-top: 0.4rem;
 }
 
+/*Triangle arrow*/
+.triangle{
+    border-top: var(--color-white) solid 2rem;
+    border-bottom: transparent solid 2rem;
+    border-left: transparent solid 3rem;
+    border-right: transparent solid 3rem;
+    height: 0;
+    width: 0;
+    background: none;
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    margin-left: -3rem;
+}
+
 /*Hits area*/
 .hits-container{
     background-color: var(--color-line-background);
@@ -156,12 +172,11 @@ main{
 }
 
 .hits-content{
-    margin: auto;
+    margin: 3rem auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 2rem 0;
 }
 
 .hits-content h2, .hits-content span{
@@ -275,6 +290,20 @@ footer .icon-Facebook-Twitter{
 
     .top-link-list div + div{
         padding-top: initial;
+    }
+
+    /*Triangle arrow*/
+    .triangle{
+        border-top: var(--color-white) solid 1.33rem;
+        border-bottom: transparent solid 1.33rem;
+        border-left: transparent solid 2rem;
+        border-right: transparent solid 2rem;
+        height: 0;
+        width: 0;
+        background: none;
+        position: absolute;
+        bottom: -2.66rem;
+        margin-left: -2rem;
     }
 
     /*Hits area*/
