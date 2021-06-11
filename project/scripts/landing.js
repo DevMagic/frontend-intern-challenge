@@ -8,6 +8,9 @@ document.querySelector('#shorten-form').addEventListener("submit", ev => {ev.pre
 //Verifies button condition on clicking
 document.querySelector('#btn-link').addEventListener("click", verifyButtonAction);
 
+//Erases shortened link
+document.querySelector('#btn-cancel').addEventListener("click", function(){changeForm("shorten")});
+
 //Functions activated on page loading
 window.addEventListener("load", function(){
     changeForm("shorten");

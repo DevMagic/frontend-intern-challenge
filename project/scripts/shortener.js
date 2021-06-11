@@ -23,15 +23,39 @@ function makeShortLink(link)
     return link;
 }
 
+//Adds animation to the form
+function animateFade()
+{
+    let formItems = document.querySelectorAll('.shortener-form input, .shortener-form button');
+    removeFade();
+    for(let item of formItems)
+    {
+        //#btn-cancel receives partial fading, other receive total fading
+        item.classList.add(item.id == "btn-cancel" ? "animate-fade-partial" : "animate-fade-total");
+    }
+}
+
+//Removes animation from the form
+function removeFade()
+{
+    let formItems = document.querySelectorAll('.shortener-form input, .shortener-form button');
+    for(let item of formItems)
+    {
+        item.className = '';
+    }
+}
+
 //Changes input and button text and actions for the received action
 export function changeForm(action)
 {
     let txtLink = document.querySelector('#txt-link');
     let btnLink = document.querySelector('#btn-link');
+    let btnCancel = document.querySelector('#btn-cancel');    
     if(action === "shorten")
     {
         txtLink.placeholder = "Cole o seu link aqui";
         txtLink.value = "";
+        btnCancel.style.display = "none";
         btnLink.innerText = "ENCURTAR";
         btnLink.dataset.action = "shorten";
     }
@@ -40,6 +64,8 @@ export function changeForm(action)
         txtLink.placeholder = "";
         btnLink.innerText = "COPIAR";
         btnLink.dataset.action = "copy";
+        btnCancel.style.display = "initial";
+        setTimeout(removeFade, 500);
     }
 }
 
@@ -49,8 +75,11 @@ function shortenLink()
     let link = document.querySelector('#txt-link');
     if(validateURL(link.value))
     {
-        link.value = makeShortLink(link.value);
-        changeForm("copy");
+        animateFade();
+        setTimeout(() => {
+            link.value = makeShortLink(link.value);
+            changeForm("copy");
+        }, 500);
     }
     else
     {
