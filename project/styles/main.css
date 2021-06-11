@@ -1,0 +1,22 @@
+/*Fonts Roboto and Roboto Slab imported*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+/*Definition of color variables*/
+:root{
+    --color-red: #AA1423;
+    --color-support-text: #777;
+    --color-line-background: #EEE;
+    --color-white: #FFF;
+    --color-link-shortener: #FF6E14;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+}

@@ -1,0 +1,368 @@
+@import url('./main.css');
+@import url('./animations.css');
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    width: 100vw;
+    background-color: var(--color-white);
+}
+
+/*Header style*/
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+header a{
+    margin: auto;
+    width: 12rem;
+}
+
+header a img{
+    width: 100%;
+}
+
+/*Content display*/
+main{
+    width: 100vw;
+}
+
+.shortener-container, .top-five-container, .hits-container{
+    width: 100%;
+}
+
+/*Shortener area*/
+.shortener-container{
+    background-image: url('/Assets/background-home.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.shortener-content{
+    width: 50%;
+    margin: 8rem auto;
+    text-align: center;
+}
+
+.shortener-content h1{
+    font-size: 2.25rem;
+    color: var(--color-white);
+    font-family: 'Roboto Slab';
+}
+
+.shortener-content p{
+    font-size: 1rem;
+    color: var(--color-white);
+    font-family: 'Roboto';
+    margin-top: 1rem;
+}
+
+.shortener-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.shortener-form input, .shortener-form button{
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 1rem;
+}
+
+.shortener-form input{
+    width: 73%;
+    background-color: transparent;
+    border-bottom: var(--color-link-shortener) solid 2px;
+    color: var(--color-link-shortener);
+    padding: 0.5rem;
+}
+
+.shortener-form input::placeholder{
+    color: var(--color-link-shortener);
+}
+
+.shortener-form button
+{
+    cursor: pointer;
+}
+
+.shortener-form button#btn-cancel
+{
+    margin-left: -2rem;
+    background-color: transparent;
+    color: var(--color-white);
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.shortener-form button:not(#btn-cancel){
+    width: 25%;
+    min-width: 4rem;
+    color: var(--color-white);
+    background-color: var(--color-link-shortener);
+    padding: 0.5rem;
+}
+
+/*Top 5 area*/
+.top-five-container{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.top-five-content{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.top-five-content h2{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-red);
+    margin-bottom: 2rem;
+}
+
+.top-link-list div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-link-list p{
+    font-size: 1rem;
+    font-family: 'Roboto';
+    margin: 0.5rem 0;
+}
+
+.top-link-list p a{
+    text-decoration: none;
+    color: var(--color-red);
+    text-align: left;
+    font-weight: bold;
+}
+
+.top-link-list p + p{
+    text-align: right;
+    color: var(--color-support-text);
+}
+
+.top-link-list div + div{
+    border-top: var(--color-line-background) solid 1px;
+    padding-top: 0.4rem;
+}
+
+/*Triangle arrow*/
+.triangle{
+    border-top: var(--color-white) solid 2rem;
+    border-bottom: transparent solid 2rem;
+    border-left: transparent solid 3rem;
+    border-right: transparent solid 3rem;
+    height: 0;
+    width: 0;
+    background: none;
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    margin-left: -3rem;
+}
+
+/*Hits area*/
+.hits-container{
+    background-color: var(--color-line-background);
+    display: flex;
+    flex-direction: row;
+}
+
+.hits-content{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.hits-content h2, .hits-content span{
+    color: var(--color-red);
+    font-size: 2rem;
+}
+
+.hits-content h2{
+    margin-bottom: 2rem;
+    font-family: 'Roboto Slab';
+}
+
+.hits-content span, .hits-content p{
+    font-family: 'Roboto';
+}
+
+.hits-content span{
+    background-color: var(--color-white);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hits-content p{
+    color: var(--color-support-text);
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+/*Footer style*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20vw;
+}
+
+footer .icon-Chaordic{
+    width: 6rem;
+}
+
+footer .icon-Chaordic a{
+    width: 100%;
+}
+
+footer .icon-Chaordic a img{
+    width: 100%;
+}
+
+footer .icon-Facebook-Twitter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 6rem;
+}
+
+.icon-Facebook-Twitter a{
+    width: 2rem;
+}
+
+.icon-Facebook-Twitter a img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    /*Header style*/
+    header a{
+        width: 8rem;
+    }
+
+    /*Content display*/
+    /*Shortener area*/
+    .shortener-content{
+        width: 80%;
+        margin: 5.33 auto;
+    }
+
+    .shortener-content h1{
+        font-size: 1.5rem;
+    }
+
+    .shortener-content p{
+        font-size: 0.66rem;
+        margin-top: 0.66rem;
+    }
+
+    .shortener-form{
+        margin-top: 2.66rem;
+    }
+
+    .shortener-form input, .shortener-form button{
+        font-size: 0.66rem;
+    }
+
+    .shortener-form button#btn-cancel
+    {
+        margin-left: -1.33rem;
+        width: 0.66rem;
+        height: 0.66rem;
+    }
+
+    /*Top 5 area*/
+    .top-five-content{
+        width: 80%;
+    }
+
+    .top-five-content h2{
+        font-size: 1.33rem;
+    }
+
+    .top-link-list p{
+        font-size: 0.66rem;
+    }
+
+    .top-link-list div + div{
+        padding-top: initial;
+    }
+
+    /*Triangle arrow*/
+    .triangle{
+        border-top: var(--color-white) solid 1.33rem;
+        border-bottom: transparent solid 1.33rem;
+        border-left: transparent solid 2rem;
+        border-right: transparent solid 2rem;
+        height: 0;
+        width: 0;
+        background: none;
+        position: absolute;
+        bottom: -2.66rem;
+        margin-left: -2rem;
+    }
+
+    /*Hits area*/
+    .hits-content h2, .hits-content span{
+        font-size: 1.33rem;
+    }
+
+    .hits-content h2{
+        margin-bottom: 1.33rem;
+    }
+
+    .hits-content p{
+        font-size: 0.66rem;
+        margin-top: 0.53;
+    }
+
+    /*Footer style*/
+    footer{
+        padding: 1rem;
+    }
+
+    .icon-Chaordic a, .icon-Facebook-Twitter{
+        width: 4rem;
+    }
+
+    .icon-Facebook-Twitter{
+        justify-content: space-around;
+    }
+
+    .icon-Facebook-Twitter a{
+        width: 1.8rem;
+    }
+}
